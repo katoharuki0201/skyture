@@ -1,13 +1,10 @@
-
-interface Coordinates {
+type Coordinates = {
   latitude: number;
   longitude: number;
   accuracy: number;
 }
 
-/**
- * 現在地の座標を取得する
- */
+// 現在地の座標を取得する
 function getLocation(): Promise<Coordinates> {
   return new Promise((resolve, reject) => {
     // Geolocation APIの利用可否を確認
