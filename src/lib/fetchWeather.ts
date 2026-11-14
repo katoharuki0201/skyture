@@ -35,7 +35,7 @@ export async function fetchWeather(latitude: number, longitude: number): Promise
     },
     daily: {
         sunrise: data.daily.sunrise,
-        sunset: data.daily.sunset,
+    sunset: data.daily.sunset,
     },
-    } ;
+};
 }
