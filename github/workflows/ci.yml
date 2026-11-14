@@ -1,0 +1,69 @@
+# .github/workflows/ci.yml
+
+name: CI Tests
+
+# いつ実行する？
+on:
+  push:
+  pull_request:
+    branches: [ main, develop ]
+# 実行する処理
+jobs:
+  backend-test:
+  　# どのOSで実行するか
+    runs-on: ubuntu-latest
+    
+    env:
+      DATABASE_URL: "sqlite:///./backend/test.db"
+　　　
+    steps:
+    　# ステップ1: コードをチェックアウト
+      - name: コードを取得
+        uses: actions/checkout@v4
+      # ステップ2: Pythonをセットアップ
+      - name: Python 3.9 をセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      # ステップ3: 依存関係をインストール
+      - name: 依存関係をインストール
+        run: |
+          cd backend
+          pip install --upgrade pip
+          pip install -r requirements-dev.txt
+      # ステップ4: テストを実行
+      - name: テストを実行
+        run: |
+          cd backend
+          pytest test/ -v --cov=app --cov-report=xml
+      # ステップ5: カバレッジをアップロード　# *1.カバレッジ
+      - name: カバレッジをアップロード
+        uses: codecov/codecov-action@v4
+        with:
+          file: ./backend/coverage.xml
+          fail_ci_if_error: false
+        continue-on-error: true
+  
+  frontend-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: コードを取得
+        uses: actions/checkout@v4
+      
+      - name: Node.js をセットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: 依存関係をインストール
+        run: |
+          cd frontend
+          npm ci
+      
+      - name: テストを実行
+        run: |
+          cd frontend
+          npm test -- --coverage --watchAll=false
+
+# *1. カバレッジ：テストの網羅率       
