@@ -1,41 +1,43 @@
-// fetchWeather.ts
+import getLocation from "./getLocation";
 
-export interface WeatherResponse {
-    current: {
-    weather_code: number;
-    time: string;
-    is_day: number;
-};
-    daily: {
-    sunrise: string[];
-    sunset: string[];
-    };
+interface WeatherResponse {
+  current_weather: {
+    weathercode: number;
+  };
+}
+
+// WMO天候コードを日本語に変換する関数
+function getWeatherText(code: number): string {
+  if (code === 0) return "快晴";
+  if (code <= 3) return "晴れ・薄曇り";
+  if (code <= 49) return "霧";
+  if (code <= 69) return "雨";
+  if (code <= 79) return "雪";
+  if (code <= 99) return "雷雨";
+  return "不明";
 }
 
 /**
- * 緯度・経度を受け取り、Open-Meteoから天気・日の出・日の入り情報を取得する
+ * 現在地の天候を取得して出力する
  */
-export async function fetchWeather(latitude: number, longitude: number): Promise<WeatherResponse> {
-  // Open-MeteoのAPIエンドポイント（currentとdailyに必要パラメーターを指定）　
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=weather_code,time,is_day&daily=sunrise,sunset&timezone=auto`;
+async function fetchWeather(): Promise<void> {
+  try {
+    const { latitude, longitude } = await getLocation();
 
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
     const response = await fetch(url);
 
     if (!response.ok) {
-    throw new Error(`天気の取得に失敗しました: ${response.statusText}`);
+      throw new Error(`HTTPエラー: ${response.status}`);
     }
 
-    const data = await response.json();
+    const data: WeatherResponse = await response.json();
+    const code = data.current_weather.weathercode;
 
-    return {
-    current: {
-        weather_code: data.current.weather_code,
-        time: data.current.time,
-        is_day: data.current.is_day,
-    },
-    daily: {
-        sunrise: data.daily.sunrise,
-    sunset: data.daily.sunset,
-    },
-};
+    console.log(`現在の天候: ${getWeatherText(code)} (コード: ${code})`);
+  } catch (error) {
+    console.error("取得エラー:", error);
+  }
 }
+
+export default fetchWeather;
