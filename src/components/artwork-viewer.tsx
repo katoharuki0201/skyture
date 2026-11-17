@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { artworkBack } from "../lib/artwork-back";
+import { type ArtworkLocation, artworkBack } from "../lib/artwork-back";
 import { artworkImageUrl } from "../lib/artwork-image";
 import type { Selection } from "../lib/artwork-selection";
 import { GenerationIndicator } from "./generation-loading";
@@ -10,9 +10,11 @@ import { GenerationIndicator } from "./generation-loading";
 export function ArtworkViewer({
 	selection,
 	flippable = false,
+	location,
 }: {
 	selection: Selection;
 	flippable?: boolean;
+	location?: ArtworkLocation;
 }) {
 	const container = useRef<HTMLDivElement>(null);
 	const flip = useRef(0);
@@ -159,7 +161,11 @@ export function ArtworkViewer({
 				if (flippable) {
 					await document.fonts.ready;
 					if (!active) return;
-					back = artworkBack(selection, new THREE.Box3().setFromObject(model));
+					back = artworkBack(
+						selection,
+						new THREE.Box3().setFromObject(model),
+						location,
+					);
 					display.add(back.mesh);
 				}
 				resize();
@@ -248,7 +254,7 @@ export function ArtworkViewer({
 			renderer.dispose();
 			renderer.domElement.remove();
 		};
-	}, [artworkUrl, flippable, selection]);
+	}, [artworkUrl, flippable, selection, location]);
 
 	const toggle = () => {
 		if (loading || error || !flippable) return;
@@ -281,7 +287,9 @@ export function ArtworkViewer({
 			/>
 			{flippable && (
 				<p className="gallery-flip-hint">
-					{backVisible ? "- タップして絵画にもどる -" : "- タップして作品情報をみる -"}
+					{backVisible
+						? "- タップして絵画にもどる -"
+						: "- タップして作品情報をみる -"}
 				</p>
 			)}
 			{loading && (

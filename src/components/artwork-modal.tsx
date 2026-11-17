@@ -1,16 +1,18 @@
 import { X } from "lucide-react";
 import { useEffect, useRef } from "react";
+import type { ArtworkLocation } from "../lib/artwork-back";
 import type { Selection } from "../lib/artwork-selection";
 import { useDialogBackdrop } from "../lib/use-dialog-backdrop";
-import { ArtworkPlate } from "./artwork-plate";
 import { ArtworkViewer } from "./artwork-viewer";
 
 export default function ArtworkModal({
 	selection,
 	onClose,
+	location,
 }: {
 	selection: Selection;
 	onClose: () => void;
+	location?: ArtworkLocation;
 }) {
 	const dialog = useRef<HTMLDialogElement>(null);
 	const backdropDismiss = useDialogBackdrop();
@@ -30,7 +32,7 @@ export default function ArtworkModal({
 			{...backdropDismiss}
 			ref={dialog}
 			className="artwork-modal"
-			aria-labelledby="artwork-modal-title"
+			aria-label={`${location ? `${location.name}の` : ""}作品：${selection.artwork.title}`}
 			onClose={onClose}
 		>
 			<button
@@ -41,8 +43,12 @@ export default function ArtworkModal({
 			>
 				<X size={25} aria-hidden="true" />
 			</button>
-			<ArtworkViewer selection={selection} />
-			<ArtworkPlate selection={selection} />
+			<ArtworkViewer
+				key={selection.generatedAt}
+				selection={selection}
+				location={location}
+				flippable
+			/>
 		</dialog>
 	);
 }

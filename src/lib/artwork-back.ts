@@ -1,7 +1,13 @@
 import * as THREE from "three";
 import { type Selection, timeLabels, weatherLabels } from "./artwork-selection";
 
-export function artworkBack(selection: Selection, bounds: THREE.Box3) {
+export type ArtworkLocation = { name: string; timezone: string };
+
+export function artworkBack(
+	selection: Selection,
+	bounds: THREE.Box3,
+	location?: ArtworkLocation,
+) {
 	const canvas = document.createElement("canvas");
 	canvas.width = canvas.height = 1536;
 	const ctx = canvas.getContext("2d");
@@ -37,6 +43,21 @@ export function artworkBack(selection: Selection, bounds: THREE.Box3) {
 	text(`天気　${weatherLabels[selection.conditions.weather]}`, 46);
 	text(`時間帯　${timeLabels[selection.conditions.time]}`, 46);
 	text(`気温　${selection.conditions.temperature.toFixed(1)}℃`, 46);
+	if (location) {
+		y += 36;
+		text(location.name, 46);
+		text(
+			`${new Intl.DateTimeFormat("ja-JP", {
+				timeZone: location.timezone,
+				month: "long",
+				day: "numeric",
+				hour: "2-digit",
+				minute: "2-digit",
+				hourCycle: "h23",
+			}).format(new Date(selection.generatedAt))}（現地時間）`,
+			38,
+		);
+	}
 	const texture = new THREE.CanvasTexture(canvas);
 	texture.colorSpace = THREE.SRGBColorSpace;
 	const material = new THREE.MeshBasicMaterial({
