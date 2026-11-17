@@ -13,5 +13,49 @@ body,
 
 body {
   margin: 0;
+  color: #12303a;
+  background: linear-gradient(145deg, #dff5f1 0%, #eef5ff 48%, #f7f9fc 100%);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
+
+.weather-page {
+  display: grid;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  place-items: center;
+}
+
+.weather-card {
+  width: min(100%, 30rem);
+  padding: clamp(1.5rem, 6vw, 3rem);
+  border: 1px solid rgb(255 255 255 / 75%);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 82%);
+  box-shadow: 0 1.5rem 4rem rgb(28 77 93 / 12%);
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+.weather-eyebrow,
+.weather-credit {
+  color: #61818a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.weather-card h1 { margin: 0.6rem 0; font-size: clamp(1.8rem, 6vw, 2.5rem); }
+.weather-intro, .weather-message { color: #55717a; line-height: 1.7; }
+.weather-result { margin-top: 2rem; }
+.weather-condition { margin: 0; color: #397d8d; font-size: 1.2rem; font-weight: 700; }
+.weather-temperature { margin: 0.2rem 0 1.5rem; font-size: 5rem; font-weight: 700; letter-spacing: -0.08em; line-height: 1.1; }
+.weather-temperature span { margin-left: 0.25rem; font-size: 2rem; vertical-align: top; }
+.weather-details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin: 0; padding: 1rem 0; border-block: 1px solid #e1eaec; }
+.weather-details dt { color: #718890; font-size: 0.8rem; }
+.weather-details dd { margin: 0.4rem 0 0; font-weight: 700; }
+.weather-error { margin: 1.5rem 0; color: #a43d42; }
+.weather-error button, .refresh-button { border: 0; border-radius: 999px; padding: 0.75rem 1.25rem; color: white; background: #287f8f; font: inherit; font-weight: 700; cursor: pointer; }
+.weather-error button:hover, .refresh-button:hover { background: #206b79; }
+.refresh-button { margin-top: 1.25rem; }
+.weather-credit { margin: 2rem 0 0; letter-spacing: 0.02em; }
 
