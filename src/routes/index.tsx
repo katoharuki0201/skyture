@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock3 } from "lucide-react";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { GenerationLoading } from "../components/generation-loading";
 import {
 	fetchConditions,
 	pickArtwork,
@@ -151,14 +152,9 @@ function TodayPage() {
 					</p>
 				</div>
 			</div>
+			{stage !== "idle" && <GenerationLoading stage={stage} />}
 			{openedSelection && (
-				<Suspense
-					fallback={
-						<p className="generation-error" role="alert">
-							作品を準備しています…
-						</p>
-					}
-				>
+				<Suspense fallback={<GenerationLoading stage="artwork" />}>
 					<ArtworkModal
 						selection={openedSelection}
 						onClose={() => setOpenedSelection(null)}

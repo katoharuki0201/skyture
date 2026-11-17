@@ -6,6 +6,7 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { artworkImageUrl } from "../lib/artwork-image";
 import type { Selection } from "../lib/artwork-selection";
 import { ArtworkPlate } from "./artwork-plate";
+import { GenerationIndicator } from "./generation-loading";
 
 export default function ArtworkModal({
 	selection,
@@ -240,7 +241,7 @@ export default function ArtworkModal({
 	return (
 		<dialog
 			ref={dialog}
-			className="artwork-modal"
+			className={`artwork-modal${loading ? " is-preparing" : ""}`}
 			aria-labelledby="artwork-modal-title"
 			onClose={onClose}
 		>
@@ -260,7 +261,9 @@ export default function ArtworkModal({
 				aria-busy={loading}
 			/>
 			{loading && (
-				<output className="artwork-modal-status">作品を準備しています…</output>
+				<div className="artwork-preparing-overlay">
+					<GenerationIndicator stage="artwork" />
+				</div>
 			)}
 			{error && (
 				<div className="artwork-modal-error" role="alert">

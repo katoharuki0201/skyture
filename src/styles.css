@@ -400,3 +400,41 @@ body {
 .artwork-plate-text .artwork-plate-note { font-size: 10px; line-height: 1.5; }
 .artwork-plate-loading { position: absolute; inset: 0; display: grid; place-items: center; font-size: 12px; color: #fff; }
 .artwork-plate.is-fallback { background: #242628; border-radius: 8px; }
+
+.generation-loading-dialog {
+  width: min(calc(100% - 48px), 350px);
+  padding: 32px 16px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: inherit;
+}
+.generation-loading-dialog::backdrop { background: rgb(4 10 22 / 82%); }
+.generation-indicator { display: flex; flex-direction: column; align-items: center; text-align: center; color: #fff; }
+.generation-orbit { position: relative; display: grid; place-items: center; width: 96px; height: 96px; margin-bottom: 26px; color: #eaf5ff; }
+.generation-orbit-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgb(255 255 255 / 14%);
+  border-top-color: #d9edff;
+  border-right-color: rgb(217 237 255 / 55%);
+  animation: generation-orbit 1.8s linear infinite;
+}
+.generation-orbit-ring::after { content: ""; position: absolute; top: 8px; right: 10px; width: 5px; height: 5px; background: #fff; border-radius: 50%; box-shadow: 0 0 12px rgb(217 237 255 / 65%); }
+.generation-loading-title { margin: 0 0 12px; font-size: 18px; font-weight: 400; letter-spacing: 0.05em; }
+.generation-loading-status { color: #c4cedd; font-size: 12px; line-height: 1.8; }
+.generation-steps { display: flex; gap: 8px; margin-top: 24px; }
+.generation-steps span { width: 24px; height: 3px; border-radius: 3px; background: rgb(255 255 255 / 14%); transition: background-color 250ms ease; }
+.generation-steps .is-complete { background: #9aafbf; }
+.generation-steps .is-current { background: #e5f1ff; }
+.artwork-preparing-overlay { position: absolute; inset: 0; display: grid; place-items: center; z-index: 2; }
+.artwork-modal-close { z-index: 3; }
+.artwork-modal.is-preparing .artwork-model-stage,
+.artwork-modal.is-preparing .artwork-plate { visibility: hidden; }
+@keyframes generation-orbit { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .generation-orbit-ring { animation: none; }
+  .generation-steps span { transition: none; }
+}
+.generation-loading-dialog:focus { outline: none; }
