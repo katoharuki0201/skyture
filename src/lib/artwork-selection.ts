@@ -148,13 +148,10 @@ export function readToday(): Selection | null {
 	);
 }
 
-export function saveSelection(
-	selection: Selection,
-	{ allowRepeat = false }: { allowRepeat?: boolean } = {},
-): Selection {
+export function saveSelection(selection: Selection): Selection {
 	// A second tab may already have generated today's artwork while location was loading.
 	const existing = readToday();
-	if (existing && !allowRepeat) return existing;
+	if (existing) return existing;
 	localStorage.setItem(
 		storageKey,
 		JSON.stringify([...readHistory(), selection]),

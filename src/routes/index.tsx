@@ -35,15 +35,11 @@ function TodayPage() {
 
 	async function generate() {
 		if (inFlight.current) return;
-		if (!import.meta.env.DEV && selection) {
-			setOpenedSelection(selection);
-			return;
-		}
 		inFlight.current = true;
 		setError("");
 		try {
 			const existing = readToday();
-			if (existing && !import.meta.env.DEV) {
+			if (existing) {
 				setSelection(existing);
 				setOpenedSelection(existing);
 				return;
@@ -60,14 +56,11 @@ function TodayPage() {
 				);
 			}
 			const picked = pickArtwork(conditions);
-			const result = saveSelection(
-				{
-					...picked,
-					conditions,
-					generatedAt: new Date().toISOString(),
-				},
-				{ allowRepeat: import.meta.env.DEV },
-			);
+			const result = saveSelection({
+				...picked,
+				conditions,
+				generatedAt: new Date().toISOString(),
+			});
 			setSelection(result);
 			setOpenedSelection(result);
 		} catch (cause) {

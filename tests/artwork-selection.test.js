@@ -69,14 +69,17 @@ test("天気APIへ座標を渡し、レスポンスから選定条件を作る",
   } finally { globalThis.fetch = originalFetch; }
 });
 
-test("再出力許可時は同日の作品も新しく保存し最新を復元する", () => {
+test("前日の履歴があっても当日の作品を保存できる", () => {
   const memory = new Map();
   globalThis.localStorage = { getItem: (key) => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
   const conditions = { weather: "clear", time: "day", temperature: 21 };
-  const first = { ...pickArtwork(conditions), conditions, generatedAt: new Date().toISOString() };
-  saveSelection(first);
-  const second = { ...first, artwork: pickArtwork({ weather: "cloudy", time: "day" }).artwork };
-  expect(saveSelection(second, { allowRepeat: true })).toEqual(second);
-  expect(readToday()).toEqual(second);
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  const previous = { ...pickArtwork(conditions), conditions, generatedAt: yesterday.toISOString() };
+  saveSelection(previous);
+  expect(readToday()).toBeNull();
+  const today = { ...previous, generatedAt: new Date().toISOString() };
+  expect(saveSelection(today)).toEqual(today);
+  expect(readToday()).toEqual(today);
   expect(JSON.parse([...memory.values()][0])).toHaveLength(2);
 });
