@@ -1,3 +1,6 @@
+@import "@fontsource/zen-maru-gothic/500.css";
+@import "@fontsource/zen-maru-gothic/700.css";
+
 
 * {
   box-sizing: border-box;
@@ -38,13 +41,22 @@ body {
   height: 100%;
 }
 
+.animated-background::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: calc(180px + env(safe-area-inset-top));
+  background: linear-gradient(to bottom, rgb(8 25 65 / 30%), rgb(8 25 65 / 12%) 60%, transparent);
+}
+
 .page-content {
   position: relative;
   min-height: 100svh;
 }
 
 body {
-  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif;
+  font-weight: 500;
   color: #102f66;
 }
 
@@ -146,4 +158,125 @@ body {
   .navigation-link {
     transition: none;
   }
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: calc(40px + env(safe-area-inset-top)) 16px 16px;
+  color: #fff;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(24px, 7vw, 32px);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  text-shadow: 0 2px 8px rgb(16 47 102 / 25%);
+}
+
+.app-brand-image {
+  display: block;
+  width: clamp(40px, 11vw, 50px);
+  height: auto;
+  flex-shrink: 0;
+}
+
+.app-info-button,
+.about-close-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.app-info-button:hover,
+.about-close-button:hover {
+  background: rgb(255 255 255 / 20%);
+}
+
+.app-info-button:focus-visible,
+.about-close-button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.about-dialog {
+  width: min(calc(100% - 40px), 390px);
+  max-height: calc(100dvh - 48px);
+  padding: 0;
+  border: 0;
+  border-radius: 28px;
+  background: transparent;
+  color: #102f66;
+  overflow-y: auto;
+}
+
+.about-dialog::backdrop {
+  background: rgb(8 26 59 / 40%);
+}
+
+.about-content {
+  position: relative;
+  padding: 32px 24px;
+}
+
+.about-close-form {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.about-brand-image {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
+.about-content h2 {
+  margin: 12px 0;
+  font-size: 24px;
+}
+
+.about-content p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.about-features {
+  display: grid;
+  gap: 22px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.about-features li > svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.about-features h3 {
+  margin: 0 0 4px;
+  font-size: 14px;
 }

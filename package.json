@@ -15,6 +15,7 @@
     "check": "biome check"
   },
   "dependencies": {
+    "@fontsource/zen-maru-gothic": "^5.3.1",
     "@liqui-design/glass": "^0.7.0",
     "@rive-app/react-webgl2": "^4.39.0",
     "@tanstack/react-devtools": "0.10.13",
