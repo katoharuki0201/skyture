@@ -15,11 +15,14 @@
     "check": "biome check"
   },
   "dependencies": {
+    "@liqui-design/glass": "^0.7.0",
+    "@rive-app/react-webgl2": "^4.39.0",
     "@tanstack/react-devtools": "0.10.13",
     "@tanstack/react-query": "^5.104.5",
     "@tanstack/react-router": "1.170.46",
     "@tanstack/react-router-devtools": "1.167.2",
     "ky": "^2.2.0",
+    "lucide-react": "^1.73.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "zod": "^4.6.7"

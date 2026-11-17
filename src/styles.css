@@ -13,20 +13,137 @@ body {
   margin: 0;
 }
 
-
-.home {
-  padding: 2rem;
+.app-shell {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 430px;
+  min-height: 100svh;
+  margin-inline: auto;
 }
 
-.home h1 {
-  margin: 0;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.animated-background {
+  position: fixed;
+  inset-block: 0;
+  left: 50%;
+  width: min(100%, 430px);
+  transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.animated-background > div,
+.animated-background canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.page-content {
+  position: relative;
+  min-height: 100svh;
+}
+
+body {
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  color: #102f66;
+}
+
+.app-page {
+  padding: 52px 28px calc(128px + env(safe-area-inset-bottom));
+}
+
+.page-heading {
+  text-shadow: 0 1px 12px rgb(255 255 255 / 65%);
+}
+
+.page-eyebrow {
+  margin: 0 0 10px;
+  font-size: 11px;
   font-weight: 700;
+  letter-spacing: 0.22em;
 }
 
-.home p {
-  margin: 1rem 0 0;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.page-heading h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
+.page-description {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.page-navigation {
+  position: fixed;
+  z-index: 10;
+  bottom: calc(18px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(calc(100% - 28px), 402px);
+}
+
+.navigation-glass {
+  width: 100%;
+}
+
+.navigation-items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 5px;
+}
+
+.navigation-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-height: 58px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: #12376f;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 180ms ease;
+}
+
+.navigation-link + .navigation-link::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgb(72 143 211 / 25%);
+}
+
+.navigation-link.is-active {
+  background-color: rgb(255 255 255 / 35%);
+}
+
+.navigation-link.is-active::before,
+.navigation-link.is-active + .navigation-link::before {
+  opacity: 0;
+}
+
+.navigation-link:hover {
+  background-color: rgb(255 255 255 / 20%);
+}
+
+.navigation-link:focus-visible {
+  outline: 2px solid #12376f;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation-link {
+    transition: none;
+  }
 }
