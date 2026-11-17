@@ -2,14 +2,10 @@ import { X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { MTLLoader } from "three/addons/loaders/MTLLoader.js";
-import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { artworkImageUrl } from "../lib/artwork-image";
-import {
-	type Selection,
-	timeLabels,
-	weatherLabels,
-} from "../lib/artwork-selection";
+import type { Selection } from "../lib/artwork-selection";
+import { ArtworkPlate } from "./artwork-plate";
 
 export default function ArtworkModal({
 	selection,
@@ -123,26 +119,31 @@ export default function ArtworkModal({
 		async function load() {
 			try {
 				const base = `${import.meta.env.BASE_URL}models/`;
-				const read = async (url: string): Promise<string> => {
-					const response = await fetch(url, { signal: controller.signal });
-					if (!response.ok)
-						throw new Error("額縁モデルを読み込めませんでした。");
-					return response.text();
-				};
-				const [obj, mtl] = await Promise.all([
-					read(`${base}15046_Possibilities.obj`),
-					read(`${base}15046_Possibilities.mtl`),
-				]);
-				if (!active) return;
-				const materials = new MTLLoader().parse(mtl, base);
-				materials.preload();
-				model = new OBJLoader().setMaterials(materials).parse(obj);
-				const canvasMesh = model.getObjectByName("Possibilities_Canvas");
-				if (!canvasMesh)
-					throw new Error("モデル内に絵画の表示面が見つかりませんでした。");
-				const canvasBounds = new THREE.Box3().setFromObject(canvasMesh);
-				const canvasSize = canvasBounds.getSize(new THREE.Vector3());
-				const canvasCenter = canvasBounds.getCenter(new THREE.Vector3());
+				const modelResponse = await fetch(`${base}frame.glb`, {
+					signal: controller.signal,
+				});
+				if (!modelResponse.ok)
+					throw new Error("額縁モデルを読み込めませんでした。");
+				const gltf = await new GLTFLoader().parseAsync(
+					await modelResponse.arrayBuffer(),
+					base,
+				);
+				model = gltf.scene;
+				if (!active) {
+					model.traverse((object) => {
+						if (object instanceof THREE.Mesh) {
+							object.geometry.dispose();
+							for (const material of Array.isArray(object.material)
+								? object.material
+								: [object.material])
+								material.dispose();
+						}
+					});
+					return;
+				}
+				const picture = model.getObjectByName("Picture");
+				if (!(picture instanceof THREE.Mesh))
+					throw new Error("モデル内にPictureの表示面が見つかりませんでした。");
 				const bounds = new THREE.Box3().setFromObject(model);
 				const center = bounds.getCenter(new THREE.Vector3());
 				const scale =
@@ -164,7 +165,6 @@ export default function ArtworkModal({
 					URL.revokeObjectURL(imageUrl);
 				}
 				if (!active) return;
-				canvasMesh.visible = false;
 				const canvas = document.createElement("canvas");
 				canvas.width = canvas.height = 2048;
 				const context = canvas.getContext("2d");
@@ -180,23 +180,20 @@ export default function ArtworkModal({
 				context.drawImage(image, (2048 - w) / 2, (2048 - h) / 2, w, h);
 				paintingTexture = new THREE.CanvasTexture(canvas);
 				paintingTexture.colorSpace = THREE.SRGBColorSpace;
+				paintingTexture.flipY = false;
 				paintingTexture.anisotropy = Math.min(
 					4,
 					renderer.capabilities.getMaxAnisotropy(),
 				);
-				const painting = new THREE.Mesh(
-					new THREE.PlaneGeometry(canvasSize.x, canvasSize.y),
-					new THREE.MeshBasicMaterial({
-						map: paintingTexture,
-						toneMapped: false,
-					}),
-				);
-				painting.position.set(
-					canvasCenter.x,
-					canvasCenter.y,
-					canvasBounds.max.z + 0.5,
-				);
-				model.add(painting);
+				const previousMaterials = Array.isArray(picture.material)
+					? picture.material
+					: [picture.material];
+				picture.material = new THREE.MeshBasicMaterial({
+					map: paintingTexture,
+					toneMapped: false,
+					side: THREE.DoubleSide,
+				});
+				for (const material of previousMaterials) material.dispose();
 				resize();
 				setLoading(false);
 			} catch (cause) {
@@ -276,26 +273,7 @@ export default function ArtworkModal({
 					</button>
 				</div>
 			)}
-			<p className="artwork-drag-hint">ドラッグして額縁を回転</p>
-			<div className="artwork-modal-caption">
-				<h1 id="artwork-modal-title">{selection.artwork.title}</h1>
-				<p>
-					{selection.artwork.artist} · {selection.artwork.date}
-				</p>
-				<p>
-					{weatherLabels[selection.conditions.weather]} ·{" "}
-					{timeLabels[selection.conditions.time]} ·{" "}
-					{selection.conditions.temperature.toFixed(1)}°C
-				</p>
-				<a href={selection.artwork.link} target="_blank" rel="noreferrer">
-					The Metropolitan Museum of Art ↗
-				</a>
-				{selection.fallback && (
-					<p className="artwork-modal-note">
-						今の空に一致する作品がないため、全作品から選びました。
-					</p>
-				)}
-			</div>
+			<ArtworkPlate selection={selection} />
 		</dialog>
 	);
 }
