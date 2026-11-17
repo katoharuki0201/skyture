@@ -8,6 +8,7 @@ function Home() {
   const weather = useQuery({
     queryKey: ['current-weather'],
     queryFn: fetchWeather,
+    enabled: typeof window !== 'undefined',
     retry: false,
   })
 
