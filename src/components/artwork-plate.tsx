@@ -31,8 +31,6 @@ export function ArtworkPlate({ selection }: { selection: Selection }) {
 		renderer.outputColorSpace = THREE.SRGBColorSpace;
 		renderer.toneMapping = THREE.ACESFilmicToneMapping;
 		renderer.toneMappingExposure = 0.85;
-		renderer.shadowMap.enabled = true;
-		renderer.shadowMap.type = THREE.PCFShadowMap;
 		element.appendChild(renderer.domElement);
 		const scene = new THREE.Scene();
 		// A dark studio with narrow softboxes, rather than a bright room reflected
@@ -77,21 +75,7 @@ export function ArtworkPlate({ selection }: { selection: Selection }) {
 		scene.add(new THREE.HemisphereLight(0xffffff, 0x78716a, 0.2));
 		const light = new THREE.DirectionalLight(0xfff4df, 1);
 		light.position.set(-3, 4, 5);
-		light.castShadow = true;
-		light.shadow.mapSize.set(1024, 1024);
-		light.shadow.camera.left = -3;
-		light.shadow.camera.right = 3;
-		light.shadow.camera.top = 3;
-		light.shadow.camera.bottom = -3;
-		light.shadow.normalBias = 0.015;
 		scene.add(light);
-		const shadow = new THREE.Mesh(
-			new THREE.PlaneGeometry(8, 8),
-			new THREE.ShadowMaterial({ opacity: 0.3 }),
-		);
-		shadow.position.z = -0.28;
-		shadow.receiveShadow = true;
-		scene.add(shadow);
 		const resize = () => {
 			const width = element.clientWidth,
 				height = element.clientHeight;
@@ -133,8 +117,6 @@ export function ArtworkPlate({ selection }: { selection: Selection }) {
 				model.scale.setScalar(scale);
 				model.traverse((object) => {
 					if (object instanceof THREE.Mesh) {
-						object.castShadow = true;
-						object.receiveShadow = true;
 						for (const material of Array.isArray(object.material)
 							? object.material
 							: [object.material]) {
@@ -172,8 +154,6 @@ export function ArtworkPlate({ selection }: { selection: Selection }) {
 			observer.disconnect();
 			dispose();
 			environment.dispose();
-			shadow.geometry.dispose();
-			shadow.material.dispose();
 			renderer.dispose();
 			renderer.domElement.remove();
 		};

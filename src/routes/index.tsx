@@ -47,14 +47,7 @@ function TodayPage() {
 			setStage("location");
 			const coords = await getCurrentLocation();
 			setStage("weather");
-			let conditions: Awaited<ReturnType<typeof fetchConditions>>;
-			try {
-				conditions = await fetchConditions(coords);
-			} catch {
-				throw new Error(
-					"天気情報を取得できませんでした。通信環境を確認して再試行してください。",
-				);
-			}
+			const conditions = await fetchConditions(coords);
 			const picked = pickArtwork(conditions);
 			const result = saveSelection({
 				...picked,

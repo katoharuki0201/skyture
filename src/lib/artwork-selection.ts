@@ -2,6 +2,7 @@ import { z } from "zod";
 import data from "../data/artworks.json";
 import { apiClient } from "./api-client";
 import type { Coordinates } from "./location";
+import { retryWeatherRequest, WeatherError } from "./weather-error";
 
 export type Weather = "clear" | "cloudy" | "rain" | "snow" | "storm";
 export type TimeOfDay = "day" | "twilight" | "night";
@@ -51,8 +52,9 @@ export function classifyWeather(code: number): Weather {
 		return "rain";
 	if ([71, 73, 75, 77, 85, 86].includes(code)) return "snow";
 	if ([95, 96, 99].includes(code)) return "storm";
-	throw new Error(
-		"取得した天気を判定できませんでした。もう一度お試しください。",
+	throw new WeatherError(
+		"classification",
+		"取得した天気コードを分類できませんでした。",
 	);
 }
 
@@ -74,20 +76,29 @@ export function classifyTime(
 export async function fetchConditions(
 	coords: Coordinates,
 ): Promise<Conditions> {
-	const raw = await apiClient
-		.get("https://api.open-meteo.com/v1/forecast", {
-			searchParams: {
-				...coords,
-				current: "temperature_2m,weather_code,is_day",
-				daily: "sunrise,sunset",
-				timezone: "auto",
-				timeformat: "unixtime",
-				forecast_days: 1,
-			},
-			timeout: 15000,
-		})
-		.json();
-	const { current, daily } = forecastSchema.parse(raw);
+	const raw = await retryWeatherRequest(() =>
+		apiClient
+			.get("https://api.open-meteo.com/v1/forecast", {
+				searchParams: {
+					...coords,
+					current: "temperature_2m,weather_code,is_day",
+					daily: "sunrise,sunset",
+					timezone: "auto",
+					timeformat: "unixtime",
+					forecast_days: 1,
+				},
+				timeout: 15000,
+			})
+			.json(),
+	);
+	const parsed = forecastSchema.safeParse(raw);
+	if (!parsed.success)
+		throw new WeatherError(
+			"data",
+			"天気サービスのデータ形式が想定と異なるか、必要な情報が欠けています。",
+			{ cause: parsed.error },
+		);
+	const { current, daily } = parsed.data;
 	return {
 		weather: classifyWeather(current.weather_code),
 		time: classifyTime(

@@ -1,9 +1,9 @@
-import ky from 'ky'
+import ky from "ky";
 
 export const apiClient = ky.create({
-  headers: {
-    accept: 'application/json',
-  },
-  // TanStack Query owns retry behavior to avoid multiplied retries.
-  retry: 0,
-})
+	headers: {
+		accept: "application/json",
+	},
+	// Callers own retry behavior (weather uses retryWeatherRequest).
+	retry: 0,
+});
