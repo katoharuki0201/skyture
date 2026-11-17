@@ -324,7 +324,6 @@ body {
 
 .generation-error { padding: 14px; background: #fff5ed; color: #763b21; border-radius: 10px; font-size: 13px; line-height: 1.8; }
 .generation-error { margin-top: 24px; }
-.painting-button:disabled { cursor: default; }
 .painting-button:not(:disabled) { cursor: pointer; }
 
 .artwork-modal {
@@ -438,3 +437,37 @@ body {
   .generation-steps span { transition: none; }
 }
 .generation-loading-dialog:focus { outline: none; }
+
+button.app-info-icon {
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+button.app-info-icon:hover { background: rgb(255 255 255 / 10%); }
+button.app-info-icon:focus-visible, .app-info-close:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.painting-button:disabled { cursor: not-allowed; opacity: 0.45; }
+.app-info-dialog {
+  position: fixed;
+  width: min(calc(100% - 40px), 370px);
+  max-height: calc(100dvh - 48px);
+  padding: 34px 24px 28px;
+  border: 0;
+  border-radius: 22px;
+  background: transparent;
+  text-shadow: 0 1px 4px rgb(4 10 22 / 45%);
+  color: #f5f7fb;
+  font-family: inherit;
+  overflow-y: auto;
+}
+.app-info-dialog::backdrop { background: rgb(4 10 22 / 65%); }
+.app-info-close-form { position: absolute; top: 10px; right: 10px; }
+.app-info-close { display: grid; place-items: center; width: 40px; height: 40px; border: 0; border-radius: 50%; background: transparent; color: inherit; cursor: pointer; }
+.app-info-dialog h2 { margin: 0 0 28px; font-size: 21px; font-weight: 500; }
+.app-info-item { display: flex; align-items: flex-start; gap: 14px; }
+.app-info-item + .app-info-item { border-top: 1px solid rgb(255 255 255 / 12%); margin-top: 22px; padding-top: 22px; }
+.app-info-item > svg { flex-shrink: 0; margin-top: 2px; color: #c7dfff; }
+.app-info-item h3 { margin: 0 0 7px; font-size: 15px; font-weight: 500; }
+.app-info-item p { margin: 0; color: #c1cada; font-size: 13px; line-height: 1.85; }

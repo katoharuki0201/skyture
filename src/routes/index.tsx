@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Clock3 } from "lucide-react";
+import { CheckCircle2, Clock3 } from "lucide-react";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { GenerationLoading } from "../components/generation-loading";
 import {
@@ -28,6 +28,7 @@ function TodayPage() {
 	const [selection, setSelection] = useState<Selection | null>(null);
 	const [stage, setStage] = useState<"idle" | "location" | "weather">("idle");
 	const [error, setError] = useState("");
+	const [historyReady, setHistoryReady] = useState(false);
 	const inFlight = useRef(false);
 	const [openedSelection, setOpenedSelection] = useState<Selection | null>(
 		null,
@@ -41,7 +42,6 @@ function TodayPage() {
 			const existing = readToday();
 			if (existing) {
 				setSelection(existing);
-				setOpenedSelection(existing);
 				return;
 			}
 			setStage("location");
@@ -85,6 +85,7 @@ function TodayPage() {
 					"作品履歴を保存・読み込みできません。ブラウザのストレージ設定を確認してください。",
 				);
 			}
+			setHistoryReady(true);
 		};
 		update();
 		const timer = window.setInterval(update, 1000);
@@ -113,7 +114,7 @@ function TodayPage() {
 				<button
 					type="button"
 					className="painting-button"
-					disabled={stage !== "idle"}
+					disabled={!historyReady || stage !== "idle" || !!selection}
 					onClick={generate}
 				>
 					<span>
@@ -122,27 +123,40 @@ function TodayPage() {
 							: stage === "weather"
 								? "天気を確認しています…"
 								: selection
-									? "今日の空をみる"
+									? "本日は取得済み"
 									: error
 										? "もう一度試す"
 										: "今日の空をみる"}
 					</span>
 				</button>
 				<div className="transparent-glass countdown-glass">
-					<p
-						className="painting-countdown"
-						role="timer"
-						aria-label={`次の生成まで残り${remaining.hours}時間${remaining.minutes}分`}
-					>
-						<Clock3 size={17} aria-hidden="true" />
-						<span>次の生成まで</span>
-						<span className="countdown-value">
-							{remaining.hours}
-							<span>時間</span>
-							{String(remaining.minutes).padStart(2, "0")}
-							<span>分</span>
-						</span>
-					</p>
+					{selection ? (
+						<p
+							className="painting-countdown"
+							role="timer"
+							aria-label={`次の生成まで残り${remaining.hours}時間${remaining.minutes}分`}
+						>
+							<Clock3 size={17} aria-hidden="true" />
+							<span>次の生成まで</span>
+							<span className="countdown-value">
+								{remaining.hours}
+								<span>時間</span>
+								{String(remaining.minutes).padStart(2, "0")}
+								<span>分</span>
+							</span>
+						</p>
+					) : (
+						<output className="painting-countdown">
+							<CheckCircle2 size={17} aria-hidden="true" />
+							<span>
+								{!historyReady
+									? "確認しています…"
+									: stage !== "idle"
+										? "生成中です…"
+										: "生成できます"}
+							</span>
+						</output>
+					)}
 				</div>
 			</div>
 			{stage !== "idle" && <GenerationLoading stage={stage} />}

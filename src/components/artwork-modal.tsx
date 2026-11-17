@@ -5,6 +5,7 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { artworkImageUrl } from "../lib/artwork-image";
 import type { Selection } from "../lib/artwork-selection";
+import { useDialogBackdrop } from "../lib/use-dialog-backdrop";
 import { ArtworkPlate } from "./artwork-plate";
 import { GenerationIndicator } from "./generation-loading";
 
@@ -16,6 +17,7 @@ export default function ArtworkModal({
 	onClose: () => void;
 }) {
 	const dialog = useRef<HTMLDialogElement>(null);
+	const backdropDismiss = useDialogBackdrop();
 	const container = useRef<HTMLDivElement>(null);
 	const [error, setError] = useState("");
 	const [loading, setLoading] = useState(true);
@@ -240,6 +242,7 @@ export default function ArtworkModal({
 
 	return (
 		<dialog
+			{...backdropDismiss}
 			ref={dialog}
 			className={`artwork-modal${loading ? " is-preparing" : ""}`}
 			aria-labelledby="artwork-modal-title"
