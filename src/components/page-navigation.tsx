@@ -1,5 +1,4 @@
-import { LiquiGlass } from "@liqui-design/glass";
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { Earth, Images, Sun } from "lucide-react";
 
 const pages = [
@@ -9,16 +8,20 @@ const pages = [
 ] as const;
 
 export function PageNavigation() {
+	const pathname = useLocation({ select: (location) => location.pathname });
+	const selectedIndex = Math.max(
+		0,
+		pages.findIndex((page) => page.to === pathname),
+	);
 	return (
 		<nav className="page-navigation" aria-label="メインナビゲーション">
-			<LiquiGlass
-				className="navigation-glass"
-				radius={35}
-				bezel={14}
-				frost={0.16}
-				elevated
-			>
+			<div className="transparent-glass navigation-glass">
 				<div className="navigation-items">
+					<span
+						className="navigation-indicator"
+						aria-hidden="true"
+						style={{ transform: `translateX(${selectedIndex * 100}%)` }}
+					/>
 					{pages.map(({ to, label, icon: Icon }) => (
 						<Link
 							key={to}
@@ -32,7 +35,7 @@ export function PageNavigation() {
 						</Link>
 					))}
 				</div>
-			</LiquiGlass>
+			</div>
 		</nav>
 	);
 }

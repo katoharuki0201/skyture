@@ -1,4 +1,3 @@
-import { LiquiGlass } from "@liqui-design/glass";
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Clock3 } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -29,36 +28,23 @@ function TodayPage() {
 	return (
 		<main className="today-page" aria-label="今日の絵画">
 			<p className="today-introduction">
-				いまの空と天気から、
+				今いる場所の天気と時間に合わせて、
 				<br />
-				今日の一枚をおすすめします。
+				ぴったりの絵画を一枚おすすめします。
 			</p>
 			<div className="today-actions">
-				<div className="painting-button-frame">
-					<button
-						type="button"
-						className="painting-button"
-						aria-disabled="true"
-					>
-						<span>今日の絵を見る</span>
-						<span className="painting-button-arrow">
-							<ArrowRight size={24} aria-hidden="true" />
-						</span>
-					</button>
-				</div>
-				<LiquiGlass
-					className="countdown-glass"
-					radius={24}
-					bezel={9}
-					frost={0.2}
-				>
+				<button type="button" className="painting-button" aria-disabled="true">
+					<span>今日の一枚に出会う</span>
+					<ArrowRight size={22} aria-hidden="true" />
+				</button>
+				<div className="transparent-glass countdown-glass">
 					<p
 						className="painting-countdown"
 						role="timer"
-						aria-label={`次の絵まで残り${remaining.hours}時間${remaining.minutes}分`}
+						aria-label={`次の生成まで残り${remaining.hours}時間${remaining.minutes}分`}
 					>
 						<Clock3 size={17} aria-hidden="true" />
-						<span>次の絵まで</span>
+						<span>次の生成まで</span>
 						<span className="countdown-value">
 							{remaining.hours}
 							<span>時間</span>
@@ -66,7 +52,7 @@ function TodayPage() {
 							<span>分</span>
 						</span>
 					</p>
-				</LiquiGlass>
+				</div>
 			</div>
 		</main>
 	);
