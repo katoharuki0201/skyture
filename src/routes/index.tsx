@@ -1,16 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Clock3 } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { Clock3 } from "lucide-react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import {
 	fetchConditions,
 	pickArtwork,
 	readToday,
 	type Selection,
 	saveSelection,
-	timeLabels,
-	weatherLabels,
 } from "../lib/artwork-selection";
 import { getCurrentLocation } from "../lib/location";
+
+const ArtworkModal = lazy(() => import("../components/artwork-modal"));
 
 export const Route = createFileRoute("/")({ component: TodayPage });
 
@@ -27,18 +27,24 @@ function TodayPage() {
 	const [selection, setSelection] = useState<Selection | null>(null);
 	const [stage, setStage] = useState<"idle" | "location" | "weather">("idle");
 	const [error, setError] = useState("");
-	const [imageFailed, setImageFailed] = useState(false);
-	const [imageAttempt, setImageAttempt] = useState(0);
 	const inFlight = useRef(false);
+	const [openedSelection, setOpenedSelection] = useState<Selection | null>(
+		null,
+	);
 
 	async function generate() {
-		if (inFlight.current || selection) return;
+		if (inFlight.current) return;
+		if (!import.meta.env.DEV && selection) {
+			setOpenedSelection(selection);
+			return;
+		}
 		inFlight.current = true;
 		setError("");
 		try {
 			const existing = readToday();
-			if (existing) {
+			if (existing && !import.meta.env.DEV) {
 				setSelection(existing);
+				setOpenedSelection(existing);
 				return;
 			}
 			setStage("location");
@@ -53,13 +59,16 @@ function TodayPage() {
 				);
 			}
 			const picked = pickArtwork(conditions);
-			const result = saveSelection({
-				...picked,
-				conditions,
-				generatedAt: new Date().toISOString(),
-			});
-			setImageFailed(false);
+			const result = saveSelection(
+				{
+					...picked,
+					conditions,
+					generatedAt: new Date().toISOString(),
+				},
+				{ allowRepeat: import.meta.env.DEV },
+			);
 			setSelection(result);
+			setOpenedSelection(result);
 		} catch (cause) {
 			setError(
 				cause instanceof Error
@@ -101,49 +110,6 @@ function TodayPage() {
 				<br />
 				ぴったりの絵画を一枚おすすめします。
 			</p>
-			{selection && (
-				<section className="artwork-result" aria-label="今日の作品">
-					<p className="artwork-weather">
-						{weatherLabels[selection.conditions.weather]} ·{" "}
-						{timeLabels[selection.conditions.time]} ·{" "}
-						{selection.conditions.temperature.toFixed(1)}°C
-					</p>
-					{imageFailed ? (
-						<div className="artwork-image-error" role="alert">
-							<p>作品画像を読み込めませんでした。</p>
-							<button
-								type="button"
-								onClick={() => {
-									setImageFailed(false);
-									setImageAttempt((value) => value + 1);
-								}}
-							>
-								画像を再読み込み
-							</button>
-						</div>
-					) : (
-						<img
-							key={`${selection.generatedAt}-${imageAttempt}`}
-							className="artwork-image"
-							src={selection.artwork.image}
-							alt={`${selection.artwork.title} — ${selection.artwork.artist}`}
-							onError={() => setImageFailed(true)}
-						/>
-					)}
-					<h1>{selection.artwork.title}</h1>
-					<p>
-						{selection.artwork.artist} · {selection.artwork.date}
-					</p>
-					<a href={selection.artwork.link} target="_blank" rel="noreferrer">
-						The Metropolitan Museum of Artで作品を見る ↗
-					</a>
-					{selection.fallback && (
-						<p className="artwork-note">
-							今の空に一致する作品がないため、コレクション全体から選びました。
-						</p>
-					)}
-				</section>
-			)}
 			{error && (
 				<p className="generation-error" role="alert">
 					{error}
@@ -153,7 +119,7 @@ function TodayPage() {
 				<button
 					type="button"
 					className="painting-button"
-					disabled={stage !== "idle" || !!selection}
+					disabled={stage !== "idle"}
 					onClick={generate}
 				>
 					<span>
@@ -162,14 +128,11 @@ function TodayPage() {
 							: stage === "weather"
 								? "天気を確認しています…"
 								: selection
-									? "今日の一枚をお届けしました"
+									? "今日の空をみる"
 									: error
 										? "もう一度試す"
-										: "今日の一枚に出会う"}
+										: "今日の空をみる"}
 					</span>
-					{stage === "idle" && !selection && (
-						<ArrowRight size={22} aria-hidden="true" />
-					)}
 				</button>
 				<div className="transparent-glass countdown-glass">
 					<p
@@ -187,15 +150,21 @@ function TodayPage() {
 						</span>
 					</p>
 				</div>
-				<a
-					className="weather-credit"
-					href="https://open-meteo.com/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Weather data by Open-Meteo
-				</a>
 			</div>
+			{openedSelection && (
+				<Suspense
+					fallback={
+						<p className="generation-error" role="alert">
+							作品を準備しています…
+						</p>
+					}
+				>
+					<ArtworkModal
+						selection={openedSelection}
+						onClose={() => setOpenedSelection(null)}
+					/>
+				</Suspense>
+			)}
 		</main>
 	);
 }

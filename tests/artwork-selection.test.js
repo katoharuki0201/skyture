@@ -68,3 +68,15 @@ test("天気APIへ座標を渡し、レスポンスから選定条件を作る",
     expect(result).toEqual({ weather: "rain", time: "day", temperature: 18.5 });
   } finally { globalThis.fetch = originalFetch; }
 });
+
+test("再出力許可時は同日の作品も新しく保存し最新を復元する", () => {
+  const memory = new Map();
+  globalThis.localStorage = { getItem: (key) => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
+  const conditions = { weather: "clear", time: "day", temperature: 21 };
+  const first = { ...pickArtwork(conditions), conditions, generatedAt: new Date().toISOString() };
+  saveSelection(first);
+  const second = { ...first, artwork: pickArtwork({ weather: "cloudy", time: "day" }).artwork };
+  expect(saveSelection(second, { allowRepeat: true })).toEqual(second);
+  expect(readToday()).toEqual(second);
+  expect(JSON.parse([...memory.values()][0])).toHaveLength(2);
+});

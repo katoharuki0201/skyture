@@ -138,17 +138,23 @@ export function readHistory(): Selection[] {
 
 export function readToday(): Selection | null {
 	return (
-		readHistory().find(
-			(entry) =>
-				localDateKey(new Date(entry.generatedAt)) === localDateKey(new Date()),
-		) ?? null
+		readHistory()
+			.reverse()
+			.find(
+				(entry) =>
+					localDateKey(new Date(entry.generatedAt)) ===
+					localDateKey(new Date()),
+			) ?? null
 	);
 }
 
-export function saveSelection(selection: Selection): Selection {
+export function saveSelection(
+	selection: Selection,
+	{ allowRepeat = false }: { allowRepeat?: boolean } = {},
+): Selection {
 	// A second tab may already have generated today's artwork while location was loading.
 	const existing = readToday();
-	if (existing) return existing;
+	if (existing && !allowRepeat) return existing;
 	localStorage.setItem(
 		storageKey,
 		JSON.stringify([...readHistory(), selection]),
