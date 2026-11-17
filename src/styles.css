@@ -327,3 +327,22 @@ body {
   /* A tiny neutral shadow keeps white text readable without tinting the pane. */
   text-shadow: 0 1px 3px rgb(0 18 48 / 65%);
 }
+
+.artwork-result {
+  margin: 28px 0 0;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgb(255 255 255 / 94%);
+}
+.artwork-weather { font-size: 14px; }
+.artwork-image { display: block; width: 100%; height: auto; max-height: 360px; object-fit: contain; }
+.artwork-result h1 { margin: 16px 0 8px; font-size: 21px; }
+.artwork-result p { line-height: 1.8; }
+.artwork-result a { color: #12376f; font-size: 12px; }
+.artwork-note { font-size: 12px; }
+.generation-error, .artwork-image-error { padding: 14px; background: #fff5ed; color: #763b21; border-radius: 10px; font-size: 13px; line-height: 1.8; }
+.generation-error { margin-top: 24px; }
+.artwork-image-error button { font: inherit; padding: 8px 12px; cursor: pointer; }
+.painting-button:disabled { cursor: default; }
+.painting-button:not(:disabled) { cursor: pointer; }
+.weather-credit { color: #12376f; font-size: 11px; text-underline-offset: 3px; }

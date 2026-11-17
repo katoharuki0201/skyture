@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-08",
+  "artworks": [
+    {
+      "id": "met-10181",
+      "title": "Landscape",
+      "artist": "Ralph Albert Blakelock",
+      "date": "1885–95",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap29.35.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10181",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-11181",
+      "title": "Landscape",
+      "artist": "William Morris Hunt",
+      "date": "ca. 1852–53",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/06.170.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11181",
+      "weather": "clear",
+      "time": "day"
+    }
+  ]
+}
