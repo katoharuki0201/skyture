@@ -5,7 +5,7 @@ export function AppHeader() {
 		<header className="app-header">
 			<img
 				className="app-brand"
-				src={`${import.meta.env.BASE_URL}images/skyture-wordmark.png`}
+				src={`${import.meta.env.BASE_URL}images/skyture-art-wordmark.png`}
 				alt="Skyture"
 				width={2172}
 				height={724}

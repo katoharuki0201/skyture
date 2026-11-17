@@ -197,7 +197,7 @@ body {
 
 .app-brand {
   display: block;
-  width: 240px;
+  width: 160px;
   max-width: calc(100% - 50px);
   height: auto;
 }
