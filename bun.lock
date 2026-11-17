@@ -5,7 +5,7 @@
     "": {
       "name": "react",
       "dependencies": {
-        "@fontsource/zen-maru-gothic": "^5.3.1",
+        "@fontsource/noto-sans-jp": "^5.3.1",
         "@liqui-design/glass": "^0.7.0",
         "@rive-app/react-webgl2": "^4.39.0",
         "@tanstack/react-devtools": "0.10.13",
@@ -98,7 +98,7 @@
 
     "@floating-ui/utils": ["@floating-ui/utils@0.2.12", "", {}, "sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww=="],
 
-    "@fontsource/zen-maru-gothic": ["@fontsource/zen-maru-gothic@5.3.1", "", {}, "sha512-DtDKg44WTu44VuUWIJq8oAdCMHkkKrlpUaYHPbBQQkr8eZUNUjdWtzTJM3QIVlYYqdUPZN0Oy2a20EbxPJnF/g=="],
+    "@fontsource/noto-sans-jp": ["@fontsource/noto-sans-jp@5.3.1", "", {}, "sha512-9NNBB/M9PextLYVXGSfIaLZsPnrt5UDw8g2B6T0M775H2yb/oekApSjuS1XKOP7FPcMMEnTavR5rJGDM66qKtA=="],
 
     "@internationalized/number": ["@internationalized/number@3.6.9", "", { "dependencies": { "@swc/helpers": "^0.5.0" } }, "sha512-GgWy2caO/+hV9sT/oCTWGHvbjmJMPT9kkXzoKRLnkEq7adghhR7UprhvY9sXrKfrp3NcDfhF6QQHXR1KfQbB8g=="],
 
