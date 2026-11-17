@@ -1,0 +1,222 @@
+{
+  "cma-106088": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "storm",
+        "cloudy"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-115050": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "cloudy"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-126243": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "storm"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-134072": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "clear"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-139454": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "fog"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-141639": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "clear"
+      ],
+      "time": [
+        "twilight"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-144732": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "storm"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-145426": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "rain",
+        "storm"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-147144": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "rain",
+        "storm"
+      ],
+      "time": [
+        "night"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-147906": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "clear"
+      ],
+      "time": [
+        "night"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-151298": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "clear"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-152006": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "cloudy"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-153663": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "clear"
+      ],
+      "time": [
+        "night"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-153664": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "snow"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-159739": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "snow",
+        "cloudy"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-171296": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "clear"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-447805": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "fog"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  },
+  "cma-93014": {
+    "status": "approved",
+    "tags": {
+      "weather": [
+        "cloudy"
+      ],
+      "time": [
+        "day"
+      ]
+    },
+    "updated_at": "2026-11-16T04:19:26.986199+00:00"
+  }
+}

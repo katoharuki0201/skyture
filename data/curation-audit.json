@@ -1,0 +1,480 @@
+{
+  "status": "approved_for_initial_dataset",
+  "method": "Assistant visual inspection and official museum metadata; initial set adopted with user authorization in this chat. No CLIP classification performed.",
+  "records": [
+    {
+      "id": "cma-149662",
+      "title": "Rain-coming Pavilion by the Stone Bridge at Mt. Tiantai",
+      "sourceUrl": "https://clevelandart.org/art/1979.54",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/149662",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "長い画巻で画像内の文字領域が大きく、天気と時刻の判定が不確実。"
+    },
+    {
+      "id": "cma-447805",
+      "title": "Rain Clearing over a Summer’s Mountain",
+      "sourceUrl": "https://clevelandart.org/art/2022.151",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/447805",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "山と山の間に白い霞の帯があり遠景の輪郭が薄い。雨上がりという題名だけではrainを付けない。時刻は暫定。",
+      "proposedTags": {
+        "weather": [
+          "fog"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-145426",
+      "title": "River Village in a Rainstorm",
+      "sourceUrl": "https://clevelandart.org/art/1970.76",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/145426",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "斜めに吹き付ける雨と風にさらされる木々。公式解説も風雨を説明。時刻は暫定。",
+      "proposedTags": {
+        "weather": [
+          "rain",
+          "storm"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-147144",
+      "title": "Royal lovers watching rain clouds: The month of Bhadon, from a Barahmasa",
+      "sourceUrl": "https://clevelandart.org/art/1973.104",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/147144",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "黒い雨雲と稲妻、暗い天空の宮廷風景。公式解説は嵐の夕方とするためnightとtwilightの境界は要確認。",
+      "proposedTags": {
+        "weather": [
+          "rain",
+          "storm"
+        ],
+        "time": [
+          "night"
+        ]
+      }
+    },
+    {
+      "id": "cma-149417",
+      "title": "Landscape with Gentle Peaks",
+      "sourceUrl": "https://clevelandart.org/art/1978.7",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/149417",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "山水の描写から特定の天気を判断しにくい。"
+    },
+    {
+      "id": "cma-159739",
+      "title": "Snow Landscape",
+      "sourceUrl": "https://clevelandart.org/art/1997.111",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/159739",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "山や家々に積雪があり、空全体が灰色。雲と単色の空の区別は要確認。",
+      "proposedTags": {
+        "weather": [
+          "snow",
+          "cloudy"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-543409",
+      "title": "Bamboo in Snow",
+      "sourceUrl": "https://clevelandart.org/art/2023.161",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/543409",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "竹と岩が主で空の表現と時間帯の判定が不確実。"
+    },
+    {
+      "id": "cma-135382",
+      "title": "The Red Kerchief",
+      "sourceUrl": "https://clevelandart.org/art/1958.39",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/135382",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "室内から窓越しの雪景。空が明瞭に見えないため見送り。"
+    },
+    {
+      "id": "cma-149762",
+      "title": "Snow Coloring the World White",
+      "sourceUrl": "https://clevelandart.org/art/1979.76",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/149762",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "長い画巻で、画像全体から時間帯を確定しにくい。"
+    },
+    {
+      "id": "cma-153664",
+      "title": "Snowscape with Figures",
+      "sourceUrl": "https://clevelandart.org/art/1987.187",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/153664",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "雪をまとった山と木々、見通せる空。水墨画のため時刻は暫定。",
+      "proposedTags": {
+        "weather": [
+          "snow"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-154405",
+      "title": "Section of an Illustrated Tale of Genji Poetry Contest",
+      "sourceUrl": "https://clevelandart.org/art/1989.119",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/154405",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "人物と詞書が主。検索語のfogは登場人物に関する説明で、霧の景色ではない。"
+    },
+    {
+      "id": "cma-132840",
+      "title": "Album of Seasonal Landscapes, Leaf G (previous leaf 7)",
+      "sourceUrl": "https://clevelandart.org/art/1955.302.7",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/132840",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "遠景はあるが霧・曇りなどの根拠が弱い。"
+    },
+    {
+      "id": "cma-106088",
+      "title": "Early Morning After a Storm at Sea",
+      "sourceUrl": "https://clevelandart.org/art/1924.195",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/106088",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "岩に砕ける強い波と厚い雲。嵐の後の海としてstorm/cloudyを提案。早朝という題名だけではtwilightにしない。",
+      "proposedTags": {
+        "weather": [
+          "storm",
+          "cloudy"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-144732",
+      "title": "Storm in the Mountains",
+      "sourceUrl": "https://clevelandart.org/art/1969.52",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/144732",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "厚い暗雲、荒れた山景、折れた木が嵐を表す。昼判定は明るい雲の描写からの暫定判断。",
+      "proposedTags": {
+        "weather": [
+          "storm"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-93014",
+      "title": "View of Schroon Mountain, Essex County, New York, After a Storm",
+      "sourceUrl": "https://clevelandart.org/art/1917.1335",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/93014",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "晴れ間を残しつつ大きな雲が山を覆う。嵐の後という題名だけではstormにしない。clearとの境界は要確認。",
+      "proposedTags": {
+        "weather": [
+          "cloudy"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-126243",
+      "title": "A Storm Behind the Isle of Wight",
+      "sourceUrl": "https://clevelandart.org/art/1948.461",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/126243",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "渦巻く暗雲と荒れる海。公式解説も雷と嵐を説明。暗い色だけではnightにしない。",
+      "proposedTags": {
+        "weather": [
+          "storm"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-115050",
+      "title": "Storm Clouds",
+      "sourceUrl": "https://clevelandart.org/art/1935.217",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/115050",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "海岸上空に灰色の雲が広がる。雷や荒波は明瞭でないためstormは付けない。",
+      "proposedTags": {
+        "weather": [
+          "cloudy"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-148698",
+      "title": "Sunset over Autumn Mountains",
+      "sourceUrl": "https://clevelandart.org/art/1976.151",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/148698",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "題名は夕景だが、単色の山水から天気を確定しにくい。"
+    },
+    {
+      "id": "cma-86110",
+      "title": "Sunset Glow over a Fishing Village, from Eight Views of Xiao-Xiang",
+      "sourceUrl": "https://clevelandart.org/art/2015.590",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/86110",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "題名は夕景だが、単色の山水から天気を確定しにくい。"
+    },
+    {
+      "id": "cma-134072",
+      "title": "Sunny Autumn Day",
+      "sourceUrl": "https://clevelandart.org/art/1956.578",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/134072",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "木々の間に明るい空と日差しが見える昼の風景。",
+      "proposedTags": {
+        "weather": [
+          "clear"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-141639",
+      "title": "Twilight in the Wilderness",
+      "sourceUrl": "https://clevelandart.org/art/1965.233",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/141639",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "赤く照らされた雲と明るい地平線を持つ夕景。雲の存在だけでstormにしない。",
+      "proposedTags": {
+        "weather": [
+          "clear"
+        ],
+        "time": [
+          "twilight"
+        ]
+      }
+    },
+    {
+      "id": "cma-137259",
+      "title": "Mme L . . . (Laure Borreau)",
+      "sourceUrl": "https://clevelandart.org/art/1962.2",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/137259",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "人物肖像が主で、天気を主題とする風景としては見送り。"
+    },
+    {
+      "id": "cma-132015",
+      "title": "The Poet Lin Bu Wandering in the Moonlight",
+      "sourceUrl": "https://clevelandart.org/art/1954.582",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/132015",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "月夜という題名はあるが、月・空と天気の判断が不確実。"
+    },
+    {
+      "id": "cma-155097",
+      "title": "Boating in Moonlight",
+      "sourceUrl": "https://clevelandart.org/art/1989.87",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/155097",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "月夜という題名はあるが、空と天気の描写が不明瞭。"
+    },
+    {
+      "id": "cma-147906",
+      "title": "A Prunus in the Moonlight",
+      "sourceUrl": "https://clevelandart.org/art/1974.26",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/147906",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "木のそばに月が見える夜景。月光の題名を補助情報として使用。曇天・雨の明瞭な描写はない。",
+      "proposedTags": {
+        "weather": [
+          "clear"
+        ],
+        "time": [
+          "night"
+        ]
+      }
+    },
+    {
+      "id": "cma-153663",
+      "title": "Bamboo in Moonlight",
+      "sourceUrl": "https://clevelandart.org/art/1987.186",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/153663",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "竹の上に大きな満月が明瞭に見える。夜空として判断。",
+      "proposedTags": {
+        "weather": [
+          "clear"
+        ],
+        "time": [
+          "night"
+        ]
+      }
+    },
+    {
+      "id": "cma-160128",
+      "title": "Drinking in the Moonlight",
+      "sourceUrl": "https://clevelandart.org/art/1997.89",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/160128",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "月夜という題名はあるが、空と天気の描写が不明瞭。"
+    },
+    {
+      "id": "cma-147016",
+      "title": "Virgin and Child in a Landscape",
+      "sourceUrl": "https://clevelandart.org/art/1972.47",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/147016",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "excluded",
+      "reason": "聖母子像が主で、天気を主題とする風景としては見送り。"
+    },
+    {
+      "id": "cma-152006",
+      "title": "Rocky, Wooded Landscape with a Dell and Weir",
+      "sourceUrl": "https://clevelandart.org/art/1984.59",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/152006",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "風景上空を広く覆う灰色の空。雨筋や夜を示す描写はない。",
+      "proposedTags": {
+        "weather": [
+          "cloudy"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-171296",
+      "title": "Vale of Kashmir",
+      "sourceUrl": "https://clevelandart.org/art/2014.12",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/171296",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "青空と陽光が見える広い谷の風景。地平線の暖色だけではtwilightにしない。",
+      "proposedTags": {
+        "weather": [
+          "clear"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-151298",
+      "title": "Prater Landscape",
+      "sourceUrl": "https://clevelandart.org/art/1983.155",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/151298",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "空が見え、草地に日差しと木陰が描かれた昼景。",
+      "proposedTags": {
+        "weather": [
+          "clear"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    },
+    {
+      "id": "cma-139454",
+      "title": "Landscape",
+      "sourceUrl": "https://clevelandart.org/art/1963.262",
+      "metadataUrl": "https://openaccess-api.clevelandart.org/api/artworks/139454",
+      "license": "CC0",
+      "type": "Painting",
+      "status": "approved",
+      "reason": "山や水辺の輪郭を隠す帯状の霞が見える。水墨画の明るさによる昼判定は暫定で要確認。",
+      "proposedTags": {
+        "weather": [
+          "fog"
+        ],
+        "time": [
+          "day"
+        ]
+      }
+    }
+  ],
+  "approval": {
+    "basis": "User requested finalization after being asked to adopt the proposed 18 works as the initial dataset. Individual visual review by the user is not attested.",
+    "recorded_at": "2026-11-16T04:19:26.986199+00:00",
+    "output": "dist/artworks.json",
+    "count": 18
+  }
+}

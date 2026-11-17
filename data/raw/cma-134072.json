@@ -1,0 +1,452 @@
+{
+  "data": {
+    "id": 134072,
+    "accession_number": "1956.578",
+    "share_license_status": "CC0",
+    "tombstone": "Sunny Autumn Day, 1892. George Inness (American, 1825–1894). Oil on canvas; framed: 111.4 x 137.5 x 12.1 cm (43 7/8 x 54 1/8 x 4 3/4 in.); unframed: 81 x 106 cm (31 7/8 x 41 3/4 in.); former: 101 x 127 x 7.6 cm (39 3/4 x 50 x 3 in.). The Cleveland Museum of Art, Anonymous Gift, 1956.578",
+    "current_location": "208 American Gilded Age and Realism",
+    "title": "Sunny Autumn Day",
+    "creation_date": "1892",
+    "creation_date_earliest": 1892,
+    "creation_date_latest": 1892,
+    "artists_tags": [
+      "male"
+    ],
+    "culture": [
+      "United States"
+    ],
+    "technique": "oil on canvas",
+    "support_materials": [],
+    "department": "American Painting and Sculpture",
+    "collection": "American - Painting",
+    "type": "Painting",
+    "measurements": "Framed: 111.4 x 137.5 x 12.1 cm (43 7/8 x 54 1/8 x 4 3/4 in.); Unframed: 81 x 106 cm (31 7/8 x 41 3/4 in.); Former: 101 x 127 x 7.6 cm (39 3/4 x 50 x 3 in.)",
+    "dimensions": {
+      "framed": {
+        "height": 1.114,
+        "height_inch": 43,
+        "height_inch_fraction": 0.875,
+        "width": 1.375,
+        "width_inch": 54,
+        "width_inch_fraction": 0.125,
+        "depth": 0.121,
+        "depth_inch": 4,
+        "depth_inch_fraction": 0.75
+      },
+      "unframed": {
+        "height": 0.81,
+        "height_inch": 31,
+        "height_inch_fraction": 0.875,
+        "width": 1.06,
+        "width_inch": 41,
+        "width_inch_fraction": 0.75
+      },
+      "former": {
+        "height": 1.01,
+        "height_inch": 39,
+        "height_inch_fraction": 0.75,
+        "width": 1.27,
+        "width_inch": 50,
+        "width_inch_fraction": 0.0,
+        "depth": 0.076,
+        "depth_inch": 3,
+        "depth_inch_fraction": 0.0
+      }
+    },
+    "state_of_the_work": null,
+    "edition_of_the_work": null,
+    "copyright": null,
+    "inscriptions": [
+      {
+        "inscription": "Signed lower left: \"G. Inness 1892:",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": null
+      }
+    ],
+    "exhibitions": {
+      "current": [
+        {
+          "id": 315769,
+          "title": "200 Years of American Painting",
+          "description": "<i>200 Years of American Painting</i>. Saint Louis Art Museum, St. Louis, MO (organizer) (co-organizer) (April 1-May 31, 1964).",
+          "opening_date": "1964-04-01T05:00:00"
+        },
+        {
+          "id": 302330,
+          "title": "Heritage and Horizon: American Painting 1776 - 1976",
+          "description": "<i>Heritage and Horizon: American Painting 1776 - 1976</i>. Buffalo AKG Art Museum, Buffalo, NY (organizer) (March 7-April 11, 1976); The Detroit Institute of Arts, Detroit, MI (May 2-June 13, 1976); The Toledo Museum of Art, Toledo, OH (July 4-August 15, 1976); The Cleveland Museum of Art, Cleveland, OH (September 8-October 10, 1976).",
+          "opening_date": "1976-03-07T05:00:00"
+        },
+        {
+          "id": 442438,
+          "title": "George Inness Landscapes: His Signature Years, 1884-1894",
+          "description": "<i>George Inness Landscapes: His Signature Years, 1884-1894</i>. Oakland Museum of California, Oakland, CA (organizer) (November 28, 1978-January 28, 1979); Santa Barbara Museum of Art, Santa Barbara, CA (February 10-April 15, 1979).",
+          "opening_date": "1978-11-28T05:00:00"
+        },
+        {
+          "id": 304561,
+          "title": "Visions of Landscape: East and West",
+          "description": "<i>Visions of Landscape: East and West</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (February 17-March 21, 1982).",
+          "opening_date": "1982-02-17T05:00:00"
+        },
+        {
+          "id": 218501,
+          "title": "Paris 1900:  The \"American School\" at the Universal Exposition",
+          "description": "<i>Paris 1900:  The \"American School\" at the Universal Exposition</i>. Montclair Art Museum, Montclair, NJ (organizer) (September 18, 1999-January 16, 2000); Pennsylvania Academy of Fine Arts, Museum of American Art, Philadelphia, PA (February 11-April 16, 2000); Columbus Museum of Art, Columbus, OH (May 18-August 13, 2000); Elvehjem Museum of Art, Madison, WI (September 16-December 3, 2000); Musée Carnavalet, Paris, France (February 20-April 29, 2001).",
+          "opening_date": "1999-09-18T00:00:00"
+        }
+      ],
+      "legacy": [
+        {
+          "description": "Chicago, World's Columbian Exposition, (1893); cat. no. 598, lent by Thomas B. Clarke, N.Y.",
+          "opening_date": null
+        },
+        {
+          "description": "New York, Union League Club, Inness and Homer Exhibition (1898), cat. no. 2, lent by Thomas B. Clarke.",
+          "opening_date": null
+        },
+        {
+          "description": "New York, American Art Galleries, Clarke Sale (14-17 February 1899), cat. no. 184.",
+          "opening_date": null
+        },
+        {
+          "description": "Paris, Exposition Universelle Internationale de Paris of 1900 (15 April-12 November 1900), \"The Annotated Catalogue of American Paintings, Paris Exposition of 1900\" taken from Appendix B in Paris 1900: The \"American School\" at the Universal Exposition; A18/M771c.",
+          "opening_date": "1900-04-15T00:00:00"
+        },
+        {
+          "description": "St. Louis, St. Louis Universal Exposition (1904); did find Official: Illustrations of Selected Works in the Various National Sections of the Department of Art with Complete List of Awards by the International Jury.",
+          "opening_date": "1904-01-01T00:00:00"
+        },
+        {
+          "description": "Chicago, Moulton and Ricketts Galleries, Loan Exhibit: Inness, Wyant, Blakelock (March, 1913), illus. plate VI, cat. not numbered or paginated.",
+          "opening_date": "1913-03-01T00:00:00"
+        },
+        {
+          "description": "Buffalo, The Buffalo Fine Arts Academy, Albright Art Gallery, The Eighth Annual Exhibition of Selected Paintings by American Artists (10 May-31 August 1913), cat. no. 61, illus. p. 58, listed p. 23.",
+          "opening_date": "1913-05-10T00:00:00"
+        },
+        {
+          "description": "New York, Macbeth Gallery, (January-April 1925), cat. no. 23, lent by Mrs. Chauncey J. Blair.",
+          "opening_date": "1925-01-01T00:00:00"
+        },
+        {
+          "description": "Cleveland, The Cleveland Museum of Art, The Inaugural Exhibition (6 June-20 September 1916), cat. no. 21, listed p. 128, not illus.",
+          "opening_date": "1916-06-06T00:00:00"
+        },
+        {
+          "description": "St. Louis, City Art Museum of St. Louis, 200 Years of American Painting (1 April-31 May 1964), cat. not numbered, illus. p. 28.",
+          "opening_date": "1964-04-01T00:00:00"
+        },
+        {
+          "description": "Buffalo, Albright-Knox Art Gallery, Heritage and Horizon: American Painting 1776-1976 (6 March-11 April 1976); traveled to Detroit, Detroit Institute of Arts (5 may-3 June 1976); Toledo, The Toledo Museum of Art (4 July-15 August 1976); Cleveland, The Cleveland Museum of Art (8 September-10 October 1976), illus. cat. no. 25.",
+          "opening_date": "1976-03-06T00:00:00"
+        },
+        {
+          "description": "Oakland, The Oakland Museum, George Inness Landscapes: His Signature Years 1884-1894 (28 November 1978-28 January 1979), cat. not numbered, but listed and illus. p. 59.",
+          "opening_date": "1978-11-28T00:00:00"
+        },
+        {
+          "description": "Cleveland, The Cleveland Museum of Art, Visions of Landscape: East and West (17 February-21 March 1982)",
+          "opening_date": "1982-02-17T00:00:00"
+        },
+        {
+          "description": "Montclair, NJ, The Montclair Art Museum, Paris 1900: The \"American School\" at the Universal Exposition (18 September 1999-16 January 2000); Philadelphia, Pennsylvania Academy of Fine Arts (11 February-16 April 2000); Columbus, Columbus Art Museum (18 May-13 August 2000); Madison, WI, Elvehjem Museum of Art, University of Wisconsin-Madison (16 September-3 December 2000); Paris, Musée Carnavalet (2 February-15 May 2001); cat. no. 81, illus. p. 75.",
+          "opening_date": "2000-02-11T00:00:00"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "description": "Thomas B. Clarke, New York, NY [1884-1931], purchased from artist1",
+        "citations": [],
+        "footnotes": [
+          "<div><!--block-->1According to the introduction to the 1899 sale catalogue, Clarke and Inness were acquaintances.&nbsp; Macbeth Gallery's Art Notes also notes that \"it was purchased directly from Inness the year it was painted.\"</div>"
+        ],
+        "date": "By October 1892-1899",
+        "sortorder": 1
+      },
+      {
+        "description": "(American Art Galleries, American Art Association, New York, Feb. 14-18, 1899, no. 184, sold to Mr. and Mrs. Chauncey J. Blair)",
+        "citations": [],
+        "footnotes": [],
+        "date": "1899",
+        "sortorder": 2
+      },
+      {
+        "description": "Chauncey J. [1843–1916] and Mary Mitchell Blair [1856-1940], Chicago1",
+        "citations": [],
+        "footnotes": [
+          "<div><!--block-->1Macbeth Gallery's Art Notes: \"At the disposal of his [Thomas B. Clarke] collection in 1899, it was bought by the late Chauncey Blair of Chicago.\"</div>"
+        ],
+        "date": "1899-",
+        "sortorder": 3
+      },
+      {
+        "description": "Walter Clark Runyon [1857-1929] and Berenice Agnew Runyon [b. 1873], Scarsdale, NY1",
+        "citations": [],
+        "footnotes": [
+          "<div><!--block-->1Runyon lent the painting to the Macbeth Gallery Centennial Exhibition in 1925, and the gallery's <em>Art Notes</em> from April of that year states that \"the collector who loaned it to our exhibition\" purchased the painting from the estate of the late Chauncey Blair.</div>"
+        ],
+        "date": "-1925",
+        "sortorder": 4
+      },
+      {
+        "description": "(Macbeth Gallery, New York, and George E. Gage Gallery, Cleveland, sold to Elizabeth Bingham Blossom)1",
+        "citations": [],
+        "footnotes": [
+          "<div><!--block-->1The March 28, 1925 issue of <em>American Art News</em> notes that the painting was included in Macbeth's Centennial Exhibition in January of 1925 (cat. no. 23).&nbsp; The price (unannounced) paid for the painting established new record for the artist's work. Mr. and Mrs. Walter Clark Runyon lent the painting to the exhibition.</div>"
+        ],
+        "date": "1925",
+        "sortorder": 5
+      },
+      {
+        "description": "The Cleveland Museum of Art, Cleveland, Ohio",
+        "citations": [],
+        "footnotes": null,
+        "date": "1956-",
+        "sortorder": 7
+      }
+    ],
+    "find_spot": null,
+    "related_works": [],
+    "former_accession_numbers": [],
+    "did_you_know": "Inness died while viewing a sunset, proclaiming, \"Oh, how beautiful!” and falling to the ground.",
+    "early_education_description": null,
+    "artlens_description": null,
+    "description": "Highly prolific, Inness created more than 1,000 works during a career lasting 50 years. Dated just two years before his death, <em>Sunny Autumn Day</em> epitomizes his late style in which the physical landscape is transformed into something akin to a spiritual apparition. Featuring blurred forms and atmospheric effects from translucent colors, this scene reflects Inness’s mystical view of the natural world.",
+    "external_resources": {
+      "wikidata": [
+        "https://www.wikidata.org/wiki/Q20054728"
+      ],
+      "internet_archive": [
+        "https://archive.org/details/clevelandart-1956.578-sunny-autumn-day"
+      ]
+    },
+    "citations": [
+      {
+        "citation": "\"Inness masterpiece sold for record price to Cleveland collector,\" <em>American Art News</em> XXIII (March 28, 1925).",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "\"Inness masterpiece sold for record price to Cleveland collector,\" <em>American Art News</em> XXIII (March 28, 1925).",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Macbeth Gallery, and Inness, George, 1825-1894. <em>George Inness, 1825-1894; Centennial Exhibition, January 20-February 9 1925, the Macbeth Gallery</em>. Macbeth Gallery, 1925. &lt;http://libmma.contentdm.oclc.org/u?/p15324coll1,2101&gt;",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Macbeth Gallery, <em>Art Notes </em>(April 1925): 1425.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Quick, Michael. George Inness: A Catalogue Raisonné. New Brunswick: Rutgers University Press, 2007. No. 1066.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Macbeth Gallery Stock Disposition Cards - Sold Paintings microfilm, The Archives of American Art, New York.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Macbeth Gallery, <em>Art Notes</em> (April 1925): 1425.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": null,
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Macbeth Gallery, <em>Art Notes</em> (April 1925): 1425.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "American Art Association. <em>Private Art Collection of Thomas B. Clarke, Part I - Paintings</em>. 1899.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Clarke, Thomas Benedict, and Thomas E. Kirby. <em>Catalogue of the Private Art Collection of Thomas B. Clarke, New York: To Be Sold at Absolute Public Sale on the Evenings of February 14, 15, 16 and 17 at Chickering Hall ... and on the Afternoons of February 15, 16, 17 and 18 at the American Art Galleries</em>. New York: American Art Association, 1899.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Macbeth Gallery, <em>Art Notes</em> (April 1925): 1425.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "American Art Association. <em>Private Art Collection of Thomas B. Clarke, Part I - Paintings</em>. 1899.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": null,
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Inness, George, Gail Stavitsky, William H. Gerdts, and Montclair Art Museum. George Inness, Presence of the Unseen : A Centennial Commemoration. Montclair, N.J.: Montclair Art Museum, 1994.",
+        "page_number": "Mentioned p. 23; reproduced p. 25.",
+        "url": ""
+      },
+      {
+        "citation": "DeLue, Rachael Ziady. “George Inness : Landscape, Representation, and the Struggle of Vision,” Ph.D. dissertation, Johns Hopkins University, 2000.",
+        "page_number": "Mentioned, p. 280; reproduced, fig. 5.31.",
+        "url": ""
+      },
+      {
+        "citation": "<em>Report: The Commissioner-General for the United States to the International Universal Exposition, Paris, 1900.</em> Vol. 2 (Washington, DC: Government Printing Office, 1901).",
+        "page_number": "Mentioned, p. 552; reproduced, plate B-2, between pp. 494-95.",
+        "url": ""
+      },
+      {
+        "citation": "Daingerfield, Elliott. <em>Fifty Paintings by George Inness</em>. New York, NY: Priv. Print, 1913.",
+        "page_number": "Reproduced: pl.37",
+        "url": null
+      },
+      {
+        "citation": "Ireland, Leroy. <em>The Works of George Inness: An Illustrated Catalogue Raisonné</em>. Austin, TX: University of Texas Press, 1965.",
+        "page_number": "Mentioned: p. 372-373; Reproduced: no. 1440",
+        "url": null
+      },
+      {
+        "citation": "Adams, Celeste, Rita Myers, and Adele Z. Silver. <em>An Introduction to American Art in the Cleveland Museum of Art</em>. Cleveland, OH: Cleveland Museum of Art, 1972.",
+        "page_number": "Mentioned: p. 14-15; Reproduced: p. 15",
+        "url": null
+      },
+      {
+        "citation": "\"A Check List: American Paintings and Water Colors of the Eighteenth, Nineteenth, and Early Twentieth Centuries in The Cleveland Museum of Art,\" <em>The Bulletin of The Cleveland Museum of Art</em> no. 1(January, 1973): 29",
+        "page_number": "Reproduced: p. 29, no. 106",
+        "url": null
+      },
+      {
+        "citation": "Albright-Knox Art Gallery, Detroit Institute of Arts, and Toledo Museum of Art. <em>Heritage and Horizon: American Painting, 1776-1976. </em>Toledo, OH: Toledo Museum of Art, 1976.",
+        "page_number": "Reproduced: p. 37",
+        "url": null
+      },
+      {
+        "citation": "Cikovsky, Nicolai. <em>The Life and Work of George Inness</em>. New York, NY: Garland Pub, 1977.",
+        "page_number": "Mentioned: p. 309-316, 327-335; Reproduced: no. 120",
+        "url": null
+      },
+      {
+        "citation": "Chong, Alan. <em>European &amp; American Painting in the Cleveland Museum of Art: A Summary Catalogue</em>. Cleveland, OH: Cleveland Museum of Art, 1993.",
+        "page_number": "Reproduced: p. 114",
+        "url": null
+      },
+      {
+        "citation": "Carr, Carolyn Kinder and Robert W Rydell. <em>Revisiting the White City : American Art at the 1893 World's Fair</em>. Washington, DC: National Museum of American Art and National Portrait Gallery, Smithsonian Institution, Washington, DC: University Press of New England, 1993.",
+        "page_number": "Reproduced: p. 269",
+        "url": null
+      },
+      {
+        "citation": "DeLue, Rachael Ziady. <em>George Inness and the Science of Landscape</em>. Chicago, IL: University of Chicago Press, 2004.",
+        "page_number": "Reproduced: pl. 18",
+        "url": null
+      },
+      {
+        "citation": "Quick, Michael. <em>George Inness: A Catalogue Raisonné</em>. New Brunswick, NJ: Rutgers University Press, 2007.",
+        "page_number": "Reproduced: p. 371, fig. 1066",
+        "url": null
+      }
+    ],
+    "url": "https://clevelandart.org/art/1956.578",
+    "images": {
+      "annotation": null,
+      "web": {
+        "url": "https://openaccess-cdn.clevelandart.org/1956.578/1956.578_web.jpg",
+        "width": "1179",
+        "height": "893",
+        "filesize": "817166",
+        "filename": "1956.578_web.jpg"
+      },
+      "print": {
+        "url": "https://openaccess-cdn.clevelandart.org/1956.578/1956.578_print.jpg",
+        "width": "3400",
+        "height": "2576",
+        "filesize": "6459446",
+        "filename": "1956.578_print.jpg"
+      },
+      "full": {
+        "url": "https://openaccess-cdn.clevelandart.org/1956.578/1956.578_full.tif",
+        "width": "4950",
+        "height": "3750",
+        "filesize": "55714008",
+        "filename": "1956.578_full.tif"
+      }
+    },
+    "alternate_images": [
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1956.578/1956.578_alt0_web.jpg",
+          "width": "1095",
+          "height": "893",
+          "filesize": "811492"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1956.578/1956.578_alt0_print.jpg",
+          "width": "3400",
+          "height": "2774",
+          "filesize": "7024915"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1956.578/1956.578_alt0_full.tif",
+          "width": "3888",
+          "height": "3172",
+          "filesize": "37042036"
+        },
+        "date_created": "2008-06-23T19:34:22",
+        "annotation": ""
+      }
+    ],
+    "creditline": "Anonymous Gift",
+    "image_credit": null,
+    "sketchfab_id": null,
+    "sketchfab_url": null,
+    "gallery_donor_text": "The Cleveland Foundation Gallery",
+    "athena_id": 134072,
+    "creators": [
+      {
+        "id": 2493,
+        "description": "George Inness (American, 1825–1894)",
+        "extent": null,
+        "qualifier": null,
+        "role": "artist",
+        "biography": null,
+        "name_in_original_language": null,
+        "birth_year": "1825",
+        "death_year": "1894",
+        "use_in_caption": true,
+        "include_extent": false,
+        "weight": 1
+      }
+    ],
+    "legal_status": "accessioned",
+    "accession_date": "1956-10-24T00:00:00",
+    "sortable_date": 1892,
+    "date_added_to_oa": null,
+    "date_text": "1892",
+    "collapse_artists": false,
+    "on_loan": false,
+    "recently_acquired": false,
+    "record_type": "object",
+    "conservation_statement": null,
+    "has_conservation_images": false,
+    "cover_accession_number": null,
+    "is_nazi_era_provenance": false,
+    "impression": null,
+    "alternate_titles": [],
+    "is_highlight": false,
+    "updated_at": "2026-10-13 11:16:15.668000"
+  }
+}

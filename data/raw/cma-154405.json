@@ -1,0 +1,555 @@
+{
+  "data": {
+    "id": 154405,
+    "accession_number": "1989.119",
+    "share_license_status": "CC0",
+    "tombstone": "Section of an Illustrated Tale of Genji Poetry Contest (源氏物語歌合絵 断簡), 1400s. Japan, Muromachi period (1392–1573). Section of a handscroll mounted as a hanging scroll; ink on paper; image: 14.4 x 39.9 cm (5 11/16 x 15 11/16 in.); mounted with knobs: 91.2 x 56.9 cm (35 7/8 x 22 3/8 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. Leighton R. Longhi, 1989.119",
+    "current_location": null,
+    "title": "Section of an Illustrated Tale of Genji Poetry Contest",
+    "title_in_original_language": "源氏物語歌合絵 断簡",
+    "creation_date": "1400s",
+    "creation_date_earliest": 1400,
+    "creation_date_latest": 1499,
+    "artists_tags": [],
+    "culture": [
+      "Japan, Muromachi period (1392–1573)"
+    ],
+    "technique": "section of a handscroll mounted as a hanging scroll; ink on paper",
+    "support_materials": [],
+    "department": "Japanese Art",
+    "collection": "ASIAN - Hanging scroll",
+    "type": "Painting",
+    "measurements": "Image: 14.4 x 39.9 cm (5 11/16 x 15 11/16 in.); Mounted with knobs: 91.2 x 56.9 cm (35 7/8 x 22 3/8 in.)",
+    "dimensions": {
+      "image": {
+        "height": 0.144,
+        "height_inch": 5,
+        "height_inch_fraction": 0.6875,
+        "width": 0.399,
+        "width_inch": 15,
+        "width_inch_fraction": 0.6875
+      },
+      "mounted with knobs": {
+        "height": 0.912,
+        "height_inch": 35,
+        "height_inch_fraction": 0.875,
+        "width": 0.569,
+        "width_inch": 22,
+        "width_inch_fraction": 0.375
+      },
+      "overall with knobs and cord": {
+        "height": 0.932,
+        "height_inch": 36,
+        "height_inch_fraction": 0.6875,
+        "width": 0.569,
+        "width_inch": 22,
+        "width_inch_fraction": 0.375
+      },
+      "knob diam": {
+        "height": 0.023,
+        "height_inch": 0,
+        "height_inch_fraction": 0.875
+      },
+      "cord": {
+        "height": 0.02,
+        "height_inch": 0,
+        "height_inch_fraction": 0.8125
+      }
+    },
+    "state_of_the_work": null,
+    "edition_of_the_work": null,
+    "copyright": null,
+    "inscriptions": [
+      {
+        "inscription": "四十六番　左　ひげくろの大将　心さえ空にみだれし雪の［も」夜に　ひとりさえつるかたしきの袖／　　四十七番　うきことを思ひさわ　げばさまざまに　くゆるけむりぞ　いとど　たち　そふ／\n四十八番　すがくれてかず　にも　あらぬ　かりのこを　いづかたにかはとりかくすべき／\n右　雲井のかり　かぎりとてわすれがたきを　わするるも　こや世に　なびくこころな　るらむ／\nあさきなを　いひ　ながしける　かわ　ぐちは　いかが　もらしし　せきのあらがき／\nあわれをもいかに　しりてか　なぐさ　めむ　あるや　 恋しき　なきや　かなしきに",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": null
+      }
+    ],
+    "exhibitions": {
+      "current": [
+        {
+          "id": 310333,
+          "title": "The Year in Review for 1989",
+          "description": "<i>The Year in Review for 1989</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (February 6-April 15, 1990).",
+          "opening_date": "1990-02-06T05:00:00"
+        },
+        {
+          "id": 374889,
+          "title": "Stories in Japanese Art",
+          "description": "<i>Stories in Japanese Art</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (October 8, 2021-April 3, 2022).",
+          "opening_date": "2021-10-08T04:00:00"
+        }
+      ],
+      "legacy": []
+    },
+    "provenance": [
+      {
+        "description": "Leighton R. and Rosemarie Longhi, New York, NY, given to the Cleveland Museum of Art",
+        "citations": [],
+        "footnotes": [],
+        "date": "?–1989",
+        "sortorder": 1
+      },
+      {
+        "description": "The Cleveland Museum of Art, Cleveland, OH",
+        "citations": [],
+        "footnotes": [],
+        "date": "1989–",
+        "sortorder": 2
+      }
+    ],
+    "find_spot": null,
+    "related_works": [],
+    "former_accession_numbers": [],
+    "did_you_know": "General Blackbeard laments having smelly ash poured upon him by his angry wife in one of the poems.",
+    "early_education_description": null,
+    "artlens_description": null,
+    "description": "This hanging scroll was once part of a handscroll depicting a <em>waka</em> (thirty-one syllable verse) poetry contest between characters from the 11th-century literary classic <em>Tale of Genji</em>. In this section, a woman known informally as Kumoi no kari, or “Goose in Fog,” after a lovelorn line she hums in the novel, is pitted against Higekuro no taishō, or “General Blackbeard.” Three of his poems, numbered 46 to 48, from “The Handsome Pillar” chapter appear over his image. The subsequent three poems inscribed above Kumoi no kari are presented as her “responses,” and come from \"The Plum Tree Branch\", “New Wisteria Leaves”, and \"Evening Mist\" chapters.",
+    "external_resources": {
+      "wikidata": [
+        "https://www.wikidata.org/wiki/Q60476340"
+      ],
+      "internet_archive": [
+        "https://archive.org/details/clevelandart-1989.119-section-of-a-tale-of",
+        "https://archive.org/details/clevelandart-1989.119-section-of-an-illust"
+      ]
+    },
+    "citations": [
+      {
+        "citation": "Turner, Evan H. “The Year in Review: Selections 1989.” <em>The Bulletin of the Cleveland Museum of Art</em>, vol. 77, no. 2, 1990, pp. 38–79.",
+        "page_number": "Reproduced: no. 229, p. 54, Mentioned: p. 79",
+        "url": "www.jstor.org/stable/25160106"
+      }
+    ],
+    "url": "https://clevelandart.org/art/1989.119",
+    "images": {
+      "annotation": null,
+      "web": {
+        "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_web.jpg",
+        "width": "900",
+        "height": "336",
+        "filesize": "114114",
+        "filename": "1989.119_web.jpg"
+      },
+      "print": {
+        "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_print.jpg",
+        "width": "3400",
+        "height": "1271",
+        "filesize": "990036",
+        "filename": "1989.119_print.jpg"
+      },
+      "full": {
+        "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_full.tif",
+        "width": "7221",
+        "height": "2700",
+        "filesize": "58519828",
+        "filename": "1989.119_full.tif"
+      }
+    },
+    "alternate_images": [
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt0_web.jpg",
+          "width": "865",
+          "height": "900",
+          "filesize": "143772"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt0_print.jpg",
+          "width": "3011",
+          "height": "3134",
+          "filesize": "1071790"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt0_full.tif",
+          "width": "3011",
+          "height": "3134",
+          "filesize": "28349360"
+        },
+        "date_created": "2015-01-06T15:41:26.067000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt1_web.jpg",
+          "width": "865",
+          "height": "900",
+          "filesize": "127122"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt1_print.jpg",
+          "width": "3011",
+          "height": "3134",
+          "filesize": "1075359"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt1_full.tif",
+          "width": "3011",
+          "height": "3134",
+          "filesize": "28350736"
+        },
+        "date_created": "2015-01-06T15:41:26.067000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt2_web.jpg",
+          "width": "900",
+          "height": "658",
+          "filesize": "143145"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt2_print.jpg",
+          "width": "3400",
+          "height": "2484",
+          "filesize": "1150092"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt2_full.tif",
+          "width": "4218",
+          "height": "3082",
+          "filesize": "39038960"
+        },
+        "date_created": "2015-01-06T15:41:41.068000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt3_web.jpg",
+          "width": "900",
+          "height": "813",
+          "filesize": "231121"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt3_print.jpg",
+          "width": "3270",
+          "height": "2953",
+          "filesize": "2097780"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt3_full.tif",
+          "width": "3270",
+          "height": "2953",
+          "filesize": "29010024"
+        },
+        "date_created": "2015-01-06T15:42:15.059000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt4_web.jpg",
+          "width": "500",
+          "height": "900",
+          "filesize": "142986"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt4_print.jpg",
+          "width": "1889",
+          "height": "3400",
+          "filesize": "1388402"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt4_full.tif",
+          "width": "2306",
+          "height": "4151",
+          "filesize": "28755004"
+        },
+        "date_created": "2015-01-06T15:43:48.037000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt5_web.jpg",
+          "width": "900",
+          "height": "792",
+          "filesize": "254281"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt5_print.jpg",
+          "width": "3173",
+          "height": "2791",
+          "filesize": "2133190"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt5_full.tif",
+          "width": "3173",
+          "height": "2791",
+          "filesize": "26607456"
+        },
+        "date_created": "2015-01-06T15:46:12.015000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt6_web.jpg",
+          "width": "449",
+          "height": "900",
+          "filesize": "98907"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt6_print.jpg",
+          "width": "1696",
+          "height": "3400",
+          "filesize": "810271"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt6_full.tif",
+          "width": "2402",
+          "height": "4814",
+          "filesize": "34727716"
+        },
+        "date_created": "2015-01-06T15:47:19.062000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt7_web.jpg",
+          "width": "377",
+          "height": "900",
+          "filesize": "119650"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt7_print.jpg",
+          "width": "1425",
+          "height": "3400",
+          "filesize": "1173763"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt7_full.tif",
+          "width": "1989",
+          "height": "4745",
+          "filesize": "28351752"
+        },
+        "date_created": "2015-01-06T15:48:07.095000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt8_web.jpg",
+          "width": "900",
+          "height": "563",
+          "filesize": "183112"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt8_print.jpg",
+          "width": "3400",
+          "height": "2126",
+          "filesize": "1760863"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt8_full.tif",
+          "width": "5003",
+          "height": "3129",
+          "filesize": "47003876"
+        },
+        "date_created": "2015-01-06T15:50:16.046000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt9_web.jpg",
+          "width": "900",
+          "height": "745",
+          "filesize": "119786"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt9_print.jpg",
+          "width": "3236",
+          "height": "2677",
+          "filesize": "1165804"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt9_full.tif",
+          "width": "3236",
+          "height": "2677",
+          "filesize": "26025876"
+        },
+        "date_created": "2015-01-06T15:51:43",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt10_web.jpg",
+          "width": "549",
+          "height": "900",
+          "filesize": "116319"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt10_print.jpg",
+          "width": "2073",
+          "height": "3400",
+          "filesize": "1257766"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt10_full.tif",
+          "width": "2996",
+          "height": "4913",
+          "filesize": "44196424"
+        },
+        "date_created": "2015-01-06T15:52:38.009000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt11_web.jpg",
+          "width": "799",
+          "height": "900",
+          "filesize": "148201"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt11_print.jpg",
+          "width": "3018",
+          "height": "3400",
+          "filesize": "1541135"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt11_full.tif",
+          "width": "3183",
+          "height": "3586",
+          "filesize": "34281432"
+        },
+        "date_created": "2015-01-06T15:53:33.024000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt12_web.jpg",
+          "width": "619",
+          "height": "900",
+          "filesize": "123116"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt12_print.jpg",
+          "width": "2338",
+          "height": "3400",
+          "filesize": "1361786"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt12_full.tif",
+          "width": "3236",
+          "height": "4706",
+          "filesize": "45724120"
+        },
+        "date_created": "2015-01-06T15:55:39.003000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt13_web.jpg",
+          "width": "900",
+          "height": "724",
+          "filesize": "151198"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt13_print.jpg",
+          "width": "3400",
+          "height": "2736",
+          "filesize": "1396749"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt13_full.tif",
+          "width": "3851",
+          "height": "3099",
+          "filesize": "35841796"
+        },
+        "date_created": "2015-01-06T15:56:47.087000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt14_web.jpg",
+          "width": "900",
+          "height": "600",
+          "filesize": "107528"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt14_print.jpg",
+          "width": "3400",
+          "height": "2267",
+          "filesize": "870365"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt14_full.tif",
+          "width": "5184",
+          "height": "3456",
+          "filesize": "53786392"
+        },
+        "date_created": "2015-01-06T15:56:55.054000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt15_web.jpg",
+          "width": "900",
+          "height": "600",
+          "filesize": "132761"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt15_print.jpg",
+          "width": "3400",
+          "height": "2267",
+          "filesize": "1249413"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt15_full.tif",
+          "width": "5184",
+          "height": "3456",
+          "filesize": "53786272"
+        },
+        "date_created": "2015-01-06T15:57:15.001000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt16_web.jpg",
+          "width": "551",
+          "height": "900",
+          "filesize": "130820"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt16_print.jpg",
+          "width": "2082",
+          "height": "3400",
+          "filesize": "1626173"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1989.119/1989.119_alt16_full.tif",
+          "width": "4630",
+          "height": "7561",
+          "filesize": "105052292"
+        },
+        "date_created": "2015-01-05T12:19:09",
+        "annotation": ""
+      }
+    ],
+    "creditline": "Gift of Mr. and Mrs. Leighton R. Longhi",
+    "image_credit": null,
+    "sketchfab_id": null,
+    "sketchfab_url": null,
+    "gallery_donor_text": null,
+    "athena_id": 154405,
+    "creators": [],
+    "legal_status": "accessioned",
+    "accession_date": "1989-12-04T00:00:00",
+    "sortable_date": 1400,
+    "date_added_to_oa": null,
+    "date_text": "1400s",
+    "collapse_artists": false,
+    "on_loan": false,
+    "recently_acquired": false,
+    "record_type": "object",
+    "conservation_statement": null,
+    "has_conservation_images": false,
+    "cover_accession_number": null,
+    "is_nazi_era_provenance": false,
+    "impression": null,
+    "alternate_titles": [
+      "Section from \"Tale of Genji\" Handscroll",
+      "Section of a Tale of Genji-Themed Poetry Contest"
+    ],
+    "is_highlight": false,
+    "updated_at": "2026-06-25 11:12:54.962000"
+  }
+}

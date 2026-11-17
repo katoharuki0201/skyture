@@ -1,0 +1,373 @@
+{
+  "data": {
+    "id": 148698,
+    "accession_number": "1976.151",
+    "share_license_status": "CC0",
+    "tombstone": "Sunset over Autumn Mountains (秋山蕭寺図), 1869. Hoashi Kyōu (Japanese, 1810–1884). Hanging scroll; ink and light color on silk; mounted: 214.9 x 68.8 cm (84 5/8 x 27 1/16 in.); painting: 126.9 x 55.2 cm (49 15/16 x 21 3/4 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. Andrew B. Meldrum, 1976.151",
+    "current_location": null,
+    "title": "Sunset over Autumn Mountains",
+    "title_in_original_language": "秋山蕭寺図",
+    "creation_date": "1869",
+    "creation_date_earliest": 1869,
+    "creation_date_latest": 1869,
+    "artists_tags": [
+      "male"
+    ],
+    "culture": [
+      "Japan, Edo period (1615–1868)"
+    ],
+    "technique": "hanging scroll; ink and light color on silk",
+    "support_materials": [],
+    "department": "Japanese Art",
+    "collection": "ASIAN - Hanging scroll",
+    "type": "Painting",
+    "measurements": "Mounted: 214.9 x 68.8 cm (84 5/8 x 27 1/16 in.); Painting: 126.9 x 55.2 cm (49 15/16 x 21 3/4 in.)",
+    "dimensions": {
+      "painting": {
+        "height": 1.269,
+        "height_inch": 49,
+        "height_inch_fraction": 0.9375,
+        "width": 0.552,
+        "width_inch": 21,
+        "width_inch_fraction": 0.75
+      },
+      "mounted": {
+        "height": 2.149,
+        "height_inch": 84,
+        "height_inch_fraction": 0.625,
+        "width": 0.688,
+        "width_inch": 27,
+        "width_inch_fraction": 0.0625
+      },
+      "mounted with knobs": {
+        "height": 2.149,
+        "height_inch": 84,
+        "height_inch_fraction": 0.625,
+        "width": 0.768,
+        "width_inch": 30,
+        "width_inch_fraction": 0.25
+      },
+      "knob diam": {
+        "depth": 0.037,
+        "depth_inch": 1,
+        "depth_inch_fraction": 0.4375
+      }
+    },
+    "state_of_the_work": null,
+    "edition_of_the_work": null,
+    "copyright": null,
+    "inscriptions": [
+      {
+        "inscription": "translation of poem [by Nora Liu]:\r\n\r\nThe way was forgotten while enjoying the conversation\r\nand colors of Autumn,\r\nThe road entered among the red trees\r\nand the white clouds,\r\nThe trace of a path led to the lonely temple\r\nwhere the monks received enlightenment,\r\nThe sound of chimes echo remotely in the\r\nmountains where the sunset falls.\r\n\r\nIn the year 1869, Kyou",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": 1
+      }
+    ],
+    "exhibitions": {
+      "current": [
+        {
+          "id": 302374,
+          "title": "Year in Review, 1976",
+          "description": "<i>Year in Review, 1976</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (February 1-March 6, 1977).",
+          "opening_date": "1977-02-01T05:00:00"
+        },
+        {
+          "id": 309912,
+          "title": "Suibokuga: Japanese Ink Painting",
+          "description": "<i>Suibokuga: Japanese Ink Painting</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (October 1, 1985-February 24, 1986).",
+          "opening_date": "1985-10-01T04:00:00"
+        },
+        {
+          "id": 705668,
+          "title": "“Bunjin” in Japanese Art",
+          "description": "<i>“Bunjin” in Japanese Art</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (June 21, 2026-June 20, 2027).",
+          "opening_date": "2026-06-21T04:00:00"
+        }
+      ],
+      "legacy": []
+    },
+    "provenance": [
+      {
+        "description": "Mr. and Mrs. Andrew B. Meldrum, Hudson, OH, given to the Cleveland Museum of Art",
+        "citations": [],
+        "footnotes": null,
+        "date": "?–1976",
+        "sortorder": 1
+      },
+      {
+        "description": "The Cleveland Museum of Art, Cleveland, OH",
+        "citations": [],
+        "footnotes": null,
+        "date": "1976–",
+        "sortorder": 2
+      }
+    ],
+    "find_spot": null,
+    "related_works": [],
+    "former_accession_numbers": [],
+    "did_you_know": null,
+    "early_education_description": null,
+    "artlens_description": null,
+    "description": "Hoashi Kyōu was the fourth son of a village headman in Oita in southern Japan. He moved to Kyoto, where he studied painting and Chinese literature. His long Chinese-style poem added to the top of this work contains imagery mirrored in his composition:  The way was forgotten while enjoying the conversation and colors of autumn,The road entered among the red trees and the white clouds,The trace of a path led to the lonely temple where the monks received enlightenment,The sound of chimes echoes remotely in the mountains where the sunset falls.<br><br><br> <a href=\"#_msoanchor_1\">[JK1]</a>Peter or Mary (not sure who the designer is yet), this is a four-line poem (with the four lines each beginning with the capitalized “The”).  The entire poem will be indented (as I’ve done here), but if/when text from any of the four lines spills over, please just indent the new line a little farther (to help indicate that the line breaks aren’t original to the poem itself).  So it might look something like this:    The way was...the conversation      and colors of autumn,",
+    "external_resources": {
+      "wikidata": [
+        "https://www.wikidata.org/wiki/Q60473029"
+      ],
+      "internet_archive": [
+        "https://archive.org/details/clevelandart-1976.151-sunset-over-autumn-m"
+      ]
+    },
+    "citations": [
+      {
+        "citation": "Lee, Sherman E. “The Year in Review for 1976.” <em>The Bulletin of the Cleveland Museum of Art</em> 64, no. 2 (February 1977): 39–78.",
+        "page_number": "Mentioned; no. 138, p. 78",
+        "url": "https://www.jstor.org/stable/25152676"
+      }
+    ],
+    "url": "https://clevelandart.org/art/1976.151",
+    "images": {
+      "annotation": null,
+      "web": {
+        "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_web.jpg",
+        "width": "402",
+        "height": "900",
+        "filesize": "144661",
+        "filename": "1976.151_web.jpg"
+      },
+      "print": {
+        "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_print.jpg",
+        "width": "1518",
+        "height": "3400",
+        "filesize": "1302205",
+        "filename": "1976.151_print.jpg"
+      },
+      "full": {
+        "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_full.tif",
+        "width": "3500",
+        "height": "7839",
+        "filesize": "82339548",
+        "filename": "1976.151_full.tif"
+      }
+    },
+    "alternate_images": [
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt0_web.jpg",
+          "width": "594",
+          "height": "900",
+          "filesize": "120870"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt0_print.jpg",
+          "width": "2243",
+          "height": "3400",
+          "filesize": "884728"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt0_full.tif",
+          "width": "2915",
+          "height": "4419",
+          "filesize": "38697040"
+        },
+        "date_created": "2015-02-20T18:32:08.017000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt1_web.jpg",
+          "width": "900",
+          "height": "807",
+          "filesize": "266910"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt1_print.jpg",
+          "width": "3400",
+          "height": "3047",
+          "filesize": "2144301"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt1_full.tif",
+          "width": "3527",
+          "height": "3161",
+          "filesize": "33488576"
+        },
+        "date_created": "2015-02-20T18:32:59.012000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt2_web.jpg",
+          "width": "900",
+          "height": "841",
+          "filesize": "253429"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt2_print.jpg",
+          "width": "3342",
+          "height": "3124",
+          "filesize": "2120226"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt2_full.tif",
+          "width": "3342",
+          "height": "3124",
+          "filesize": "31362712"
+        },
+        "date_created": "2015-02-20T18:33:26.049000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt3_web.jpg",
+          "width": "260",
+          "height": "900",
+          "filesize": "89369"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt3_print.jpg",
+          "width": "983",
+          "height": "3400",
+          "filesize": "663808"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt3_full.tif",
+          "width": "1434",
+          "height": "4961",
+          "filesize": "21379864"
+        },
+        "date_created": "2015-02-20T18:34:49.056000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt4_web.jpg",
+          "width": "260",
+          "height": "900",
+          "filesize": "88533"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt4_print.jpg",
+          "width": "982",
+          "height": "3400",
+          "filesize": "628614"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt4_full.tif",
+          "width": "1419",
+          "height": "4913",
+          "filesize": "20958152"
+        },
+        "date_created": "2015-02-20T18:35:45.059000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt5_web.jpg",
+          "width": "358",
+          "height": "900",
+          "filesize": "90494"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt5_print.jpg",
+          "width": "1354",
+          "height": "3400",
+          "filesize": "748547"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt5_full.tif",
+          "width": "1918",
+          "height": "4817",
+          "filesize": "27758136"
+        },
+        "date_created": "2015-02-20T18:37:25.059000",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt6_web.jpg",
+          "width": "508",
+          "height": "900",
+          "filesize": "141912"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt6_print.jpg",
+          "width": "1918",
+          "height": "3400",
+          "filesize": "2258946"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt6_full.tif",
+          "width": "4205",
+          "height": "7454",
+          "filesize": "94062472"
+        },
+        "date_created": "2015-02-11T14:34:26",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt7_web.jpg",
+          "width": "719",
+          "height": "900",
+          "filesize": "247868"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt7_print.jpg",
+          "width": "2564",
+          "height": "3211",
+          "filesize": "2324411"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1976.151/1976.151_alt7_full.tif",
+          "width": "2564",
+          "height": "3211",
+          "filesize": "24728868"
+        },
+        "date_created": "2015-02-11T14:29:05",
+        "annotation": ""
+      }
+    ],
+    "creditline": "Gift of Mr. and Mrs. Andrew B. Meldrum",
+    "image_credit": null,
+    "sketchfab_id": null,
+    "sketchfab_url": null,
+    "gallery_donor_text": null,
+    "athena_id": 148698,
+    "creators": [
+      {
+        "id": 23547,
+        "description": "Hoashi Kyōu (Japanese, 1810–1884)",
+        "extent": null,
+        "qualifier": null,
+        "role": "artist",
+        "biography": null,
+        "name_in_original_language": "帆足 杏雨",
+        "birth_year": "1810",
+        "death_year": "1884",
+        "use_in_caption": true,
+        "include_extent": false,
+        "weight": 1
+      }
+    ],
+    "legal_status": "accessioned",
+    "accession_date": "1976-12-09T00:00:00",
+    "sortable_date": 1869,
+    "date_added_to_oa": null,
+    "date_text": "1869",
+    "collapse_artists": false,
+    "on_loan": false,
+    "recently_acquired": false,
+    "record_type": "object",
+    "conservation_statement": null,
+    "has_conservation_images": false,
+    "cover_accession_number": null,
+    "is_nazi_era_provenance": false,
+    "impression": null,
+    "alternate_titles": [
+      "Sunset over Autumn Mountains"
+    ],
+    "is_highlight": false,
+    "updated_at": "2026-11-12 12:21:14.039000"
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "data": {
+    "id": 137259,
+    "accession_number": "1962.2",
+    "share_license_status": "CC0",
+    "tombstone": "Mme L . . . (Laure Borreau), 1863. Gustave Courbet (French, 1819–1877). Oil on fabric; framed: 112.4 x 93 x 12.1 cm (44 1/4 x 36 5/8 x 4 3/4 in.); unframed: 81 x 61.2 cm (31 7/8 x 24 1/8 in.). The Cleveland Museum of Art, Leonard C. Hanna Jr. Fund, 1962.2",
+    "current_location": null,
+    "title": "Mme L . . . (Laure Borreau)",
+    "creation_date": "1863",
+    "creation_date_earliest": 1863,
+    "creation_date_latest": 1863,
+    "artists_tags": [
+      "male"
+    ],
+    "culture": [
+      "France"
+    ],
+    "technique": "oil on fabric",
+    "support_materials": [],
+    "department": "Modern European Painting and Sculpture",
+    "collection": "Mod Euro - Painting 1800-1960",
+    "type": "Painting",
+    "measurements": "Framed: 112.4 x 93 x 12.1 cm (44 1/4 x 36 5/8 x 4 3/4 in.); Unframed: 81 x 61.2 cm (31 7/8 x 24 1/8 in.)",
+    "dimensions": {
+      "framed": {
+        "height": 1.124,
+        "height_inch": 44,
+        "height_inch_fraction": 0.25,
+        "width": 0.93,
+        "width_inch": 36,
+        "width_inch_fraction": 0.625,
+        "depth": 0.121,
+        "depth_inch": 4,
+        "depth_inch_fraction": 0.75
+      },
+      "unframed": {
+        "height": 0.81,
+        "height_inch": 31,
+        "height_inch_fraction": 0.875,
+        "width": 0.612,
+        "width_inch": 24,
+        "width_inch_fraction": 0.125
+      }
+    },
+    "state_of_the_work": null,
+    "edition_of_the_work": null,
+    "copyright": null,
+    "inscriptions": [
+      {
+        "inscription": "Signed lower right: Gustave Courbet / . . 63\r\n",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": null
+      }
+    ],
+    "exhibitions": {
+      "current": [
+        {
+          "id": 302276,
+          "title": "Year in Review - 1962",
+          "description": "<i>Year in Review - 1962</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (October 24-November 25, 1962).",
+          "opening_date": "1962-10-24T04:00:00"
+        },
+        {
+          "id": 304248,
+          "title": "Style, Truth and the Portrait",
+          "description": "<i>Style, Truth and the Portrait</i>. The Cleveland Museum of Art, Cleveland, OH (October 1-November 19, 1963).",
+          "opening_date": "1963-10-01T04:00:00"
+        },
+        {
+          "id": 444095,
+          "title": "Gustave Courbet",
+          "description": "<i>Gustave Courbet</i>. Musée du Louvre, Paris, France (October 1, 1977-January 2, 1978).",
+          "opening_date": "1977-10-01T04:00:00"
+        },
+        {
+          "id": 220961,
+          "title": "Courbet, Artist and Entrepeneur",
+          "description": "<i>Courbet, Artist and Entrepeneur</i>. Musée Cantonal des Beaux-Arts, Lausanne, Switzerland (November 21, 1998-February 21, 1999).",
+          "opening_date": "1998-11-21T00:00:00"
+        },
+        {
+          "id": 216847,
+          "title": "Faces of Impressionism: Portraits from American Collections",
+          "description": "<i>Faces of Impressionism: Portraits from American Collections</i>. The Cleveland Museum of Art, Cleveland, OH (May 28-July 30, 2000).",
+          "opening_date": "1999-10-10T00:00:00"
+        },
+        {
+          "id": 182153,
+          "title": "Monet to Dalí: Modern Masters from the Cleveland Museum of Art",
+          "description": "<i>Monet to Dalí: Modern Masters from the Cleveland Museum of Art</i>. Beijing World Art Museum (May 26-August 27, 2006); Mori Art Center (September 16-November 26, 2006); Seoul Art Center, South Korea (December 22, 2006-March 28, 2007); Seoul Olympic Museum of Art, South Korea (April 7-May 20, 2007); Vancouver Art Gallery, Vancouver, Canada (June 9-September 16, 2007); The Cleveland Museum of Art, Cleveland, OH (organizer) (October 21, 2007-January 13, 2008); Frist Art Museum, Nashville, TN (February 15-June 1, 2008); Utah Museum of Fine Arts, Salt Lake City, UT (June 22-September 21, 2008); The Detroit Institute of Arts, Detroit, MI (October 12, 2008-January 18, 2009).",
+          "opening_date": "2006-05-27T00:00:00"
+        },
+        {
+          "id": 522048,
+          "title": "1863 • PARIS • 1874: Revolution in Art - From the Salon to Impressionism",
+          "description": "<i>1863 • PARIS • 1874: Revolution in Art - From the Salon to Impressionism</i>. Wallraf-Richartz Museum, Köln, Germany (organizer) (March 15-July 28, 2024) https://www.wallraf.museum/ausstellungen/aktuell/2024-03-15-paris-1874/.",
+          "opening_date": "2024-03-15T04:00:00"
+        }
+      ],
+      "legacy": [
+        {
+          "description": "<em>Salon.</em> Palais des Champs-Élysées, Paris, France. Salon (1863).",
+          "opening_date": null
+        },
+        {
+          "description": "<em>Exposition d'art français du XIXe siècle.</em> Paul Rosenberg, Possibly Paris, France (1917).",
+          "opening_date": "1917-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Cinquante ans de peinture française</em>. Musée des Arts Décoratifs, Paris, France (1925).",
+          "opening_date": "1925-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Portraits et figures de femmes. Ingres à Picasso</em>. Galerie de La Renaissance, Paris, France (1928).",
+          "opening_date": "1928-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Exposition Gustave Courbet</em>. Palais des Beaux-Arts de la ville de Paris (Petit Palais), Paris, France (1929).",
+          "opening_date": "1929-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Exposition d'oeuvres importantes de Grands Maîtres du dix-neuvième siècle</em>. Galerie Paul Rosenberg, Paris, France (1931).",
+          "opening_date": "1931-01-01T00:00:00"
+        },
+        {
+          "description": "<em> Loans in Honor of the Opening of the Avery Memorial.</em> Wadsworth Athenaeum. Hartford, CT (1934).",
+          "opening_date": "1934-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Exposition Gustave Courbet</em>. Paul Rosenberg, Paris, France (1937).",
+          "opening_date": "1937-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Honderd Jaar Fransche Kunst.</em> Stedelijk Museum. Amsterdam, Netherlands (1938).",
+          "opening_date": "1938-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Gustave Courbet 1819-1877</em>. London, Rosenberg &amp; Helft Ltd., London, United Kingdom (1938).",
+          "opening_date": "1938-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Great French Masters of the Nineteenth Century</em>: Corot to Van Gogh. Paul Rosenberg &amp; Co. New York, NY (1942).",
+          "opening_date": "1942-01-01T00:00:00"
+        },
+        {
+          "description": "<em>French Art of the 19th and 20th Centuries </em>. Rhode Island School of Design Museum of Art, Providence, RI (1942).",
+          "opening_date": "1942-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Art of the United Nations</em>. M. H. de Young Memorial Museum, San Francisco, CA (1945).",
+          "opening_date": "1945-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Great French Masters of the 19th Century.</em> Possibly Paul Rosenberg &amp; Co, New York, NY (November, 17 -December 6, 1947).",
+          "opening_date": "1947-12-06T00:00:00"
+        },
+        {
+          "description": "<em>Exhibition of 19th Century French Paintings. </em>Paul Rosenberg &amp; Co., New York, NY (1954).",
+          "opening_date": "1954-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Loan Exhibition of Paintings by Gustave Courbet</em>. Paul Rosenberg &amp; Co., New York, NY (1956).",
+          "opening_date": "1956-01-01T00:00:00"
+        },
+        {
+          "description": "<em>Gustave Courbet 1819-1877</em>. Philadelphia Museum of Art, Philadelphia, PA; (December 17, 1959-February 14, 1960); Museum of Fine Arts, Boston, MA (February 26, 1960-April 14, 1960).",
+          "opening_date": "1959-12-17T00:00:00"
+        },
+        {
+          "description": "<em>Courbet in Private French Collections</em>. Galerie Claude Aubry, Paris, France (May 5-June 25, 1966).",
+          "opening_date": "1966-05-05T00:00:00"
+        },
+        {
+          "description": "<em>Gustave Courbet 1819-1877. </em>Villa Medici, Rome, Italy (October 28, 1969-January 6, 1970).",
+          "opening_date": "1969-10-28T00:00:00"
+        },
+        {
+          "description": "<em>Courbet 1819-1877</em>. Galerie Daber, Paris, France (October 16 to November 15, 1975).",
+          "opening_date": "1975-10-16T00:00:00"
+        },
+        {
+          "description": "<em>Gustave Courbet 1819-1877</em>. Royal Academy, London, United Kingdom (January 19-March 19, 1977); Grand Palais, Paris, France (October 1, 1977-January 2, 1978).",
+          "opening_date": "1977-01-19T00:00:00"
+        },
+        {
+          "description": "<em>Courbet und Deutschland.</em> Stadische Galerie,Hamburg, Germany (October 19-December 17, 1978); Stadelsches Kunstinstitut, Frankfurt, Germany (January 17-March 18, 1979).",
+          "opening_date": "1978-10-19T00:00:00"
+        },
+        {
+          "description": "<em>Courbet Reconsidered</em>. Brooklyn Museum, Brooklyn, NY (November 4, 1988-January 16, 1989); Minneapolis Institute of Arts, Minneapolis, MN (February 18-April 30, 1989).",
+          "opening_date": "1989-02-18T00:00:00"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "description": "(Drouot, Paris, France, Artist's estate sale,  December 9, 1881, lot 11, stock number 2070, sold to Durand-Ruel)",
+        "citations": [],
+        "footnotes": [],
+        "date": "1881",
+        "sortorder": null
+      },
+      {
+        "description": "(Durand-Ruel, Paris France, December 10, 1881, sold to Max Flersheim)",
+        "citations": [],
+        "footnotes": null,
+        "date": "1881",
+        "sortorder": 2
+      },
+      {
+        "description": "(Paul Rosenberg and Company, New York, NY by 1934, sold to the Cleveland Museum of Art, 1962)",
+        "citations": [],
+        "footnotes": null,
+        "date": "by 1934-1962",
+        "sortorder": 3
+      },
+      {
+        "description": "The Cleveland Museum of Art, Cleveland, OH",
+        "citations": [],
+        "footnotes": null,
+        "date": "1962-",
+        "sortorder": 4
+      }
+    ],
+    "find_spot": null,
+    "related_works": [],
+    "former_accession_numbers": [],
+    "did_you_know": "Courbet once wrote of Laure Borreau, the sitter in this portrait, \"I am in love with a splendid lady, the driving force behind my triumph.\"",
+    "early_education_description": null,
+    "artlens_description": null,
+    "description": "Gustave Courbet painted four portraits of Madame Laure Borreau; this is the last and most highly developed. As a realist, Courbet aimed to represent what he saw in the visible, tangible world. He represented Madame Borreau in a black silk dress embellished with lace and a matching hat. Gold and violet lights of sunset softly illuminate the background. However, the portrait is not idealized. Courbet’s inclusion of her shadowed eyes and full-fleshed neck prompted one critic to write, “I daresay in nature she may be very pretty, but in Courbet’s picture she is nothing less than offensive.”",
+    "external_resources": {
+      "wikidata": [
+        "https://www.wikidata.org/wiki/Q60466132"
+      ],
+      "internet_archive": [
+        "https://archive.org/details/clevelandart-1962.2-mme-l-laure-borreau"
+      ]
+    },
+    "citations": [
+      {
+        "citation": "Hamerton, Philip Gilbert. \"The Salon of 1863.\" <em>The Fine Arts Quarterly Review</em> 1 (1863): 15-262.",
+        "page_number": "Mentioned: P. 244",
+        "url": null
+      },
+      {
+        "citation": "Mantz, Paul. \"Salon de 1863.\" <em>Gazette des Beaux-Arts</em> 14 (1863): 481-506.",
+        "page_number": "Mentioned: P. 498-499",
+        "url": null
+      },
+      {
+        "citation": "Burty, Philippe. \"Une Lettre de M. Courbet.\" <em>La Chronique des Arts et de la Curiosité </em>June 7, 1863: 253.",
+        "page_number": "Mentioned: P. 253",
+        "url": null
+      },
+      {
+        "citation": "<em>Exposition des œuvres de Gustave Courbet: a l'École des beaux-arts (mai 1882): Catalogu</em>e. Paris: Impr. Émile Martinet, 1882.",
+        "page_number": "Mentioned: Supplement p. 26",
+        "url": null
+      },
+      {
+        "citation": "Estignard, Alexandre. <em>Courbet Sa Vie, Ses Oeuvres.</em> Besançon: Delagrange-Louys, 1896.",
+        "page_number": "Mentioned: P. 162",
+        "url": null
+      },
+      {
+        "citation": "Riat, Georges, and Paul Vitry. <em>Gustave Courbet, peintre</em>. Paris, France: H. Floury, 1906.",
+        "page_number": "Reproduced: p. 214",
+        "url": null
+      },
+      {
+        "citation": "Léger, Charles. <em>Courbet, selon les caricatures et les images</em>. Paris, France: P. Rosenberg, 1920.",
+        "page_number": "Reproduced: p. 119",
+        "url": null
+      },
+      {
+        "citation": "Léger, Charles. <em>Courbet.</em> Paris: Nilsson, 1925.",
+        "page_number": "Mentioned: P. 72",
+        "url": null
+      },
+      {
+        "citation": "Alexandre, Arsene. \"Portraits et Figures de Femmes.\" <em>La Renaissance </em>11 (July/August 1928).",
+        "page_number": "Mentioned and reproduced: P. 261, no. 45",
+        "url": null
+      },
+      {
+        "citation": "Léger, Charles. <em>Courbet</em>. Paris: Éditions G. Crès, 1929.",
+        "page_number": "Mentioned: P. 95, 98; reproduced: Pl. 35",
+        "url": null
+      },
+      {
+        "citation": "Courthion, Pierre. <em>Courbet</em>. Paris, France: Librairie Floury, 1931.",
+        "page_number": "Mentioned: p. 31; Reproduced: p. 91, pl. 57",
+        "url": null
+      },
+      {
+        "citation": "Courthion, Pierre. <em>Courbet.</em> Paris: Librairie Floury, 1931.",
+        "page_number": "Mentioned: P. 34, 91; reproduced: Pl. 57",
+        "url": null
+      },
+      {
+        "citation": "Léger, Charles. <em>Courbet</em>. Paris, France: Braun, 1934.",
+        "page_number": "Reproduced: p.38",
+        "url": null
+      },
+      {
+        "citation": "Baillods, Jules. <em>Courbet Vivant</em>. Neuchâtel, Switzerland: Delachaux &amp; Niestlé, 1940.",
+        "page_number": "Mentioned: P. 48",
+        "url": null
+      },
+      {
+        "citation": "Léger, Charles. <em>Courbet et son Temps; Lettres et Documents Inédits.</em> Paris: Éditions Universelles, 1948.",
+        "page_number": "Mentioned: P. 86",
+        "url": null
+      },
+      {
+        "citation": "Mack, Gerstle. <em>Gustave Courbet</em>. New York, NY: Knopf, 1951.",
+        "page_number": "Reproduced: p. 170, pl. 37",
+        "url": null
+      },
+      {
+        "citation": "<em>Les Amis de Gustave Courbet </em>20 (1957): 11.",
+        "page_number": "Mentioned and reproduced: P. 11",
+        "url": null
+      },
+      {
+        "citation": "Lee, Sherman E. \"Year in Review 1962.\" <em>The Bulletin of The Cleveland Museum of Art XLVIIII</em>, no.9 (November, 1962):198-227.",
+        "page_number": "Mentioned: p. 229, no. 89",
+        "url": null
+      },
+      {
+        "citation": "Lurie, Ann Tzeutschler. \"Gustave Courbet, Madame Boreau..\" <em>The Bulletin of The Cleveland Museum of Art XLVIIII</em>, no.4 (April, 1962):66-71.",
+        "page_number": "Reproduced: cover",
+        "url": null
+      },
+      {
+        "citation": "Cleveland Museum of Art, “Madame Boreau by Courbet,” April 2, 1962, Cleveland Museum of Art Archives.",
+        "page_number": null,
+        "url": "https://archive.org/details/cmapr0926"
+      },
+      {
+        "citation": "Saisselin, Rémy G. <em>Style, Truth, and the Portrait</em>. Cleveland, OH: Cleveland Museum of Art, 1963.",
+        "page_number": "Reproduced: p. 76",
+        "url": null
+      },
+      {
+        "citation": "Saisselin, Rémy Gilbert. “Portrait in History: Some Connections between Art and Literature.” <em>Apollo: The International Magazine for Collectors</em> 78 (October 1963): 281–88.",
+        "page_number": "Reproduced: P. 287",
+        "url": null
+      },
+      {
+        "citation": "Borea, E. \"Notiziario: Style, Truth, and the Portrait.\" <em>Arte Antica e Moderna </em>24 (Ottobre-Dicembre 1963): 7-8.",
+        "page_number": "Mentioned and reproduced: P. 7-8, no. 16",
+        "url": null
+      },
+      {
+        "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1966</em>. Cleveland, OH: The Cleveland Museum of Art, 1966.",
+        "page_number": "Reproduced: p. 170",
+        "url": "https://archive.org/details/CMAHandbook1966/page/n194"
+      },
+      {
+        "citation": "<em>Courbet dans les Collections Privées Françaises ... 5 mai-25 juin 1966, [Galerie] Claude Aubry ... Paris. </em>Paris: Galerie C. Aubry, 1966.",
+        "page_number": "Reproduced: no. 13",
+        "url": null
+      },
+      {
+        "citation": "Aymar, Gordon Christian. <em>The Art of Portrait Painting; Portraits Through the Centuries As Seen Through the Eyes of a Practicing Portrait Painter</em>. Philadelphia, PA: Chilton Book Co, 1967.",
+        "page_number": "Reproduced: p. 78, pl. 35",
+        "url": null
+      },
+      {
+        "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1969</em>. Cleveland, OH: The Cleveland Museum of Art, 1969.",
+        "page_number": "Reproduced: p. 170",
+        "url": "https://archive.org/details/CMAHandbook1969/page/n194"
+      },
+      {
+        "citation": "Laclotte, Michel, Palma Bucarelli, and Hélène Toussaint. <em>Gustave Courbet (1819-1877)</em>. Rome. Italy: De Luca, 1969.",
+        "page_number": null,
+        "url": null
+      },
+      {
+        "citation": "Talbot, William S. “Henri Fantin-Latour: Madame Henri Lerolle.” <em>The Bulletin of the Cleveland Museum of Art</em> 56, no. 9 (November 1969): 309–319.",
+        "page_number": "Mentioned and reproduced: p. 315-316, fig. 7",
+        "url": "http://www.jstor.org/stable/25152293"
+      },
+      {
+        "citation": "Bonniot, Roger. <em>Gustave Courbet en Saintonge, 1862-1863</em>. Paris, France: C. Klincksieck, 1973.",
+        "page_number": "Reproduced: fig. 53; mentioned: P. 124, 209, 217-248, 269, 295-299",
+        "url": null
+      },
+      {
+        "citation": "Champa, Kermit Swiler. <em>Studies in Early Impressionism</em>. New Haven, CT: Yale University Press, 1973.",
+        "page_number": "Reproduced: p. 34, fig. 47",
+        "url": null
+      },
+      {
+        "citation": "Daber, Alfred. <em>Courbet, 1819-1877: </em>Paris, France: Galerie Daber, 1975.",
+        "page_number": "Reproduced: no. 6",
+        "url": null
+      },
+      {
+        "citation": "Toussaint, Hélène. <em>Gustave Courbet: 1819-1877 : [exposition organisée par la Réunion des musées nationaux et l'Arts Council of Great Britain], Grand Palais, 30 septembre 1977-2 janvier 1978 : [catalogue</em>. Paris, France: Ministère de la culture et de l'environnement, Éditions des musées nationaux, 1977.",
+        "page_number": "Reproduced: no. 68",
+        "url": null
+      },
+      {
+        "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1978</em>. Cleveland, OH: The Cleveland Museum of Art, 1978.",
+        "page_number": "Reproduced: p. 210",
+        "url": "https://archive.org/details/CMAHandbook1978/page/n230"
+      },
+      {
+        "citation": "Fernier, Robert. <em>La vie et l'œuvre de Gustave Courbet: catalogue raisonné</em>. Lausanne, Switzerland: Bibliothèque des Arts, 1978.",
+        "page_number": "Reproduced: vol. I, no. 358",
+        "url": null
+      },
+      {
+        "citation": "Hofmann, Werner, and Klaus Herding. <em>Courbet und Deutschland: [Hamburger Kunsthalle, 19. Oktober-17. Dezember 1978, Städt. Galerie im Städelschen Kunstinst. Frankfurt am Main, 17. Januar-18. März 1979</em>. Köln, Germany: Du Mont, 1978.",
+        "page_number": "Reproduced: p. 37, fig. e",
+        "url": null
+      },
+      {
+        "citation": "Heilmeier, Hans. \"Von Ingres bis Picasso.\" <em>Das Kunstblatt</em> (1978): 277-288.",
+        "page_number": "Reproduced: P. 280",
+        "url": null
+      },
+      {
+        "citation": "Morse, John D. <em>Old Master Paintings in North America: Over 3000 Masterpieces by 50 Great Artists</em>. New York, NY: Abbeville Press, 1979.",
+        "page_number": "Reproduced: p. 72",
+        "url": null
+      },
+      {
+        "citation": "Abe, Yoshio. Courbet. <em>Kūrube</em>. Tōkyō, Japan: Kōdansha, 1981.",
+        "page_number": "Reproduced: p. 116, no. 30",
+        "url": null
+      },
+      {
+        "citation": "Foucart, Bruno, <em>Courbet</em>. Norwalk, CT: Easton Press, 1983.",
+        "page_number": "Reproduced: p. 48; Mentioned: p. 69",
+        "url": null
+      },
+      {
+        "citation": "Courthion, Pierre. <em>L'opera completa di Courbet</em>. Milano, Italy: Rizzoli, 1985.",
+        "page_number": "Reproduced: no. 341",
+        "url": null
+      },
+      {
+        "citation": "Faunce, Sarah, and Linda Nochlin. <em>Courbet Reconsidered</em>. Brooklyn, NY: Brooklyn Museum, 1988.",
+        "page_number": "Reproduced: no. 40",
+        "url": null
+      },
+      {
+        "citation": "ten-Doesschate Chu,, Petra. <em>Letters of Gustave Courbet</em>. Chicago, IL: University of Chicago Press, 1992.",
+        "page_number": "Mentioned: p. 218-219; Reproduced: p. 221, fig. 35",
+        "url": null
+      },
+      {
+        "citation": "Cleveland Museum of Art. <em>Masterpieces from East and West</em>. New York, NY: Rizzoli International, 1992.",
+        "page_number": "Reproduced: P. 140",
+        "url": null
+      },
+      {
+        "citation": "Abe, Yoshio . <em>Kūrube = Gustave Courbet</em>. Tōkyō, Japan: Asahi Shinbunsha, 1993.",
+        "page_number": "Reproduced: p. 91, pl. 37",
+        "url": null
+      },
+      {
+        "citation": "Chong, Alan. <em>European &amp; American Painting in the Cleveland Museum of Art: A Summary Catalogue. </em>Cleveland, Ohio: Cleveland Museum of Art, 1993.",
+        "page_number": "Reproduced: P. 45",
+        "url": null
+      },
+      {
+        "citation": "Andreotti, Margherita. \"The Joseph Winterbotham Collection.\" <em>Art Institute of Chicago Museum Studies</em> 20, no. 2 (1994): 111-92.",
+        "page_number": "Mentioned: P. 112",
+        "url": "https://www.jstor.org/stable/4112960"
+      },
+      {
+        "citation": "Kostenevich, A. G. <em>Hidden treasures revealed: impressionist masterpieces and other important French paintings preserved by the State Hermitage Museum, St. Petersburg</em>. New York, NY: Ministry of Culture of the Russian Federation, The State Hermitage Museum, St. Petersburg in association with H.N. Abrams, 1995.",
+        "page_number": "Reproduced: p. 33",
+        "url": null
+      },
+      {
+        "citation": "Fernier, Jean-Jacques. <em>Courbet, l'amour--: Baltasar Lobo, sculptures : Christian Welter, un regard amoureux</em>. Ornans, France: Musée Gustave Courbet, 1996.",
+        "page_number": "Reproduced: p. 82",
+        "url": null
+      },
+      {
+        "citation": "ten-Doesschate Chu, Petra, and Jörg Zutter. <em>Courbet: artiste et promoteur de son œuvre</em>. Paris, France: Flammarion, 1998.",
+        "page_number": "Reproduced: no. 19; p. 26-27",
+        "url": null
+      },
+      {
+        "citation": "D'Argencourt, Louise and Roger Diederen. <em>The Cleveland Museum of Art: Catalogue of Paintings, Part Four; European Paintings of the 19th Century.</em> Cleveland, OH: The Cleveland Museum of Art, 1999.",
+        "page_number": "Reproduced: p. 61",
+        "url": null
+      },
+      {
+        "citation": "Bajou-Charpentreau, Valérie, and Gustave Courbet. <em>Courbet</em>. Paris, France: A. Biro, 2003.",
+        "page_number": "Reproduced: p. 268",
+        "url": null
+      },
+      {
+        "citation": "Riat, Georges. <em>Gustave Courbet</em>. Ho Chi Minh City, Vietnam: Baseline Co, Ltd., 2008.",
+        "page_number": "Reproduced: p. 126, fig. 70",
+        "url": null
+      },
+      {
+        "citation": "Lobstein, Dominique. \"Le Retour de la Conference et les Salons de 1863.\" In <em>Le Retour de la Conférence: Un Tableau Disparu, </em>29-36. [Ornans]: Musée Gustave Courbet; Besançon: Sekoya, 2015.",
+        "page_number": "Reproduced: P. 32",
+        "url": ""
+      },
+      {
+        "citation": "Schaefer, Barbara, and Wallraf-Richartz-Museum. <em>Paris 1863-1874: Revolution in Der Kunst: Vom Salon Zum Impressionismus</em>. Köln: Wienand, 2024.",
+        "page_number": "Mentioned and reproduced: p. 122-123, no. 3",
+        "url": ""
+      }
+    ],
+    "url": "https://clevelandart.org/art/1962.2",
+    "images": {
+      "annotation": null,
+      "web": {
+        "url": "https://openaccess-cdn.clevelandart.org/1962.2/1962.2_web.jpg",
+        "width": "684",
+        "height": "893",
+        "filesize": "345987",
+        "filename": "1962.2_web.jpg"
+      },
+      "print": {
+        "url": "https://openaccess-cdn.clevelandart.org/1962.2/1962.2_print.jpg",
+        "width": "2604",
+        "height": "3400",
+        "filesize": "5231419",
+        "filename": "1962.2_print.jpg"
+      },
+      "full": {
+        "url": "https://openaccess-cdn.clevelandart.org/1962.2/1962.2_full.tif",
+        "width": "4123",
+        "height": "5384",
+        "filesize": "66624912",
+        "filename": "1962.2_full.tif"
+      }
+    },
+    "alternate_images": [],
+    "creditline": "Leonard C. Hanna Jr. Fund",
+    "image_credit": null,
+    "sketchfab_id": null,
+    "sketchfab_url": null,
+    "gallery_donor_text": null,
+    "athena_id": 137259,
+    "creators": [
+      {
+        "id": 1600,
+        "description": "Gustave Courbet (French, 1819–1877)",
+        "extent": null,
+        "qualifier": null,
+        "role": "artist",
+        "biography": "Born into a wealthy farmer's family, Courbet began his training in 1831 at the Petit Séminaire in Ornans where, beginning in 1833, he studied under \"le père Baud,\" who had been a pupil of Gros (q.v.). He was befriended by poet Max Buchon, who would later write the first article on Courbet, claiming that he was the artist for the people. In 1837, hoping that Gustave would become a lawyer, his father sent him to the Collège Royal in Besançon. Despite his father's ambitions, Courbet began to study art at the academy there with Charles-Antoine Flageoulot (1774-1840), a former student of David (q.v.). By 1839 Courbet had moved to Paris to pursue a career in art. He refrained from entering the École des Beaux-Arts, studying instead briefly with Charles de Steuben (1788-1856) and preferring to learn how to paint by copying the works of the Old Masters in the museums. Courbet also wanted to work after life models and enrolled at the Académie Suisse. He began to submit paintings to the Salon, the majority of which were rejected. In 1846-47 Courbet traveled to the Netherlands where he studied the works of Rembrandt and Hals. The following year ten of his paintings were shown at the Salon, and together with his friends Baudelaire, Champfleury, and Buchon he became labeled a \"realist.\" Courbet's paintings shown at the 1851 Salon-Stonebreakers (1849, formerly Dresden Gemäldegalerie, destroyed during World War II), Peasants of Flagey (1850-55, Musée des Beaux-Arts, Besançon), and The Burial at Ornans (1849-50, Musée d'Orsay, Paris)-elicited criticism. Because Courbet represented the peasants as he saw them, without ennobling or idealizing them, his works met with disapproval. Moreover, these representations of peasants appeared at a time when the upper classes felt threatened by social unrest and by the instability of the republic. In 1855 Courbet financed an independent Pavillon du Réalisme near the Universal Exposition, where he showed his Painter's Studio (1854-55, Musée d'Orsay, Paris). He began to travel extensively, including visits to Gent, Brussels, Antwerp, Bruges, Cologne, Mainz, and Strasbourg. He returned to Germany in 1858, and while in Frankfurt, he began to paint the stag hunts he witnessed. The following year he visited the Normandy coast, painting seascapes, some of which became almost abstractions. Courbet turned to still lifes in 1862-63 when visiting the Saintonge area, yet he still continued to create landscapes and portraits. By 1870 he was offered the Legion of Honor but refused it because of his opposition to the imperial government. During the Paris Commune from March to May 1871, Courbet became an active member of the government. As chairman of the Commission for the Protection of the Artistic Monuments of Paris, he suggested the Vendôme Column be dismantled because it was an imperial symbol. The Commune decided instead to topple the column. When the Commune was defeated, Courbet was held responsible for this act of vandalism and was jailed for six months. In 1873 the government decided to rebuild the column at Courbet's expense. Unable to pay and fearful of being arrested, Courbet moved to Switzerland, where he spent the rest of his life in exile.",
+        "name_in_original_language": null,
+        "birth_year": "1819",
+        "death_year": "1877",
+        "use_in_caption": true,
+        "include_extent": false,
+        "weight": 1
+      }
+    ],
+    "legal_status": "accessioned",
+    "accession_date": "1962-02-17T00:00:00",
+    "sortable_date": 1863,
+    "date_added_to_oa": null,
+    "date_text": "1863",
+    "collapse_artists": false,
+    "on_loan": false,
+    "recently_acquired": false,
+    "record_type": "object",
+    "conservation_statement": null,
+    "has_conservation_images": false,
+    "cover_accession_number": null,
+    "is_nazi_era_provenance": false,
+    "impression": null,
+    "alternate_titles": [
+      "Madame Laure Borreau (La Dame au Chapeau noir)"
+    ],
+    "is_highlight": false,
+    "updated_at": "2026-11-07 01:49:01.034000"
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "data": {
+    "id": 132015,
+    "accession_number": "1954.582",
+    "share_license_status": "CC0",
+    "tombstone": "The Poet Lin Bu Wandering in the Moonlight (陪月閒行圖), late 1400s. Du Jin (Chinese, 1446–c. 1519). Hanging scroll; ink and color on paper; image: 156.4 x 72.4 cm (61 9/16 x 28 1/2 in.); overall with knobs: 286.4 x 99 cm (112 3/4 x 39 in.). The Cleveland Museum of Art, John L. Severance Fund, 1954.582",
+    "current_location": null,
+    "title": "The Poet Lin Bu Wandering in the Moonlight",
+    "title_in_original_language": "陪月閒行圖",
+    "creation_date": "late 1400s",
+    "creation_date_earliest": 1460,
+    "creation_date_latest": 1492,
+    "artists_tags": [
+      "male"
+    ],
+    "culture": [
+      "China, Ming dynasty (1368–1644)"
+    ],
+    "technique": "Hanging scroll; ink and color on paper",
+    "support_materials": [],
+    "department": "Chinese Art",
+    "collection": "ASIAN - Hanging scroll",
+    "type": "Painting",
+    "measurements": "Image: 156.4 x 72.4 cm (61 9/16 x 28 1/2 in.); Overall with knobs: 286.4 x 99 cm (112 3/4 x 39 in.)",
+    "dimensions": {
+      "image": {
+        "height": 1.564,
+        "height_inch": 61,
+        "height_inch_fraction": 0.5625,
+        "width": 0.724,
+        "width_inch": 28,
+        "width_inch_fraction": 0.5
+      },
+      "overall with knobs": {
+        "height": 2.864,
+        "height_inch": 112,
+        "height_inch_fraction": 0.75,
+        "width": 0.99,
+        "width_inch": 39,
+        "width_inch_fraction": 0.0
+      }
+    },
+    "state_of_the_work": null,
+    "edition_of_the_work": null,
+    "copyright": null,
+    "inscriptions": [
+      {
+        "inscription": "陪月閒行杖屨遲，半醒時節更相宜。\n吟成疏影寒香句，為問梅花知不知。\n\n檉居杜堇 [印]一書生",
+        "inscription_translation": "Artist's inscription, signature, and seal at upper left:\n\nAccompanying the moon, his walk slowed to a leisurely pace. \nThis was all the more fitting as he was merely half awake. \nHaving composed the line of sparse sound and chilled fragrance, \n’Tis time to ask: Was the plum blossom aware of its own essence? \n\nChengju, Du Jiin  [seal] Yi shu sheng",
+        "inscription_remark": null,
+        "sortorder": 1
+      },
+      {
+        "inscription": "1 seal of Zhang Heng 張珩 (1915–1963)",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": 2
+      },
+      {
+        "inscription": "1 seal of C. C. Wang [Wang Jiqian] 王季遷 (1907–2003)",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": 3
+      },
+      {
+        "inscription": "1 unidentified seal",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": 4
+      }
+    ],
+    "exhibitions": {
+      "current": [
+        {
+          "id": 300427,
+          "title": "Chinese Landscape Painting",
+          "description": "<i>Chinese Landscape Painting</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (November 5-December 26, 1954).",
+          "opening_date": "1954-11-05T04:00:00"
+        },
+        {
+          "id": 700733,
+          "title": "Arts of China",
+          "description": "<i>Arts of China</i>. Lyman Allyn Art Museum, New London, CT (organizer) (October 30-December 4, 1955).",
+          "opening_date": "1955-10-30T04:00:00"
+        },
+        {
+          "id": 300857,
+          "title": "Art: The International Language",
+          "description": "<i>Art: The International Language</i>. The Cleveland Museum of Art (October 2-November 4, 1956).",
+          "opening_date": "1956-10-02T04:00:00"
+        },
+        {
+          "id": 377849,
+          "title": "1000 Jahre Chinesische Malerei",
+          "description": "<i>1000 Jahre Chinesische Malerei</i>. Haus der Kunst, Munich, Mùnich, Germany (organizer) (October 16-December 13, 1959).",
+          "opening_date": "1959-10-16T04:00:00"
+        },
+        {
+          "id": 211775,
+          "title": "Highlights of Asian Paintings from The Cleveland Museum of Art",
+          "description": "<i>Highlights of Asian Paintings from The Cleveland Museum of Art</i>. Nara National Museum (organizer) (February 21-March 29, 1998); Suntory Museum of Art (April 28-June 21, 1998).",
+          "opening_date": "1998-02-21T00:00:00"
+        },
+        {
+          "id": 213950,
+          "title": "The Chinese Painter as Poet",
+          "description": "<i>The Chinese Painter as Poet</i>. China Institute in America, New York, NY (organizer) (September 14-December 17, 2000).",
+          "opening_date": "2000-09-14T00:00:00"
+        },
+        {
+          "id": 203084,
+          "title": "Ji Yun-Fei: Last Days of Village Wen",
+          "description": "<i>Ji Yun-Fei: Last Days of Village Wen</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (February 12-July 31, 2016).",
+          "opening_date": "2016-02-12T00:00:00"
+        },
+        {
+          "id": 445574,
+          "title": "Escaping to a Better World: Eccentrics and Immortals in Chinese Art",
+          "description": "<i>Escaping to a Better World: Eccentrics and Immortals in Chinese Art</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (May 13-November 6, 2022).",
+          "opening_date": "2022-05-13T04:00:00"
+        }
+      ],
+      "legacy": [
+        {
+          "description": "<em>Chiao-yü-pu</em>. [Jiao yu bu di er ci quan guo mei shu zhan lan hui zhuan ji 敎育部第二次全國美術展覽會專集 = A special collection of the second National Exhibition of Chinese Art under the auspices of the Ministry of Education]. Nanking Art Gallery, Nanjing, China (April 1-23, 1937).",
+          "opening_date": "1937-04-01T05:00:00Z"
+        },
+        {
+          "description": "<em>Chinese Paintings</em>. The Cleveland Museum of Art, Cleveland, OH (July 19-August 7, 1960).",
+          "opening_date": "1960-07-19T00:00:00"
+        },
+        {
+          "description": "<em>One Thousand Years of Chinese Painting: Tʻang to Chʻing (800 to 1800) : an Exhibition of Fifty Representative Works Borrowed from Major American Collections</em>. Indiana University Art Museum, Bloomington, IN (February 14-March 31, 1968).",
+          "opening_date": "1968-02-14T00:00:00"
+        },
+        {
+          "description": "<em>Eight Dynasties of Chinese Painting</em>. The Nelson-Atkins Museum of Art (November 7, 1980-January 4, 1981); The Cleveland Museum of Art (February 10-March 29, 1981); Tokyo National Museum (October 4-November 17, 1982).",
+          "opening_date": "1981-02-10T00:00:00"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "description": "Zhang Congyu, Shanghai, China",
+        "citations": [],
+        "footnotes": null,
+        "date": null,
+        "sortorder": 1
+      },
+      {
+        "description": "Zhang Heng 張珩 [1915–1963]",
+        "citations": [],
+        "footnotes": null,
+        "date": null,
+        "sortorder": 2
+      },
+      {
+        "description": "(C. C. Wang 王季遷 [1907–2003], New York, NY,  sold to the Cleveland Museum of Art)",
+        "citations": [],
+        "footnotes": null,
+        "date": "?–1954",
+        "sortorder": 3
+      },
+      {
+        "description": "The Cleveland Museum of Art, Cleveland, OH",
+        "citations": [],
+        "footnotes": null,
+        "date": "1954–",
+        "sortorder": 4
+      }
+    ],
+    "find_spot": null,
+    "related_works": [],
+    "former_accession_numbers": [],
+    "did_you_know": "Lin Bu withdrew from prestigious government service and lived as a hermit by the West Lake in Hangzhou.",
+    "early_education_description": null,
+    "artlens_description": null,
+    "description": "Lin Bu (967–1028), a Northern Song (960–1127) poet and hermit who lived at the West Lake in Hangzhou, was known for having plum trees for his female companions and cranes for his children. This hanging scroll depicts the poet walking in the moonlight and looking at the plum tree, a scene described in his most well-known poem on plum blossoms.<br><br>Surviving works signed by Du Jin are rare and this painting is one of them. Here, the artist used lively brushwork to depict the plum tree and rocks, exemplified in varying dots and strokes, and sweeps in different shades of ink.",
+    "external_resources": {
+      "wikidata": [
+        "https://www.wikidata.org/wiki/Q60516494"
+      ],
+      "internet_archive": [
+        "https://archive.org/details/clevelandart-1954.582-the-poet-lin-bu-wand"
+      ]
+    },
+    "citations": [
+      {
+        "citation": "<em>Jiao yu bu di er ci quan guo mei shu zhan lan hui zhuan ji</em> [敎育部第二次全國美術展覽會專集 = A special collection of the second National Exhibition of Chinese Art under the auspices of the Ministry of Education]. Nanjing: Shang wu yin shu guan, 1937.",
+        "page_number": "Mentioned: cat. no. 138",
+        "url": null
+      },
+      {
+        "citation": "Lee, Sherman E. <em>Chinese Landscape Painting</em>. Cleveland, OH: The Cleveland Museum of Art, 1954.",
+        "page_number": "Mentioned: pp. 148, 149 cat. no. 42; Reproduced: p 66",
+        "url": "https://archive.org/details/ChineseLandscape"
+      },
+      {
+        "citation": "Sirén, Osvald. <em>Chinese Painting: Leading Masters and Principles</em>. New York: Ronald Press, 1956.",
+        "page_number": "Mentioned and Reproduced: IV, 145; VII, Lists, 245",
+        "url": null
+      },
+      {
+        "citation": "The Cleveland Museum of Art. <em>The Cleveland Museum of Art Handbook.</em> Cleveland, OH: The Cleveland Museum of Art, 1958.",
+        "page_number": "Mentioned and Reproduced: cat. no. 859",
+        "url": "https://archive.org/details/CMAHandbook1958/page/n153"
+      },
+      {
+        "citation": "Goepper, Roger. <em>1000 Jahre chinesische Malerei</em>. München: Haus der Kunst, 1959.",
+        "page_number": "cat. no. 42",
+        "url": null
+      },
+      {
+        "citation": "Goepper, Roger. <em>Chinesische Malerei; die ältere Tradition</em>. Bern: Hallway, 1960.",
+        "page_number": "Mentioned and Reproduced: pp. 42–43",
+        "url": null
+      },
+      {
+        "citation": "Lee, Sherman E. <em>Chinese Landscape Painting</em>. Cleveland, OH: The Cleveland Museum of Art, 1962.",
+        "page_number": "p. 61, cat. no. 44",
+        "url": null
+      },
+      {
+        "citation": "Goepper, Roger. <em>The Essence of Chinese Painting</em>. London: Lund Humphries, 1963.",
+        "page_number": "Mentioned and Reproduced: pp. 60, 72, 74, pl. 53",
+        "url": null
+      },
+      {
+        "citation": "Lee, Sherman E.<em> A History of Far Eastern Art</em>. New York: H.N. Abrams, 1964.",
+        "page_number": "Reproduced: p. 425, fig. 567",
+        "url": null
+      },
+      {
+        "citation": "Li, Dun Jen. <em>The Ageless Chinese, A History</em>. New York: Scribner, 1965.",
+        "page_number": "p. 305",
+        "url": null
+      },
+      {
+        "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1966</em>. Cleveland, OH: The Cleveland Museum of Art, 1966.",
+        "page_number": "Reproduced: p. 263",
+        "url": "https://archive.org/details/CMAHandbook1966/page/n287"
+      },
+      {
+        "citation": "Bowie, Theodore Robert. <em>One Thousand Years of Chinese Painting: Tʻang to Chʻing (800 to 1800) : an Exhibition of Fifty Representative Works Borrowed from Major American Collections, Indiana University Art Museum, February 14 Through March 31, 1968</em>. Bloomington, IN: The Museum, 1968.",
+        "page_number": "cat. no. 27",
+        "url": null
+      },
+      {
+        "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1969</em>. Cleveland, OH: The Cleveland Museum of Art, 1969.",
+        "page_number": "Reproduced: p. 263",
+        "url": "https://archive.org/details/CMAHandbook1969/page/n287"
+      },
+      {
+        "citation": "Lee, Sherman E. “Varieties of Portraiture in Chinese and Japanese Art.” <em>The Bulletin of the Cleveland Museum of Art</em>, vol. 64, no. 4, 1977, pp. 118–136.",
+        "page_number": "Reproduced: p. 132, fig. 20",
+        "url": "www.jstor.org/stable/25159523"
+      },
+      {
+        "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1978</em>. Cleveland, OH: The Cleveland Museum of Art, 1978.",
+        "page_number": "Reproduced: p. 349",
+        "url": "https://archive.org/details/CMAHandbook1978/page/n369"
+      },
+      {
+        "citation": "Cahill, James. <em>Parting at the Shore: Chinese Painting of the Early and Middle Ming Dynasty, 1368-1580</em>. New York: Weatherhill, 1978.",
+        "page_number": "p. 155",
+        "url": null
+      },
+      {
+        "citation": "Ho, Wai-kam, Sherman E. Lee, Laurence Sickman, and Marc F. Wilson. <em>Eight Dynasties of Chinese Painting: The Collections of the Nelson Gallery-Atkins Museum, Kansas City, and the Cleveland Museum of Art</em>. Cleveland, OH: Cleveland Museum of Art, in cooperation with Indiana University Press, 1980.",
+        "page_number": "Reproduced: cat. no. 157, pp. 191–192",
+        "url": null
+      },
+      {
+        "citation": "Suzuki, Kei 鈴木敬. <em>Chugoku kaiga shi </em>[中國繪畫史 = A History of Chinese Painting]. Tōkyō: Yoshikawa Kobunkan, 1981.",
+        "page_number": "Reproduced: p. 215, no. 233",
+        "url": null
+      },
+      {
+        "citation": "Little, Stephen. “Dimensions of a Portrait: Du Jin's ‘The Poet Lin Bu Walking in the Moonlight.’” <em>The Bulletin of the Cleveland Museum of Art</em>, vol. 75, no. 9, 1988, pp. 330–349.",
+        "page_number": "Reproduced: cover, figs. 1a, 1b, 1c, and 1d",
+        "url": "https://www.jstor.org/stable/25160049"
+      },
+      {
+        "citation": "<em>Tōyō kaiga no seika: tokubetsuten: Kurīvurando Bijutsukan no korekushon kara</em> [東洋絵画の精華 : 特别展 : クリーヴラント美術館のコレクションから = Highlights of Asian painting from the Cleveland Museum of Art]. Nara, Japan: Nara National Museum, 1998.",
+        "page_number": "Reproduced: p. 58, cat. no. 34",
+        "url": null
+      },
+      {
+        "citation": "Smith, Judith G., and Wen Fong. <em>Issues of Authenticity in Chinese Painting</em>. New York: Dept. of Asian Art, Metropolitan Museum of Art, 1999.",
+        "page_number": "Reproduced: p. 208, fig. 25",
+        "url": null
+      },
+      {
+        "citation": "Hardie, Peter \"Exhibition Review.\" <em>Oriental Art Magazine</em> XLVI:4 (2000): 72.",
+        "page_number": "p. 72",
+        "url": null
+      },
+      {
+        "citation": "Chaves, Jonathan. <em>The Chinese painter as poet</em>. New York: China Institute Gallery, China Institute, 2000.",
+        "page_number": "Mentioned and Reproduced: cat. no. 8, p. 66, p. 133",
+        "url": null
+      },
+      {
+        "citation": "Greene, David B. <em>How to Respond to Strangeness in Art: Four Studies in the Unfamiliar</em>. Lewiston, N.Y.: Edwin Mellen Press, 2006.",
+        "page_number": "Reproduced: fig. 3.4",
+        "url": null
+      },
+      {
+        "citation": "Steuber, Jason. <em>China: 3000 Years of Art and Literature</em>. New York: Welcome Books, 2007.",
+        "page_number": "p. 56",
+        "url": null
+      },
+      {
+        "citation": "Siegel, Connie Smith. <em>Spirit of Drawing: A Sensory Meditation Guide to Creative Expression</em>. New York: Watson-Guptill Publications, 2007.",
+        "page_number": "p. 91",
+        "url": null
+      },
+      {
+        "citation": "Yang, Kathleen 楊凱琳, and Chi-chʻien Wang 王季遷. <em>Through a Chinese connoisseur's eye: private notes of C.C. Wang </em>王季遷讀書筆記. Beijing: Zhong hua shu ju, 2010.",
+        "page_number": "Mentioned and Reproduced: p. 310, fig. 28",
+        "url": null
+      },
+      {
+        "citation": "Chou, Ju-hsi Chou and Anita Chung. <em>Silent Poetry: Chinese Paintings from the Collection of the Cleveland Museum of Art</em>. Cleveland: The Cleveland Museum of Art, 2015.",
+        "page_number": "Mentioned and Reproduced: pp. 256–259",
+        "url": null
+      },
+      {
+        "citation": "Chou, Ju-hsi and Anita Chung. <em>Silent poetry: Chinese paintings from the collection of the Cleveland Museum of Art</em>. Cleveland, OH: The Cleveland Museum of Art, 2015.",
+        "page_number": "Mentioned: p. 256",
+        "url": null
+      },
+      {
+        "citation": "Tanenbaum, Mary. <em>Fishing on the Terrace: A Collection of Writings,</em> edited by Heather Parks. [Redwood City, CA] Stanford University Press, 2018.",
+        "page_number": "Reproduced: p. 30",
+        "url": null
+      },
+      {
+        "citation": "Giuffrida, Noelle. <em>Separating Sheep from Goats: Sherman E. Lee and Chinese Art Collecting in Postwar America</em>. Oakland, California: University of California Press, 2018.",
+        "page_number": "Reproduced: p. 108, fig. 61",
+        "url": null
+      }
+    ],
+    "url": "https://clevelandart.org/art/1954.582",
+    "images": {
+      "annotation": null,
+      "web": {
+        "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_web.jpg",
+        "width": "422",
+        "height": "893",
+        "filesize": "262647",
+        "filename": "1954.582_web.jpg"
+      },
+      "print": {
+        "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_print.jpg",
+        "width": "1605",
+        "height": "3400",
+        "filesize": "3535014",
+        "filename": "1954.582_print.jpg"
+      },
+      "full": {
+        "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_full.tif",
+        "width": "3256",
+        "height": "6896",
+        "filesize": "67374180",
+        "filename": "1954.582_full.tif"
+      }
+    },
+    "alternate_images": [
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt0_web.jpg",
+          "width": "422",
+          "height": "893",
+          "filesize": "44982"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt0_print.jpg",
+          "width": "1605",
+          "height": "3400",
+          "filesize": "550368"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt0_full.tif",
+          "width": "1934",
+          "height": "4096",
+          "filesize": "902444"
+        },
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt1_web.jpg",
+          "width": "595",
+          "height": "893",
+          "filesize": "377660"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt1_print.jpg",
+          "width": "2048",
+          "height": "3072",
+          "filesize": "4668178"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt1_full.tif",
+          "width": "2048",
+          "height": "3072",
+          "filesize": "18889952"
+        },
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt2_web.jpg",
+          "width": "628",
+          "height": "893",
+          "filesize": "427227"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt2_print.jpg",
+          "width": "1668",
+          "height": "2372",
+          "filesize": "3210401"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt2_full.tif",
+          "width": "1668",
+          "height": "2372",
+          "filesize": "11880200"
+        },
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt3_web.jpg",
+          "width": "608",
+          "height": "893",
+          "filesize": "419082"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt3_print.jpg",
+          "width": "1531",
+          "height": "2248",
+          "filesize": "2831981"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt3_full.tif",
+          "width": "1531",
+          "height": "2248",
+          "filesize": "10335288"
+        },
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt4_web.jpg",
+          "width": "595",
+          "height": "893",
+          "filesize": "350483"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt4_print.jpg",
+          "width": "2048",
+          "height": "3072",
+          "filesize": "4509382"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt4_full.tif",
+          "width": "2048",
+          "height": "3072",
+          "filesize": "18888004"
+        },
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt5_web.jpg",
+          "width": "595",
+          "height": "893",
+          "filesize": "392060"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt5_print.jpg",
+          "width": "2048",
+          "height": "3072",
+          "filesize": "4702030"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt5_full.tif",
+          "width": "2048",
+          "height": "3072",
+          "filesize": "18891676"
+        },
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt6_web.jpg",
+          "width": "1263",
+          "height": "750",
+          "filesize": "698819"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt6_print.jpg",
+          "width": "3072",
+          "height": "1825",
+          "filesize": "4343975"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1954.582/1954.582_alt6_full.tif",
+          "width": "3072",
+          "height": "1825",
+          "filesize": "16834996"
+        },
+        "annotation": ""
+      }
+    ],
+    "creditline": "John L. Severance Fund",
+    "image_credit": null,
+    "sketchfab_id": null,
+    "sketchfab_url": null,
+    "gallery_donor_text": null,
+    "athena_id": 132015,
+    "creators": [
+      {
+        "id": 17277,
+        "description": "Du Jin (Chinese, 1446–c. 1519)",
+        "extent": null,
+        "qualifier": null,
+        "role": "artist",
+        "biography": null,
+        "name_in_original_language": "杜堇",
+        "birth_year": "1446",
+        "death_year": "1524",
+        "use_in_caption": true,
+        "include_extent": false,
+        "weight": 1
+      }
+    ],
+    "legal_status": "accessioned",
+    "accession_date": "1954-08-11T00:00:00",
+    "sortable_date": 1460,
+    "date_added_to_oa": null,
+    "date_text": "late 1400s",
+    "collapse_artists": false,
+    "on_loan": false,
+    "recently_acquired": false,
+    "record_type": "object",
+    "conservation_statement": null,
+    "has_conservation_images": false,
+    "cover_accession_number": null,
+    "is_nazi_era_provenance": false,
+    "impression": null,
+    "alternate_titles": [
+      "The Poet Lin P'u Wandering in the Moonlight"
+    ],
+    "is_highlight": false,
+    "updated_at": "2026-08-21 12:43:14.689000"
+  }
+}

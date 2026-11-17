@@ -1,0 +1,365 @@
+{
+  "data": {
+    "id": 149762,
+    "accession_number": "1979.76",
+    "share_license_status": "CC0",
+    "tombstone": "Snow Coloring the World White, 1690. Fa Ruozhen (Chinese, 1613–1696). Handscroll; ink on paper; image: 29.3 x 297.2 cm (11 9/16 x 117 in.). The Cleveland Museum of Art, John L. Severance Fund, 1979.76",
+    "current_location": null,
+    "title": "Snow Coloring the World White",
+    "creation_date": "1690",
+    "creation_date_earliest": 1690,
+    "creation_date_latest": 1690,
+    "artists_tags": [
+      "male"
+    ],
+    "culture": [
+      "China, Qing dynasty (1644–1911)"
+    ],
+    "technique": "handscroll; ink on paper",
+    "support_materials": [],
+    "department": "Chinese Art",
+    "collection": "ASIAN - Handscroll",
+    "type": "Painting",
+    "measurements": "Image: 29.3 x 297.2 cm (11 9/16 x 117 in.)",
+    "dimensions": {
+      "image": {
+        "height": 0.293,
+        "height_inch": 11,
+        "height_inch_fraction": 0.5625,
+        "width": 2.972,
+        "width_inch": 117,
+        "width_inch_fraction": 0.0
+      }
+    },
+    "state_of_the_work": null,
+    "edition_of_the_work": null,
+    "copyright": null,
+    "inscriptions": [
+      {
+        "inscription": "Artist's title on frontispiece, colophon with 6 poems, and 7 seals: \n[seal] Ch'ien-k'un i ts'ao t'ing. Snow Coloring the World White. Huang-shan lao-jen, Jo-chen, at the age of seventy eight. [2 seals] Fa yin Jo-chen; Huang-shih shih. \n\n(Artist's poems are not translated.)\n\n\tIn the first month of the keng-wu year [1690], I was seventy-eight years old. On a snowy day I was pleased to have my good son-in-law Ch'eng-ssu and other gentlemen visiting me at my Tz'u-ching Hall at Yellow Hill. I did this snowscape to record the event. [2 seals] Fa Jo-chen; Tun Chai. [2 seals at end of painting] Fa yin Jo-chen; Huang-shih shih.\n\n(Translated by Ling-yün (Nora) Shih Liu and Wai-Kam Ho)",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": null
+      },
+      {
+        "inscription": "12 additional seals: 8 of Ho Kuan-wu (20th c.); 1 of Wang Nan-p'ing (20th c.); 3 unidentified.",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": 2
+      }
+    ],
+    "exhibitions": {
+      "current": [
+        {
+          "id": 304412,
+          "title": "Year in Review: 1979",
+          "description": "<i>Year in Review: 1979</i>. The Cleveland Museum of Art (organizer) (February 13-March 9, 1980).",
+          "opening_date": "1980-02-13T05:00:00"
+        },
+        {
+          "id": 310041,
+          "title": "Mountains, Rocks, and Water: Landscape Painting in Asia",
+          "description": "<i>Mountains, Rocks, and Water: Landscape Painting in Asia</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (October 2-December 13, 1987).",
+          "opening_date": "1987-10-02T04:00:00"
+        },
+        {
+          "id": 286274,
+          "title": "Chinese Gallery 240a Rotation – August 2016",
+          "description": "<i>Chinese Gallery 240a Rotation – August 2016</i>. The Cleveland Museum of Art (organizer) (August 1, 2016-February 6, 2017).",
+          "opening_date": "2016-08-01T04:00:00"
+        }
+      ],
+      "legacy": [
+        {
+          "description": "<em>Eight Dynasties of Chinese Painting</em>. The Nelson-Atkins Museum of Art (November 7, 1980-January 4, 1981); The Cleveland Museum of Art (February 10-March 29, 1981); Tokyo National Museum (October 4-November 17, 1982).",
+          "opening_date": "1980-11-07T05:00:00Z"
+        }
+      ]
+    },
+    "provenance": [
+      {
+        "description": "(Sotheby's, New York, NY, November 2, 1979 sale, lot 120, sold to the Cleveland Museum of Art)",
+        "citations": [],
+        "footnotes": null,
+        "date": "November 2, 1979",
+        "sortorder": 1
+      },
+      {
+        "description": "The Cleveland Museum of Art, Cleveland, OH",
+        "citations": [],
+        "footnotes": null,
+        "date": "1979–",
+        "sortorder": 2
+      }
+    ],
+    "find_spot": null,
+    "related_works": [],
+    "former_accession_numbers": [],
+    "did_you_know": null,
+    "early_education_description": null,
+    "artlens_description": null,
+    "description": "Fa Ruozhen was a scholar-official and prolific poet who focused on painting as his government career declined. The inscription records that he was 78 years old when he painted this handscroll to welcome visitors on a snowy day. At this point in his artistic development, Fa created expressive landscapes and experimented with unconventional brushwork. This handscroll begins at the right with gentle hills dotted with evergreens and bare deciduous trees. By the end, the twisting rocky forms dominate. <br><br>Fa’s official career spanned the fall of the Han Chinese Ming dynasty (1368–1644) and the rise of the Manchurian Qing dynasty (1644–1911). While other scholar-officials who declined to serve the Manchus had their reputations enhanced, critics accused Fa of disloyalty for serving in the new bureaucracy. Fa was deeply sensitive about this criticism. In many of his 4,000 known poems, he responded by emphasizing the Confucian virtue of being a good administrator particularly during an unstable time. Fa’s “disorderly” brushwork and distressed landscapes seem to reflect the political upheaval of his era.",
+    "external_resources": {
+      "wikidata": [
+        "https://www.wikidata.org/wiki/Q60474293"
+      ],
+      "internet_archive": [
+        "https://archive.org/details/clevelandart-1979.76-snow-coloring-the-wo"
+      ]
+    },
+    "citations": [
+      {
+        "citation": "Sotheby’s, New York. <em>Important Chinese Ceramics, Archaic Jades, Bronzes, Sculpture, Works of Art and Paintings</em>. 1979 November 2. Sale 4296.",
+        "page_number": "Lot 120",
+        "url": ""
+      },
+      {
+        "citation": "Ho, Wai-kam, Sherman E. Lee, Laurence Sickman, and Marc F. Wilson. <em>Eight Dynasties of Chinese Painting: The Collections of the Nelson Gallery-Atkins Museum, Kansas City, and the Cleveland Museum of Art</em>. Cleveland, OH: Cleveland Museum of Art, in cooperation with Indiana University Press, 1980.",
+        "page_number": "Mentioned and Reproduced: pp. 316–317, cat. no. 234",
+        "url": ""
+      }
+    ],
+    "url": "https://clevelandart.org/art/1979.76",
+    "images": {
+      "annotation": null,
+      "web": {
+        "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_web.jpg",
+        "width": "900",
+        "height": "42",
+        "filesize": "99641",
+        "filename": "1979.76_web.jpg"
+      },
+      "print": {
+        "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_print.jpg",
+        "width": "3400",
+        "height": "159",
+        "filesize": "240229",
+        "filename": "1979.76_print.jpg"
+      },
+      "full": {
+        "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_full.tif",
+        "width": "15000",
+        "height": "703",
+        "filesize": "31657288",
+        "filename": "1979.76_full.tif"
+      }
+    },
+    "alternate_images": [
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt0_web.jpg",
+          "width": "1263",
+          "height": "397",
+          "filesize": "281245"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt0_print.jpg",
+          "width": "3400",
+          "height": "1070",
+          "filesize": "2141418"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt0_full.tif",
+          "width": "5000",
+          "height": "1574",
+          "filesize": "23631100"
+        },
+        "date_created": "2004-04-07T13:14:05",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt1_web.jpg",
+          "width": "1263",
+          "height": "406",
+          "filesize": "387065"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt1_print.jpg",
+          "width": "3400",
+          "height": "1092",
+          "filesize": "2772636"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt1_full.tif",
+          "width": "5000",
+          "height": "1606",
+          "filesize": "24111100"
+        },
+        "date_created": "2004-04-07T13:11:33",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt2_web.jpg",
+          "width": "1263",
+          "height": "402",
+          "filesize": "390729"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt2_print.jpg",
+          "width": "3400",
+          "height": "1081",
+          "filesize": "2765290"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt2_full.tif",
+          "width": "5000",
+          "height": "1590",
+          "filesize": "23871100"
+        },
+        "date_created": "2004-04-07T13:07:52",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt3_web.jpg",
+          "width": "1263",
+          "height": "406",
+          "filesize": "393404"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt3_print.jpg",
+          "width": "3400",
+          "height": "1092",
+          "filesize": "2753222"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt3_full.tif",
+          "width": "5000",
+          "height": "1606",
+          "filesize": "24111100"
+        },
+        "date_created": "2004-04-07T13:04:14",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt4_web.jpg",
+          "width": "1263",
+          "height": "402",
+          "filesize": "396668"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt4_print.jpg",
+          "width": "3400",
+          "height": "1081",
+          "filesize": "2739984"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt4_full.tif",
+          "width": "5000",
+          "height": "1590",
+          "filesize": "23871100"
+        },
+        "date_created": "2004-04-07T13:00:18",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt5_web.jpg",
+          "width": "1263",
+          "height": "406",
+          "filesize": "388534"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt5_print.jpg",
+          "width": "3400",
+          "height": "1092",
+          "filesize": "2543435"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt5_full.tif",
+          "width": "5000",
+          "height": "1606",
+          "filesize": "24111100"
+        },
+        "date_created": "2004-04-07T12:57:57",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt6_web.jpg",
+          "width": "1263",
+          "height": "409",
+          "filesize": "405173"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt6_print.jpg",
+          "width": "3400",
+          "height": "1102",
+          "filesize": "2646022"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt6_full.tif",
+          "width": "5000",
+          "height": "1622",
+          "filesize": "24351100"
+        },
+        "date_created": "2004-04-07T12:48:36",
+        "annotation": ""
+      },
+      {
+        "web": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt7_web.jpg",
+          "width": "1263",
+          "height": "406",
+          "filesize": "366723"
+        },
+        "print": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt7_print.jpg",
+          "width": "3400",
+          "height": "1092",
+          "filesize": "2472397"
+        },
+        "full": {
+          "url": "https://openaccess-cdn.clevelandart.org/1979.76/1979.76_alt7_full.tif",
+          "width": "5000",
+          "height": "1606",
+          "filesize": "24111100"
+        },
+        "date_created": "2004-04-07T12:46:37",
+        "annotation": ""
+      }
+    ],
+    "creditline": "John L. Severance Fund",
+    "image_credit": null,
+    "sketchfab_id": null,
+    "sketchfab_url": null,
+    "gallery_donor_text": null,
+    "athena_id": 149762,
+    "creators": [
+      {
+        "id": 31371,
+        "description": "Fa Ruozhen (Chinese, 1613–1696)",
+        "extent": null,
+        "qualifier": null,
+        "role": "artist",
+        "biography": null,
+        "name_in_original_language": "法若真",
+        "birth_year": "1613",
+        "death_year": "1696",
+        "use_in_caption": true,
+        "include_extent": false,
+        "weight": 1
+      }
+    ],
+    "legal_status": "accessioned",
+    "accession_date": "1979-11-14T00:00:00",
+    "sortable_date": 1690,
+    "date_added_to_oa": null,
+    "date_text": "1690",
+    "collapse_artists": false,
+    "on_loan": false,
+    "recently_acquired": false,
+    "record_type": "object",
+    "conservation_statement": null,
+    "has_conservation_images": false,
+    "cover_accession_number": null,
+    "is_nazi_era_provenance": false,
+    "impression": null,
+    "alternate_titles": [],
+    "is_highlight": false,
+    "updated_at": "2026-09-09 11:11:07.234000"
+  }
+}
