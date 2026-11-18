@@ -1,11 +1,8 @@
 import { z } from "zod";
-import data from "../data/artworks.json";
-import {
-	fetchConditions,
-	localDateKey,
-	pickArtwork,
-	type Selection,
-} from "./artwork-selection";
+import { type Selection, selectionSchema } from "./artwork";
+import { pickArtwork } from "./artwork-selection";
+import { localDateKey } from "./local-date";
+import { fetchConditions } from "./weather";
 
 export const worldCities = [
 	{
@@ -74,35 +71,21 @@ export type WorldDay = {
 const storageKey = "skyture.world-artworks.v1";
 const cacheSchema = z.object({
 	date: z.string(),
-	records: z.record(
-		z.string(),
-		z.object({
-			artwork: z.object({ id: z.string() }),
-			generatedAt: z.iso.datetime({ offset: true }),
-			fallback: z.boolean(),
-			conditions: z.object({
-				weather: z.enum(["clear", "cloudy", "rain", "snow", "storm"]),
-				time: z.enum(["day", "twilight", "night"]),
-				temperature: z.number().finite(),
-			}),
-		}),
-	),
+	records: z.record(z.string(), selectionSchema),
 });
-
-function readRecords(date: string): Record<string, Selection> {
+export function readWorldDay(date = localDateKey(new Date())): WorldDay {
 	const raw = localStorage.getItem(storageKey);
-	if (!raw) return {};
-	const parsed = cacheSchema.safeParse(JSON.parse(raw));
-	if (!parsed.success || parsed.data.date !== date) return {};
-	const records: Record<string, Selection> = {};
-	for (const city of worldCities) {
-		const record = parsed.data.records[city.id];
-		const artwork = data.artworks.find(
-			(artwork) => artwork.id === record?.artwork.id,
-		);
-		if (record && artwork) records[city.id] = { ...record, artwork };
-	}
-	return records;
+	const parsed = cacheSchema.safeParse(raw ? JSON.parse(raw) : null);
+	return {
+		date,
+		records:
+			parsed.success && parsed.data.date === date ? parsed.data.records : {},
+		errors: {},
+	};
+}
+
+function readRecords(date: string) {
+	return readWorldDay(date).records;
 }
 
 // Share pending requests across React remounts; completed cities are cached separately.

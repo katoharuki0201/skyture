@@ -1,4 +1,5 @@
-import { localDateKey, type Selection } from "./artwork-selection";
+import type { Selection } from "./artwork";
+import { localDateKey } from "./local-date";
 
 export type GalleryDay = {
 	key: string;

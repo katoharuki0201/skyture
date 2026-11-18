@@ -2,14 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CheckCircle2, Clock3 } from "lucide-react";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { GenerationLoading } from "../components/generation-loading";
-import {
-	fetchConditions,
-	pickArtwork,
-	readToday,
-	type Selection,
-	saveSelection,
-} from "../lib/artwork-selection";
+import type { Selection } from "../lib/artwork";
+import { readToday, saveSelection } from "../lib/artwork-history";
+import { pickArtwork } from "../lib/artwork-selection";
 import { getCurrentLocation } from "../lib/location";
+import { fetchConditions } from "../lib/weather";
 
 const ArtworkModal = lazy(() => import("../components/artwork-modal"));
 

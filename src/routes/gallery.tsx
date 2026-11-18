@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { TemperatureHistory } from "../components/temperature-history";
-import { readHistory, type Selection } from "../lib/artwork-selection";
+import type { Selection } from "../lib/artwork";
+import { readHistory } from "../lib/artwork-history";
 import { galleryDays } from "../lib/gallery-history";
 
 const GalleryExhibition = lazy(

@@ -1,4 +1,4 @@
-import type { Artwork } from "./artwork-selection";
+import type { Artwork } from "./artwork";
 
 const localImages: Record<string, { source: string; path: string }> = {
 	"met-10181": {

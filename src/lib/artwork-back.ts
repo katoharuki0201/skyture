@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { type Selection, timeLabels, weatherLabels } from "./artwork-selection";
+import { type Selection, timeLabels, weatherLabels } from "./artwork";
 
 export type ArtworkLocation = { name: string; timezone: string };
 

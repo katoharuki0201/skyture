@@ -1,4 +1,4 @@
-import type { Selection } from "../lib/artwork-selection";
+import type { Selection } from "../lib/artwork";
 import { ArtworkViewer } from "./artwork-viewer";
 
 export default function GalleryExhibition({

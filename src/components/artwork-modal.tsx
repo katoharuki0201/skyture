@@ -1,7 +1,7 @@
 import { X } from "lucide-react";
 import { useEffect, useRef } from "react";
+import type { Selection } from "../lib/artwork";
 import type { ArtworkLocation } from "../lib/artwork-back";
-import type { Selection } from "../lib/artwork-selection";
 import { useDialogBackdrop } from "../lib/use-dialog-backdrop";
 import { ArtworkViewer } from "./artwork-viewer";
 

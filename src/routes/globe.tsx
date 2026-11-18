@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { localDateKey } from "../lib/artwork-selection";
+import { localDateKey } from "../lib/local-date";
 import {
 	loadWorldDay,
 	type WorldCity,

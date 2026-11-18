@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import type { Selection } from "../lib/artwork";
 import { type ArtworkLocation, artworkBack } from "../lib/artwork-back";
 import { artworkImageUrl } from "../lib/artwork-image";
-import type { Selection } from "../lib/artwork-selection";
 import { GenerationIndicator } from "./generation-loading";
 
 export function ArtworkViewer({
