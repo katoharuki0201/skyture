@@ -8,12 +8,21 @@ const stages = {
 	artwork: "今日の一枚を準備しています",
 };
 
-export function GenerationIndicator({ stage }: { stage: GenerationStage }) {
+export function GenerationIndicator({
+	stage,
+	compact = false,
+}: {
+	stage: GenerationStage;
+	compact?: boolean;
+}) {
 	return (
-		<output className="generation-indicator" aria-label={stages[stage]}>
+		<output
+			className={`generation-indicator${compact ? " is-compact" : ""}`}
+			aria-label={stages[stage]}
+		>
 			<span className="generation-orbit" aria-hidden="true">
 				<span className="generation-orbit-ring" />
-				<CloudSun size={34} strokeWidth={1.3} />
+				<CloudSun size={compact ? 14 : 34} strokeWidth={1.3} />
 			</span>
 		</output>
 	);

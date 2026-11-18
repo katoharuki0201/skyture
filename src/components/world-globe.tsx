@@ -13,6 +13,7 @@ import {
 	type WorldDay,
 	worldCities,
 } from "../lib/world-artworks";
+import { GenerationIndicator } from "./generation-loading";
 
 export function WorldGlobe({
 	snapshot,
@@ -133,9 +134,11 @@ export function WorldGlobe({
 								</button>
 							) : (
 								<span className="world-artwork-placeholder">
-									{(snapshot ? snapshot.loading.includes(city.id) : loading)
-										? "取得中…"
-										: "取得できません"}
+									{(snapshot ? snapshot.loading.includes(city.id) : loading) ? (
+										<GenerationIndicator stage="weather" compact />
+									) : (
+										"取得できません"
+									)}
 								</span>
 							)}
 							<figcaption>{city.name}</figcaption>

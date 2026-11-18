@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
+import { GenerationIndicator } from "../components/generation-loading";
 import { TemperatureHistory } from "../components/temperature-history";
 import { WeatherAttribution } from "../components/weather-attribution";
 import type { Selection } from "../lib/artwork";
@@ -43,7 +44,9 @@ function GalleryPage() {
 					{error}
 				</p>
 			) : !ready ? (
-				<output className="gallery-empty">履歴を読み込んでいます…</output>
+				<div className="gallery-empty">
+					<GenerationIndicator stage="artwork" />
+				</div>
 			) : !day ? (
 				<p className="gallery-empty">まだ作品の記録がありません。</p>
 			) : (
@@ -52,9 +55,9 @@ function GalleryPage() {
 						{day.selection ? (
 							<Suspense
 								fallback={
-									<output className="gallery-empty">
-										作品を準備しています…
-									</output>
+									<div className="gallery-empty">
+										<GenerationIndicator stage="artwork" />
+									</div>
 								}
 							>
 								<GalleryExhibition selection={day.selection} />

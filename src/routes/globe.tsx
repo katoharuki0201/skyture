@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { lazy, Suspense, useState } from "react";
+import { GenerationIndicator } from "../components/generation-loading";
 import { useWorldArtworks } from "../hooks/use-world-artworks";
 import { type WorldCity, worldCities } from "../lib/world-artworks";
 
@@ -24,7 +25,9 @@ function GlobePage() {
 		<main className="world-page" aria-label="世界の空と絵画">
 			<Suspense
 				fallback={
-					<output className="world-status">地球儀を準備しています…</output>
+					<div className="world-status">
+						<GenerationIndicator stage="artwork" />
+					</div>
 				}
 			>
 				<WorldGlobe
@@ -36,11 +39,6 @@ function GlobePage() {
 					paused={city !== null}
 				/>
 			</Suspense>
-			{loading && (
-				<output className="world-fetch-status">
-					世界の空を確認しています…
-				</output>
-			)}
 			{error && (
 				<div className="world-page-error">
 					<p role="alert">{error}</p>
