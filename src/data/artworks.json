@@ -1,25 +1,885 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08",
+  "generatedAt": "2026-11-18",
   "artworks": [
     {
-      "id": "met-10181",
-      "title": "Landscape",
-      "artist": "Ralph Albert Blakelock",
-      "date": "1885–95",
-      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap29.35.jpg",
-      "link": "https://www.metmuseum.org/art/collection/search/10181",
+      "id": "met-437686",
+      "title": "Rue Eugène Moussoir at Moret: Winter",
+      "artist": "Alfred Sisley",
+      "date": "1891",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-33708-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437686",
+      "weather": "snow",
+      "time": "day"
+    },
+    {
+      "id": "met-437588",
+      "title": "Drawing the Eel",
+      "artist": "Salomon van Ruysdael",
+      "date": "early 1650s",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP147902.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437588",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-437314",
+      "title": "The Garden of the Tuileries on a Winter Afternoon",
+      "artist": "Camille Pissarro",
+      "date": "1899",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DT1559.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437314",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-438640",
+      "title": "Mountainous Landscape at Vicovaro",
+      "artist": "Simon Denis",
+      "date": "ca. 1786–97",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP169450.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/438640",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-10769",
+      "title": "A River Glimpse",
+      "artist": "Thomas Doughty",
+      "date": "ca. 1843–50",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap95.17.2.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10769",
       "weather": "cloudy",
       "time": "day"
     },
     {
-      "id": "met-11181",
-      "title": "Landscape",
-      "artist": "William Morris Hunt",
-      "date": "ca. 1852–53",
-      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/06.170.jpg",
-      "link": "https://www.metmuseum.org/art/collection/search/11181",
+      "id": "met-435877",
+      "title": "Mont Sainte-Victoire and the Viaduct of the Arc River Valley",
+      "artist": "Paul Cézanne",
+      "date": "1882–85",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-20099-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/435877",
       "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-436817",
+      "title": "A Mountainous Landscape with a Waterfall",
+      "artist": "Kerstiaen de Keuninck",
+      "date": "ca. 1600",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-25738-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436817",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-435885",
+      "title": "View of the Domaine Saint-Joseph",
+      "artist": "Paul Cézanne",
+      "date": "late 1880s",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DT1937.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/435885",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-10149",
+      "title": "Canadian Rockies (Lake Louise)",
+      "artist": "Albert Bierstadt",
+      "date": "ca. 1889",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT7282.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10149",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-18447",
+      "title": "Lake George",
+      "artist": "John William Casilear",
+      "date": "1857",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap15.30.64.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/18447",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-488035",
+      "title": "The Black Horse",
+      "artist": "John Atherton",
+      "date": "1942",
+      "image": "https://images.metmuseum.org/CRDImages/ma/web-large/LC-42_159_overall_20250429_008.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/488035",
+      "weather": "rain",
+      "time": "twilight"
+    },
+    {
+      "id": "met-441769",
+      "title": "Virgil's Tomb by Moonlight, with Silius Italicus Declaiming",
+      "artist": "Joseph Wright (Wright of Derby)",
+      "date": "1779",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP322015.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/441769",
+      "weather": "cloudy",
+      "time": "night"
+    },
+    {
+      "id": "met-439343",
+      "title": "Copenhagen Harbor by Moonlight",
+      "artist": "Johan Christian Dahl",
+      "date": "1846",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-17567-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/439343",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-438417",
+      "title": "Two Men Contemplating the Moon",
+      "artist": "Caspar David Friedrich",
+      "date": "ca. 1825–30",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-31997-001-NEW.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/438417",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-436632",
+      "title": "Moonrise",
+      "artist": "Henri-Joseph Harpignies",
+      "date": "1885",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP238263.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436632",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-11050",
+      "title": "Approaching Thunder Storm",
+      "artist": "Martin Johnson Heade",
+      "date": "1859",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP248013.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11050",
+      "weather": "cloudy",
+      "time": "night"
+    },
+    {
+      "id": "met-10497",
+      "title": "View from Mount Holyoke, Northampton, Massachusetts, after a Thunderstorm—The Oxbow",
+      "artist": "Thomas Cole",
+      "date": "1836",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-12550-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10497",
+      "weather": "storm",
+      "time": "twilight"
+    },
+    {
+      "id": "met-437292",
+      "title": "A Shipwreck in a Storm",
+      "artist": "Jean Pillement",
+      "date": "1782",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP233702.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437292",
+      "weather": "storm",
+      "time": "night"
+    },
+    {
+      "id": "met-435570",
+      "title": "A Ship in a Stormy Sea",
+      "artist": "Ivan Konstantinovich Aivazovsky (Hovhannes Aivazian)",
+      "date": "1892",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-27364-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/435570",
+      "weather": "storm",
+      "time": "day"
+    },
+    {
+      "id": "met-12024",
+      "title": "The Custom House at Greenock, Scotland",
+      "artist": "Robert Salmon",
+      "date": "1828",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP115732.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/12024",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-11130",
+      "title": "Northeaster",
+      "artist": "Winslow Homer",
+      "date": "1895; reworked by 1901",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT1545.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11130",
+      "weather": "storm",
+      "time": "day"
+    },
+    {
+      "id": "met-439333",
+      "title": "Wanderer in the Storm",
+      "artist": "Julius von Leypold",
+      "date": "1835",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-34308-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/439333",
+      "weather": "rain",
+      "time": "day"
+    },
+    {
+      "id": "met-438950",
+      "title": "A Storm off the Normandy Coast",
+      "artist": "Eugène Isabey",
+      "date": "probably 1850s",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP169472.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/438950",
+      "weather": "storm",
+      "time": "twilight"
+    },
+    {
+      "id": "met-11319",
+      "title": "Passing off of the Storm",
+      "artist": "John Frederick Kensett",
+      "date": "1872",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap74.27.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11319",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-11289",
+      "title": "Approaching Storm",
+      "artist": "William Keith",
+      "date": "1880",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap51.144.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11289",
+      "weather": "rain",
+      "time": "night"
+    },
+    {
+      "id": "met-11136",
+      "title": "Searchlight on Harbor Entrance, Santiago de Cuba",
+      "artist": "Winslow Homer",
+      "date": "1902",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-21455-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11136",
+      "weather": "cloudy",
+      "time": "night"
+    },
+    {
+      "id": "met-437979",
+      "title": "Ship by Moonlight",
+      "artist": "Ivan Konstantinovich Aivazovsky (Hovhannes Aivazian)",
+      "date": "",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-23290-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437979",
+      "weather": "clear",
+      "time": "night"
+    },
+    {
+      "id": "met-437190",
+      "title": "The Farrier",
+      "artist": "Aert van der Neer",
+      "date": "early or mid-1650s",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-21084-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437190",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-10183",
+      "title": "A Waterfall, Moonlight",
+      "artist": "Ralph Albert Blakelock",
+      "date": "by 1886",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP343327.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10183",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-438952",
+      "title": "View from the Citadel Ramparts in Copenhagen by Moonlight",
+      "artist": "Martinus Rørbye",
+      "date": "1839",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-34305-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/438952",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-10191",
+      "title": "Corn Husking",
+      "artist": "David Gilmour Blythe",
+      "date": "ca. 1863–64",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap57.19.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10191",
+      "weather": "storm",
+      "time": "night"
+    },
+    {
+      "id": "met-437631",
+      "title": "Night Scene on the Volga",
+      "artist": "Alexei Kondratievich Savrasov",
+      "date": "1871",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-23542-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437631",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-10455",
+      "title": "The Lamp Lighter",
+      "artist": "William P. Chappel",
+      "date": "1870s",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-1427-029.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10455",
+      "weather": "rain",
+      "time": "night"
+    },
+    {
+      "id": "met-438954",
+      "title": "Mother and Child by the Sea",
+      "artist": "Johan Christian Dahl",
+      "date": "1830",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-34304-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/438954",
+      "weather": "storm",
+      "time": "twilight"
+    },
+    {
+      "id": "met-816789",
+      "title": "Sky – Northern Cuba",
+      "artist": "Charles Dewolf Brownell",
+      "date": "ca. 1853–66",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-23090-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/816789",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-436057",
+      "title": "Hautbois Common, Norfolk",
+      "artist": "John Crome",
+      "date": "probably ca. 1810",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP167135.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436057",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-438642",
+      "title": "Cloud Study (Early Evening)",
+      "artist": "Simon Denis",
+      "date": "ca. 1786–1806",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP103066.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/438642",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-21693",
+      "title": "Clouds",
+      "artist": "Thomas Cole",
+      "date": "ca. 1838",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP300700.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/21693",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-436830",
+      "title": "A Panoramic Landscape with a Country Estate",
+      "artist": "Philips Koninck",
+      "date": "ca. 1649",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP145898.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436830",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-436005",
+      "title": "The Calm Sea",
+      "artist": "Gustave Courbet",
+      "date": "1869",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DT1973.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436005",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-438643",
+      "title": "Cloud Study (Distant Storm)",
+      "artist": "Simon Denis",
+      "date": "ca. 1786–1806",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP169448.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/438643",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-441755",
+      "title": "Landscape Study with Clouds",
+      "artist": "Emile Loubon",
+      "date": "ca. 1829–31",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP281416.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/441755",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-437171",
+      "title": "The Old Castle",
+      "artist": "Emanuel Murant",
+      "date": "",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP143169.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437171",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-436831",
+      "title": "An Extensive Wooded Landscape",
+      "artist": "Philips Koninck",
+      "date": "1670s",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP146508.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436831",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-441379",
+      "title": "The North Cape by Moonlight",
+      "artist": "Peder Balke",
+      "date": "1848",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-1740-001_cropped.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/441379",
+      "weather": "cloudy",
+      "time": "night"
+    },
+    {
+      "id": "met-788905",
+      "title": "Schloss Milkel in Moonlight",
+      "artist": "Carl Gustav Carus",
+      "date": "ca. 1833–35",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-16387-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/788905",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-12811",
+      "title": "Trappers",
+      "artist": "Jonathan K. Trego",
+      "date": "ca. 1855",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap1985.354.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/12811",
+      "weather": "snow",
+      "time": "day"
+    },
+    {
+      "id": "met-752047",
+      "title": "A Reconnaissance",
+      "artist": "Frederic Remington",
+      "date": "1902",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-19024-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/752047",
+      "weather": "snow",
+      "time": "day"
+    },
+    {
+      "id": "met-10805",
+      "title": "Red School House (Country Scene)",
+      "artist": "George Henry Durrie",
+      "date": "1858",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP277399.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10805",
+      "weather": "snow",
+      "time": "day"
+    },
+    {
+      "id": "met-459115",
+      "title": "The Pond (La Mare)",
+      "artist": "Théodore Rousseau",
+      "date": "1855",
+      "image": "https://images.metmuseum.org/CRDImages/rl/web-large/DP-34502-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/459115",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-437461",
+      "title": "On the Seine",
+      "artist": "Martín Rico y Ortega",
+      "date": "1869",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP267031.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437461",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-435750",
+      "title": "Beaulieu: The Bay of Fourmis",
+      "artist": "Eugène Boudin",
+      "date": "1892",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-17451-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/435750",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-11320",
+      "title": "Salt Meadow in October",
+      "artist": "John Frederick Kensett",
+      "date": "1872",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap74.28.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11320",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-10456",
+      "title": "Militia Drilling",
+      "artist": "William P. Chappel",
+      "date": "1870s",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-1427-037.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10456",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-436086",
+      "title": "The Seine: Morning",
+      "artist": "Charles-François Daubigny",
+      "date": "1874",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-19626-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436086",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-437519",
+      "title": "A River Landscape",
+      "artist": "Théodore Rousseau",
+      "date": "ca. 1845–50",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP274261.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437519",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-816791",
+      "title": "Ingenio, San Martín, Cuba",
+      "artist": "Charles Dewolf Brownell",
+      "date": "ca. 1853–66",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-23089-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/816791",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-436021",
+      "title": "The Sea",
+      "artist": "Gustave Courbet",
+      "date": "1865 or later",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-24650-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436021",
+      "weather": "rain",
+      "time": "day"
+    },
+    {
+      "id": "met-10501",
+      "title": "View on the Catskill—Early Autumn",
+      "artist": "Thomas Cole",
+      "date": "1836–37",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT2639.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10501",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-437093",
+      "title": "Mercury and Battus",
+      "artist": "Francisque Millet",
+      "date": "",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-17624-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437093",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-437548",
+      "title": "Mountain Torrent",
+      "artist": "Jacob van Ruisdael",
+      "date": "1670s",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP123841.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437548",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-10496",
+      "title": "The Mountain Ford",
+      "artist": "Thomas Cole",
+      "date": "1846",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT216681.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10496",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-11325",
+      "title": "Sunset on the Sea",
+      "artist": "John Frederick Kensett",
+      "date": "1872",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT226485.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11325",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-11324",
+      "title": "Sunset",
+      "artist": "John Frederick Kensett",
+      "date": "1872",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap74.37.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11324",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-10499",
+      "title": "The Titan's Goblet",
+      "artist": "Thomas Cole",
+      "date": "1833",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-12799-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10499",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-436833",
+      "title": "Red Sunset",
+      "artist": "Arkhyp Kuindzhi (Arkhip Ivanovich Kuindzhi)",
+      "date": "1905–8",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DT2557.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436833",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-10947",
+      "title": "Tivoli",
+      "artist": "Sanford Robinson Gifford",
+      "date": "1870",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT1549.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10947",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-435775",
+      "title": "Kynance",
+      "artist": "John Brett",
+      "date": "1888",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP169651.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/435775",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-438374",
+      "title": "A Beach with Fishing Boats",
+      "artist": "Jan van Goyen",
+      "date": "probably 1653",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP120413.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/438374",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-11142",
+      "title": "Study for Eagle Head, Manchester, Massachusetts",
+      "artist": "Winslow Homer",
+      "date": "1869 (?)",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT9826.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11142",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-10155",
+      "title": "Sea Cove",
+      "artist": "Albert Bierstadt",
+      "date": "ca. 1880–90",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT9508.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10155",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-11307",
+      "title": "Eaton's Neck, Long Island",
+      "artist": "John Frederick Kensett",
+      "date": "1872",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap74.29.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11307",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-13065",
+      "title": "Lair of the Sea Serpent",
+      "artist": "Elihu Vedder",
+      "date": "ca. 1899",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap1976.106.1.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/13065",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-11111",
+      "title": "The Beach, Late Afternoon",
+      "artist": "Winslow Homer",
+      "date": "1869",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-16284-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11111",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-437585",
+      "title": "Market by the Seashore",
+      "artist": "Salomon van Ruysdael",
+      "date": "1637",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP143181.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437585",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-10464",
+      "title": "At the Seaside",
+      "artist": "William Merritt Chase",
+      "date": "ca. 1892",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT95.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10464",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-435749",
+      "title": "On the Beach at Trouville",
+      "artist": "Eugène Boudin",
+      "date": "1863",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DT1032.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/435749",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-459109",
+      "title": "Figures on the Beach",
+      "artist": "Auguste Renoir",
+      "date": "1890",
+      "image": "https://images.metmuseum.org/CRDImages/rl/web-large/DP-34500-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/459109",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-437987",
+      "title": "On the Beach, Dieppe",
+      "artist": "Eugène Boudin",
+      "date": "1864",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DT11491.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437987",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-436223",
+      "title": "Landing the Shore End of the Atlantic Cable",
+      "artist": "Robert Charles Dudley",
+      "date": "1866",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP371472.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436223",
+      "weather": "cloudy",
+      "time": "day"
+    },
+    {
+      "id": "met-11117",
+      "title": "Eagle Head, Manchester, Massachusetts (High Tide)",
+      "artist": "Winslow Homer",
+      "date": "1870",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DP-21445-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11117",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-11904",
+      "title": "New Jersey Beach",
+      "artist": "William Trost Richards",
+      "date": "1901",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap32.73.1.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11904",
+      "weather": "rain",
+      "time": "day"
+    },
+    {
+      "id": "met-438551",
+      "title": "On the Beach, Sunset",
+      "artist": "Eugène Boudin",
+      "date": "1865",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DT1031.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/438551",
+      "weather": "cloudy",
+      "time": "twilight"
+    },
+    {
+      "id": "met-436535",
+      "title": "Wheat Field with Cypresses",
+      "artist": "Vincent van Gogh",
+      "date": "1889",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP-42549-001.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/436535",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-11894",
+      "title": "Indian Summer",
+      "artist": "William Trost Richards",
+      "date": "1875",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT276257.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11894",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-10798",
+      "title": "Summer Afternoon",
+      "artist": "Asher Brown Durand",
+      "date": "1865",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/DT283604.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/10798",
+      "weather": "clear",
+      "time": "twilight"
+    },
+    {
+      "id": "met-437326",
+      "title": "Blind Orion Searching for the Rising Sun",
+      "artist": "Nicolas Poussin",
+      "date": "1658",
+      "image": "https://images.metmuseum.org/CRDImages/ep/web-large/DP148490.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/437326",
+      "weather": "clear",
+      "time": "day"
+    },
+    {
+      "id": "met-11911",
+      "title": "Surf on Rocks",
+      "artist": "William Trost Richards",
+      "date": "1890s",
+      "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ap32.73.2.jpg",
+      "link": "https://www.metmuseum.org/art/collection/search/11911",
+      "weather": "storm",
       "time": "day"
     }
   ]
