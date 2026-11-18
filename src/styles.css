@@ -432,7 +432,7 @@ button.app-info-icon:focus-visible, .app-info-close:focus-visible { outline: 2px
 .artwork-viewer { position: relative; }
 .artwork-viewer.is-loading .artwork-model-stage { visibility: hidden; }
 .gallery-page { display: flex; flex-direction: column; flex: 1; padding: 12px 20px calc(var(--navigation-height) + var(--navigation-bottom) + var(--action-gap) + env(safe-area-inset-bottom)); color: #fff; }
-.gallery-exhibition-area { min-height: 420px; margin-bottom: 20px; }
+.gallery-exhibition-area { display: flex; flex-direction: column; justify-content: center; flex: 1; min-height: 420px; margin-bottom: 20px; }
 .gallery-page .temperature-history { margin-top: auto; flex-shrink: 0; }
 .gallery-exhibition-area .artwork-model-stage { height: min(50dvh, 420px); min-height: 280px; cursor: pointer; }
 .gallery-exhibition-area .artwork-model-stage canvas { cursor: pointer; }
