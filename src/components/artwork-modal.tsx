@@ -1,7 +1,6 @@
 import { X } from "lucide-react";
 import { useEffect, useRef } from "react";
-import type { Selection } from "../lib/artwork";
-import type { ArtworkLocation } from "../lib/artwork-back";
+import type { ArtworkLocation, Selection } from "../lib/artwork";
 import { useDialogBackdrop } from "../lib/use-dialog-backdrop";
 import { ArtworkViewer } from "./artwork-viewer";
 import { WeatherAttribution } from "./weather-attribution";
@@ -44,12 +43,7 @@ export default function ArtworkModal({
 			>
 				<X size={25} aria-hidden="true" />
 			</button>
-			<ArtworkViewer
-				key={selection.generatedAt}
-				selection={selection}
-				location={location}
-				flippable
-			/>
+			<ArtworkViewer selection={selection} location={location} />
 			<WeatherAttribution />
 		</dialog>
 	);

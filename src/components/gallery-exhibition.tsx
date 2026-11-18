@@ -6,5 +6,5 @@ export default function GalleryExhibition({
 }: {
 	selection: Selection;
 }) {
-	return <ArtworkViewer selection={selection} flippable />;
+	return <ArtworkViewer selection={selection} />;
 }

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { timeLabels, weatherLabels } from "../lib/artwork";
 import { type GalleryDay, temperatureSegments } from "../lib/gallery-history";
 
 const spacing = 72;
@@ -148,6 +149,10 @@ export function TemperatureHistory({
 				</div>
 			</section>
 			<span className="temperature-center-marker" aria-hidden="true" />
+			<output className="sr-only" aria-live="polite">
+				{days[selectedIndex]?.selection &&
+					`${days[selectedIndex].date.toLocaleDateString("ja-JP")}、${weatherLabels[days[selectedIndex].selection.conditions.weather]}、${timeLabels[days[selectedIndex].selection.conditions.time]}、${days[selectedIndex].selection.conditions.temperature.toFixed(1)}℃`}
+			</output>
 		</section>
 	);
 }

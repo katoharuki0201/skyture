@@ -57,7 +57,7 @@ function GalleryPage() {
 									</output>
 								}
 							>
-								<GalleryExhibition key={day.key} selection={day.selection} />
+								<GalleryExhibition selection={day.selection} />
 							</Suspense>
 						) : null}
 					</div>
