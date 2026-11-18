@@ -12,9 +12,7 @@ export class GlobeScene {
 	private pose = { ...initialGlobePose };
 	private width = 0;
 	private frame = 0;
-	private timer = 0;
 	private previous = 0;
-	private resumeAt = 0;
 	private stopped = false;
 	private holding = false;
 	private paused = false;
@@ -88,24 +86,17 @@ export class GlobeScene {
 		);
 	}
 	private wake = () => {
-		clearTimeout(this.timer);
-		this.timer = 0;
 		if (this.disposed) return;
 		if (document.hidden) {
 			cancelAnimationFrame(this.frame);
 			this.frame = 0;
 			return;
 		}
-		if (this.dirty || (this.eligible() && performance.now() >= this.resumeAt)) {
+		if (this.dirty || this.eligible()) {
 			if (!this.frame) {
 				this.previous = performance.now();
 				this.frame = requestAnimationFrame(this.render);
 			}
-		} else if (this.eligible() && Number.isFinite(this.resumeAt)) {
-			this.timer = window.setTimeout(
-				this.wake,
-				Math.max(0, this.resumeAt - performance.now()),
-			);
 		}
 	};
 	private invalidate = () => {
@@ -146,7 +137,7 @@ export class GlobeScene {
 	private render = (now: number) => {
 		this.frame = 0;
 		if (this.disposed || document.hidden) return;
-		const animate = this.eligible() && now >= this.resumeAt;
+		const animate = this.eligible();
 		if (animate)
 			this.pose.phi += Math.min((now - this.previous) / 1000, 0.1) * 0.1;
 		this.previous = now;
@@ -160,17 +151,11 @@ export class GlobeScene {
 	};
 	hold() {
 		this.holding = true;
-		this.resumeAt = Number.POSITIVE_INFINITY;
-		this.wake();
-	}
-	delayRotation() {
-		this.resumeAt = performance.now() + 3000;
 		this.wake();
 	}
 	release() {
 		this.holding = false;
 		this.drag = null;
-		this.resumeAt = performance.now() + 3000;
 		this.wake();
 	}
 	beginDrag(x: number, y: number) {
@@ -199,19 +184,16 @@ export class GlobeScene {
 	}
 	setStopped(stopped: boolean) {
 		this.stopped = stopped;
-		if (!stopped) this.resumeAt = 0;
 		this.wake();
 	}
 	setPaused(paused: boolean) {
 		if (this.paused === paused) return;
 		this.paused = paused;
-		if (!paused) this.resumeAt = performance.now() + 3000;
 		this.wake();
 	}
 	dispose() {
 		this.disposed = true;
 		cancelAnimationFrame(this.frame);
-		clearTimeout(this.timer);
 		this.observer.disconnect();
 		this.cardObserver.disconnect();
 		this.motion.removeEventListener("change", this.wake);

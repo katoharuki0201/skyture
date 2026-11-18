@@ -120,9 +120,7 @@ export function WorldGlobe({
 									type="button"
 									className="world-artwork-open"
 									aria-label={`${city.name}の作品と情報をみる`}
-									onFocus={() => scene.current?.delayRotation()}
 									onClick={() => {
-										scene.current?.delayRotation();
 										onSelect(city);
 									}}
 								>
