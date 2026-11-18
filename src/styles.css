@@ -480,6 +480,4 @@ button.app-info-icon:focus-visible, .app-info-close:focus-visible { outline: 2px
 .world-globe-controls button[aria-pressed="true"] { background: rgb(255 255 255 / 16%); }
 .world-status { display: grid; place-items: center; min-height: 250px; color: #fff; text-align: center; font-size: 13px; }
 .world-page-error { margin: 20px 16px; text-align: center; font-size: 12px; line-height: 1.7; }
-.weather-attribution { flex-shrink: 0; margin: 6px 0 0; text-align: center; font-size: 10px; line-height: 1.5; }
-.weather-attribution a { color: #e0e9f4; text-decoration: underline; text-underline-offset: 2px; text-shadow: 0 1px 3px rgb(0 0 0 / 40%); }
 .world-page-error button { padding: 10px 18px; border: 1px solid rgb(255 255 255 / 70%); border-radius: 20px; background: rgb(0 0 0 / 15%); color: #fff; font: inherit; cursor: pointer; }

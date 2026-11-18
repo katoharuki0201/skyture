@@ -3,7 +3,6 @@ import { useEffect, useRef } from "react";
 import type { ArtworkLocation, Selection } from "../lib/artwork";
 import { useDialogBackdrop } from "../lib/use-dialog-backdrop";
 import { ArtworkViewer } from "./artwork-viewer";
-import { WeatherAttribution } from "./weather-attribution";
 
 export default function ArtworkModal({
 	selection,
@@ -44,7 +43,6 @@ export default function ArtworkModal({
 				<X size={25} aria-hidden="true" />
 			</button>
 			<ArtworkViewer selection={selection} location={location} />
-			<WeatherAttribution />
 		</dialog>
 	);
 }

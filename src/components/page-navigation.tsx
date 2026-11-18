@@ -4,7 +4,7 @@ import { Earth, Images, Sun } from "lucide-react";
 const pages = [
 	{ to: "/", label: "今日の絵画", icon: Sun },
 	{ to: "/gallery", label: "ギャラリー", icon: Images },
-	{ to: "/globe", label: "地球儀", icon: Earth },
+	{ to: "/globe", label: "世界の空", icon: Earth },
 ] as const;
 
 export function PageNavigation() {

@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { GenerationIndicator } from "../components/generation-loading";
 import { TemperatureHistory } from "../components/temperature-history";
-import { WeatherAttribution } from "../components/weather-attribution";
 import type { Selection } from "../lib/artwork";
 import { readHistory } from "../lib/artwork-history";
 import { galleryDays } from "../lib/gallery-history";
@@ -69,7 +68,6 @@ function GalleryPage() {
 						selectedIndex={selectedIndex}
 						onSelect={setSelectedIndex}
 					/>
-					<WeatherAttribution />
 				</>
 			)}
 		</main>
