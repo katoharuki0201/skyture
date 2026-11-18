@@ -116,13 +116,7 @@ function GlobePage() {
 				</div>
 			)}
 			{city && snapshot?.records[city.id] && (
-				<Suspense
-					fallback={
-						<output className="world-fetch-status">
-							作品を準備しています…
-						</output>
-					}
-				>
+				<Suspense fallback={null}>
 					<ArtworkModal
 						selection={snapshot.records[city.id]}
 						location={city}
