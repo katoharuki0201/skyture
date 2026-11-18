@@ -22,10 +22,10 @@ export function AppHeader() {
 			<header className="app-header">
 				<img
 					className="app-brand"
-					src={`${import.meta.env.BASE_URL}images/skyture-art-wordmark.png`}
+					src={`${import.meta.env.BASE_URL}images/skyture-logo.png`}
 					alt="Skyture"
-					width={2172}
-					height={724}
+					width={5907}
+					height={2461}
 				/>
 				<button
 					type="button"
