@@ -8,11 +8,13 @@
   "scripts": {
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
-    "build": "vite build",
+    "build": "bun run check:artworks && vite build",
     "preview": "vite preview",
     "format": "biome format",
     "lint": "biome lint",
-    "check": "biome check"
+    "check": "biome check",
+    "sync:artworks": "python3 scripts/sync-artwork-images.py",
+    "check:artworks": "node scripts/check-artwork-images.mjs"
   },
   "dependencies": {
     "@fontsource/noto-sans-jp": "^5.3.1",

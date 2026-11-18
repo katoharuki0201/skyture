@@ -36,7 +36,9 @@ bun run preview
 
 現在は分類済み作品が88点です。一致候補がなければ全作品からランダムに選び、理由の説明は画面に出しません。作品の追加・分類は別途準備したデータで行います。
 
-作品JSONは `id / title / artist / date / image / link / weather / time` を持ちます。分類は仕様書のカテゴリに揃え、画像の使用条件を確認してください。初期2作品の画像は `public/artworks` に保存し、`src/lib/artwork-image.ts` で元URLと対応付けています。追加作品はJSONの画像URLから読み込むため、公開先とブラウザからの取得可否を確認してください。
+作品JSONは `id / title / artist / date / image / link / weather / time` を持ちます。分類は仕様書のカテゴリに揃え、画像の使用条件を確認してください。作品画像は `public/artworks` に事前保存し、`src/data/artwork-images.json` で元URLとローカル配信パスを対応付けます。カードと3D額縁は共にローカル配信を使用し、閲覧時に美術館の画像サーバーへの接続を必要としません。過去の履歴用に既存の画像と対応表を残します。
+
+作品JSONを更新したら `bun run sync:artworks` を実行してください（Python 3とcurlが必要です）。画像を2件ずつ取得し、形式を確認して保存します。`bun run check:artworks` は通信を行わず、全作品の画像が揃っているかを確認します。この確認は本番ビルドでも自動実行します。作品JSONの画像URL・分類は同期時に変更しません。
 
 localStorageのキーは次のとおりです。
 

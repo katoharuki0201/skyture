@@ -4,6 +4,7 @@ import type { Selection } from "./artwork";
 import { artworkBack } from "./artwork-back";
 import { artworkImageUrl } from "./artwork-image";
 import type { ArtworkInformation } from "./artwork-information";
+import { AssetLoadError, fetchAsset } from "./asset-fetch";
 
 export type ArtworkSceneState = { loading: boolean; error: string };
 function abortable<T>(operation: Promise<T>, signal: AbortSignal): Promise<T> {
@@ -136,10 +137,11 @@ export class ArtworkScene {
 			this.lifetime.signal.addEventListener("abort", abort, { once: true });
 			const timeout = window.setTimeout(abort, 20_000);
 			try {
-				const response = await fetch(`${base}frame.glb`, {
-					signal: controller.signal,
-				});
-				if (!response.ok) throw new Error("額縁モデルを読み込めませんでした。");
+				const response = await fetchAsset(
+					`${base}frame.glb`,
+					"model",
+					controller.signal,
+				);
 				const gltf = await new GLTFLoader().parseAsync(
 					await response.arrayBuffer(),
 					base,
@@ -171,7 +173,13 @@ export class ArtworkScene {
 			}
 		})().catch((error) => {
 			this.modelPromise = undefined;
-			throw error;
+			throw error instanceof AssetLoadError
+				? error
+				: new AssetLoadError(
+						"model",
+						"額縁モデルを読み込めませんでした。再読み込みしてください。",
+						{ cause: error },
+					);
 		});
 		return this.modelPromise;
 	}
@@ -188,21 +196,39 @@ export class ArtworkScene {
 		this.onState({ loading: true, error: "" });
 		let texture: THREE.CanvasTexture | undefined;
 		let nextBack: ReturnType<typeof artworkBack> | undefined;
+		let phase: "model" | "image" = "model";
 		try {
 			await this.loadModel();
 			if (this.disposed || revision !== this.revision) return;
+			phase = "image";
 			await abortable(document.fonts.ready, controller.signal);
 			if (controller.signal.aborted)
 				throw new DOMException("Aborted", "AbortError");
-			const response = await fetch(artworkImageUrl(selection.artwork), {
-				signal: controller.signal,
-			});
-			if (!response.ok) throw new Error("作品画像を読み込めませんでした。");
-			const url = URL.createObjectURL(await response.blob());
+			const response = await fetchAsset(
+				artworkImageUrl(selection.artwork),
+				"image",
+				controller.signal,
+			);
+			const blob = await response.blob();
+			if (blob.type && !blob.type.startsWith("image/"))
+				throw new AssetLoadError(
+					"decode",
+					"作品画像のデータ形式が正しくありません。再読み込みしてください。",
+				);
+			const url = URL.createObjectURL(blob);
 			const image = new Image();
 			try {
 				image.src = url;
-				await abortable(image.decode(), controller.signal);
+				try {
+					await abortable(image.decode(), controller.signal);
+				} catch (cause) {
+					if (controller.signal.aborted) throw cause;
+					throw new AssetLoadError(
+						"decode",
+						"作品画像を読み取れませんでした。再読み込みしてください。",
+						{ cause },
+					);
+				}
 			} finally {
 				URL.revokeObjectURL(url);
 			}
@@ -265,11 +291,9 @@ export class ArtworkScene {
 				this.onState({
 					loading: false,
 					error:
-						cause instanceof Error &&
-						cause.name !== "AbortError" &&
-						cause.name !== "TimeoutError"
+						cause instanceof AssetLoadError
 							? cause.message
-							: "読み込みに時間がかかっています。再試行してください。",
+							: `${phase === "model" ? "額縁モデル" : "作品画像"}${controller.signal.aborted ? "の読み込みがタイムアウトしました。" : "の準備に失敗しました。"}再読み込みしてください。`,
 				});
 		} finally {
 			clearTimeout(timeout);
