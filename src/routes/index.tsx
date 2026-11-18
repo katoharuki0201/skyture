@@ -8,7 +8,6 @@ import {
 import type { Selection } from "../lib/artwork";
 import { readToday, saveSelection } from "../lib/artwork-history";
 import { pickArtwork } from "../lib/artwork-selection";
-import { unlimitedGeneration } from "../lib/development-options";
 import { getCurrentLocation } from "../lib/location";
 import { fetchConditions } from "../lib/weather";
 
@@ -27,7 +26,7 @@ function remainingUntilMidnight() {
 function TodayPage() {
 	const [remaining, setRemaining] = useState(remainingUntilMidnight);
 	const [selection, setSelection] = useState<Selection | null>(null);
-	const generatedToday = !!selection && !unlimitedGeneration;
+	const generatedToday = !!selection;
 	const [stage, setStage] = useState<"idle" | "location" | "weather">("idle");
 	const [error, setError] = useState("");
 	const [historyReady, setHistoryReady] = useState(false);
@@ -41,7 +40,7 @@ function TodayPage() {
 		inFlight.current = true;
 		setError("");
 		try {
-			const existing = unlimitedGeneration ? null : readToday();
+			const existing = readToday();
 			if (existing) {
 				setSelection(existing);
 				return;
