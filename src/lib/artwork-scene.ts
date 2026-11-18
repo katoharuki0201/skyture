@@ -6,6 +6,17 @@ import { artworkImageUrl } from "./artwork-image";
 import type { ArtworkInformation } from "./artwork-information";
 
 export type ArtworkSceneState = { loading: boolean; error: string };
+function abortable<T>(operation: Promise<T>, signal: AbortSignal): Promise<T> {
+	return new Promise((resolve, reject) => {
+		const abort = () => reject(new DOMException("Aborted", "AbortError"));
+		if (signal.aborted) {
+			abort();
+		} else signal.addEventListener("abort", abort, { once: true });
+		operation
+			.then(resolve, reject)
+			.finally(() => signal.removeEventListener("abort", abort));
+	});
+}
 function disposeMaterial(material: THREE.Material) {
 	for (const value of Object.values(material))
 		if (value instanceof THREE.Texture) value.dispose();
@@ -120,37 +131,44 @@ export class ArtworkScene {
 		if (this.modelPromise) return this.modelPromise;
 		this.modelPromise = (async () => {
 			const base = `${import.meta.env.BASE_URL}models/`;
-			const response = await fetch(`${base}frame.glb`, {
-				signal: AbortSignal.any([
-					this.lifetime.signal,
-					AbortSignal.timeout(20_000),
-				]),
-			});
-			if (!response.ok) throw new Error("額縁モデルを読み込めませんでした。");
-			const gltf = await new GLTFLoader().parseAsync(
-				await response.arrayBuffer(),
-				base,
-			);
-			if (this.disposed) {
-				disposeModel(gltf.scene);
-				return;
+			const controller = new AbortController();
+			const abort = () => controller.abort();
+			this.lifetime.signal.addEventListener("abort", abort, { once: true });
+			const timeout = window.setTimeout(abort, 20_000);
+			try {
+				const response = await fetch(`${base}frame.glb`, {
+					signal: controller.signal,
+				});
+				if (!response.ok) throw new Error("額縁モデルを読み込めませんでした。");
+				const gltf = await new GLTFLoader().parseAsync(
+					await response.arrayBuffer(),
+					base,
+				);
+				if (this.disposed) {
+					disposeModel(gltf.scene);
+					return;
+				}
+				this.model = gltf.scene;
+				const picture = this.model.getObjectByName("Picture");
+				if (!(picture instanceof THREE.Mesh)) {
+					disposeModel(this.model);
+					this.model = undefined;
+					throw new Error("モデル内に作品の表示面が見つかりませんでした。");
+				}
+				this.picture = picture;
+				const bounds = new THREE.Box3().setFromObject(this.model),
+					center = bounds.getCenter(new THREE.Vector3());
+				const scale =
+					3 /
+					Math.max(bounds.max.x - bounds.min.x, bounds.max.y - bounds.min.y);
+				this.model.position.copy(center).multiplyScalar(-scale);
+				this.model.scale.setScalar(scale);
+				this.display.add(this.model);
+				this.bounds = new THREE.Box3().setFromObject(this.model);
+			} finally {
+				clearTimeout(timeout);
+				this.lifetime.signal.removeEventListener("abort", abort);
 			}
-			this.model = gltf.scene;
-			const picture = this.model.getObjectByName("Picture");
-			if (!(picture instanceof THREE.Mesh)) {
-				disposeModel(this.model);
-				this.model = undefined;
-				throw new Error("モデル内に作品の表示面が見つかりませんでした。");
-			}
-			this.picture = picture;
-			const bounds = new THREE.Box3().setFromObject(this.model),
-				center = bounds.getCenter(new THREE.Vector3());
-			const scale =
-				3 / Math.max(bounds.max.x - bounds.min.x, bounds.max.y - bounds.min.y);
-			this.model.position.copy(center).multiplyScalar(-scale);
-			this.model.scale.setScalar(scale);
-			this.display.add(this.model);
-			this.bounds = new THREE.Box3().setFromObject(this.model);
 		})().catch((error) => {
 			this.modelPromise = undefined;
 			throw error;
@@ -173,7 +191,7 @@ export class ArtworkScene {
 		try {
 			await this.loadModel();
 			if (this.disposed || revision !== this.revision) return;
-			await document.fonts.ready;
+			await abortable(document.fonts.ready, controller.signal);
 			if (controller.signal.aborted)
 				throw new DOMException("Aborted", "AbortError");
 			const response = await fetch(artworkImageUrl(selection.artwork), {
@@ -184,7 +202,7 @@ export class ArtworkScene {
 			const image = new Image();
 			try {
 				image.src = url;
-				await image.decode();
+				await abortable(image.decode(), controller.signal);
 			} finally {
 				URL.revokeObjectURL(url);
 			}

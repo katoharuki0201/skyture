@@ -45,6 +45,11 @@ export function artworkBack(info: ArtworkInformation, bounds: THREE.Box3) {
 		ctx.font = `${line.weight} ${line.size * scale}px "Noto Sans JP", sans-serif`;
 		ctx.fillText(line.text, 228, y);
 		y += (line.size * 1.5 + line.gap) * scale;
+		if (line.gap === 70) {
+			ctx.fillStyle = "#929aa6";
+			ctx.fillRect(228, y - 35 * scale, 1080, 2);
+			ctx.fillStyle = "#f5f5f4";
+		}
 	}
 	const texture = new THREE.CanvasTexture(canvas);
 	texture.colorSpace = THREE.SRGBColorSpace;
