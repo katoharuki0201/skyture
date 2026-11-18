@@ -64,9 +64,9 @@ export function AppHeader() {
 				<div className="app-info-item">
 					<CalendarDays size={25} aria-hidden="true" />
 					<div>
-						<h3>絵画の取得は1日1回まで</h3>
+						<h3>今日の絵画は1日1回まで</h3>
 						<p>
-							一度取得すると、その日は再取得できません。端末の時間で毎日0時に、次の一枚を取得できるようになります。
+							今日の絵画は1日1枚、世界の絵画は各都市につき1日1枚を取得します。端末の時間で毎日0時に更新されます。
 						</p>
 					</div>
 				</div>

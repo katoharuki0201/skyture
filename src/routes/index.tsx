@@ -1,10 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CheckCircle2, Clock3 } from "lucide-react";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { CityPicker } from "../components/city-picker";
 import { GenerationLoading } from "../components/generation-loading";
+import type { City } from "../data/cities";
 import type { Selection } from "../lib/artwork";
 import { readToday, saveSelection } from "../lib/artwork-history";
 import { pickArtwork } from "../lib/artwork-selection";
+import type { Coordinates } from "../lib/location";
 import { getCurrentLocation } from "../lib/location";
 import { fetchConditions } from "../lib/weather";
 
@@ -27,11 +30,12 @@ function TodayPage() {
 	const [error, setError] = useState("");
 	const [historyReady, setHistoryReady] = useState(false);
 	const inFlight = useRef(false);
+	const [choosingCity, setChoosingCity] = useState(false);
 	const [openedSelection, setOpenedSelection] = useState<Selection | null>(
 		null,
 	);
 
-	async function generate() {
+	async function generate(city?: City) {
 		if (inFlight.current) return;
 		inFlight.current = true;
 		setError("");
@@ -41,8 +45,22 @@ function TodayPage() {
 				setSelection(existing);
 				return;
 			}
-			setStage("location");
-			const coords = await getCurrentLocation();
+			let coords: Coordinates;
+			if (city) coords = { latitude: city.latitude, longitude: city.longitude };
+			else {
+				setStage("location");
+				try {
+					coords = await getCurrentLocation();
+				} catch (cause) {
+					setError(
+						cause instanceof Error
+							? cause.message
+							: "現在地を取得できませんでした。都市を選択してください。",
+					);
+					setChoosingCity(true);
+					return;
+				}
+			}
 			setStage("weather");
 			const conditions = await fetchConditions(coords);
 			const picked = pickArtwork(conditions);
@@ -50,6 +68,9 @@ function TodayPage() {
 				...picked,
 				conditions,
 				generatedAt: new Date().toISOString(),
+				...(city
+					? { location: { name: city.name, timezone: city.timezone } }
+					: {}),
 			});
 			setSelection(result);
 			setOpenedSelection(result);
@@ -105,7 +126,7 @@ function TodayPage() {
 					type="button"
 					className="painting-button"
 					disabled={!historyReady || stage !== "idle" || !!selection}
-					onClick={generate}
+					onClick={() => void generate()}
 				>
 					<span>
 						{stage === "location"
@@ -119,6 +140,16 @@ function TodayPage() {
 										: "今日の空をみる"}
 					</span>
 				</button>
+				{!selection && (
+					<button
+						type="button"
+						className="city-choice-button"
+						disabled={!historyReady || stage !== "idle"}
+						onClick={() => setChoosingCity(true)}
+					>
+						現在地を使わず都市を選ぶ
+					</button>
+				)}
 				<div className="transparent-glass countdown-glass">
 					{selection ? (
 						<p
@@ -150,6 +181,15 @@ function TodayPage() {
 				</div>
 			</div>
 			{stage !== "idle" && <GenerationLoading stage={stage} />}
+			{choosingCity && (
+				<CityPicker
+					onClose={() => setChoosingCity(false)}
+					onSelect={(city) => {
+						setChoosingCity(false);
+						void generate(city);
+					}}
+				/>
+			)}
 			{openedSelection && (
 				<Suspense fallback={<GenerationLoading stage="artwork" />}>
 					<ArtworkModal

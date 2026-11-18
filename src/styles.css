@@ -478,4 +478,14 @@ button.app-info-icon:focus-visible, .app-info-close:focus-visible { outline: 2px
 .world-status { display: grid; place-items: center; min-height: 250px; color: #fff; text-align: center; font-size: 13px; }
 .world-fetch-status { display: block; margin-top: 20px; text-align: center; font-size: 12px; text-shadow: 0 1px 3px #12376f; }
 .world-page-error { margin: 20px 16px; text-align: center; font-size: 12px; line-height: 1.7; }
+.weather-attribution { flex-shrink: 0; margin: 6px 0 0; text-align: center; font-size: 10px; line-height: 1.5; }
+.weather-attribution a { color: #e0e9f4; text-decoration: underline; text-underline-offset: 2px; text-shadow: 0 1px 3px rgb(0 0 0 / 40%); }
+.city-choice-button { border: 0; padding: 4px 8px; background: transparent; color: #fff; font: inherit; font-size: 12px; text-decoration: underline; text-underline-offset: 3px; text-shadow: 0 1px 3px #12376f; cursor: pointer; }
+.city-choice-button:disabled { opacity: .5; cursor: default; }
+.city-picker { width: min(calc(100% - 40px), 350px); padding: 28px 22px; border: 0; border-radius: 24px; color: #fff; font: inherit; background: rgb(10 35 65 / 40%); }
+.city-picker::backdrop { background: rgb(4 10 22 / 70%); }
+.city-picker h2 { margin: 0 36px 22px 0; font-size: 20px; font-weight: 500; }
+.city-picker-close { position: absolute; top: 16px; right: 16px; display: grid; place-items: center; width: 40px; height: 40px; border: 0; border-radius: 50%; color: inherit; background: transparent; cursor: pointer; }
+.city-picker-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.city-picker-list button { min-height: 48px; padding: 8px; border: 1px solid rgb(255 255 255 / 30%); border-radius: 12px; background: rgb(255 255 255 / 8%); color: inherit; font: inherit; font-size: 13px; cursor: pointer; }
 .world-page-error button { padding: 10px 18px; border: 1px solid rgb(255 255 255 / 70%); border-radius: 20px; background: rgb(0 0 0 / 15%); color: #fff; font: inherit; cursor: pointer; }

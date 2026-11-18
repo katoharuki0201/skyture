@@ -4,6 +4,7 @@ import type { Selection } from "../lib/artwork";
 import type { ArtworkLocation } from "../lib/artwork-back";
 import { useDialogBackdrop } from "../lib/use-dialog-backdrop";
 import { ArtworkViewer } from "./artwork-viewer";
+import { WeatherAttribution } from "./weather-attribution";
 
 export default function ArtworkModal({
 	selection,
@@ -49,6 +50,7 @@ export default function ArtworkModal({
 				location={location}
 				flippable
 			/>
+			<WeatherAttribution />
 		</dialog>
 	);
 }
