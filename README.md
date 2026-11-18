@@ -1,185 +1,65 @@
-Welcome to your new TanStack Start app!
+# Skyture
 
-# Getting Started
+現在地や世界の都市の天気・時間帯をきっかけに、美術作品に出会うスマートフォン向けWebアプリです。最大幅は430pxで、PCでは中央に表示します。
 
-To run this application:
+React・TypeScript・ViteのクライアントSPAです。バックエンド、アカウント、データベースは使用しません。機能仕様は [docs/app-spec.md](docs/app-spec.md)、作業ルールは [AGENTS.md](AGENTS.md) を参照してください。
 
-```bash
+## 開発
+
+```sh
 bun install
-bun --bun run dev
+bun run dev
 ```
 
-# Building For Production
+開発サーバーは `http://localhost:3000` です。
 
-To build this application for production:
-
-```bash
-bun --bun run build
+```sh
+bunx tsc --noEmit
+bun run lint
+bun run build
+bun run preview
 ```
 
-## Styling
+`build` は配信用の `dist` を生成します。型チェックは別コマンドです。静的ホスティングでは `/gallery`・`/globe` への直接アクセスを `index.html` に返すSPAフォールバックを設定してください。現在地取得はHTTPSまたはlocalhost環境で利用します。
 
-Styles are defined with plain CSS in `src/styles.css`.
+## ページ
 
-## Linting & Formatting
+- `/`：現在地、または8都市から選択した地点の気象情報を取得し、1日1作品を保存します。
+- `/gallery`：保存した作品を3D額縁で表示し、横スクロール可能な気温グラフで選択します。未記録日は線が途切れ、停止対象にはなりません。
+- `/globe`：8都市の絵画をCOBEの地球儀にカードとして表示します。都市ごとの成功・失敗を逐次反映します。
 
-This project uses [Biome](https://biomejs.dev/) for linting and formatting. The following scripts are available:
+額縁のタップで作品と情報面を切り替えます。世界の作品と「今日の絵画」の生成枠は別です。更新日の判定は端末の現地日付を使います。
 
+## データと外部サービス
 
-```bash
-bun --bun run lint
-bun --bun run format
-bun --bun run check
-```
+実行時はOpen-Meteoへ緯度・経度を送信して気象情報を取得します。美術館の作品情報は事前に `src/data/artworks.json` に用意します。美術館APIを閲覧ごとに呼ぶ構成ではありません。
 
+現在は分類済み作品が2点です。一致候補がなければ全作品からランダムに選び、理由の説明は画面に出しません。作品の追加・分類は別途準備したデータで行います。
 
+作品JSONは `id / title / artist / date / image / link / weather / time` を持ちます。分類は仕様書のカテゴリに揃え、画像の使用条件を確認してください。2作品の画像は `public/artworks` に保存し、`src/lib/artwork-image.ts` で元URLと対応付けています。追加作品はJSONの画像URLから読み込むため、公開先とブラウザからの取得可否を確認してください。
 
-## Routing
+localStorageのキーは次のとおりです。
 
-This project uses [TanStack Router](https://tanstack.com/router) with file-based routing. Routes are managed as files in `src/routes`.
+- `skyture.artwork-history.v1`：今日の絵画と鑑賞履歴。保存時の作品情報を持ち、選定カタログから削除された作品も表示できます。
+- `skyture.world-artworks.v1`：世界の都市の当日分。履歴とは別に保存します。
 
-### Adding A Route
+データはブラウザ・配信元ごとに独立します。ブラウザのデータ削除で消え、別端末には同期されません。1日1回の制限もこの保存状態に基づきます。
 
-To add a new route to your application just add a new file in the `./src/routes` directory.
+## 構成
 
-TanStack will automatically generate the content of the route file for you.
+- `src/routes`：ページの構成。ルーターの生成は `src/router.tsx` に集約しています。
+- `src/components`：表示と利用者の操作。
+- `src/hooks`：React画面と非同期のデータ取得の接続。
+- `src/data`：分類済み作品・共通の都市一覧。
+- `src/lib/artwork.ts`：作品・取得条件・保存データの型と検証。
+- `src/lib/weather.ts` / `weather-error.ts`：気象情報の取得・分類・エラー・リトライ。
+- `src/lib/artwork-selection.ts` / `artwork-history.ts`：作品の選定と履歴の永続化。
+- `src/lib/world-artworks.ts`：世界の当日分キャッシュ・都市ごとの取得状態。
+- `src/lib/artwork-scene.ts`：額縁の3Dシーン。モデルを再利用し、作品変更時はテクスチャを交換します。
+- `src/lib/artwork-information.ts` / `artwork-back.ts`：作品情報の整形と裏面の描画。
+- `src/lib/globe-scene.ts` / `globe-layout.ts`：地球儀の描画・操作とカードの投影・配置。
+- `src/styles.css`：共通・各画面のCSS。Tailwindは使用しません。
+- `public/models/frame.glb`：額縁モデル。`Frame` と `Picture` のメッシュ構成を前提にします。
+- `public/rive/background.riv`：全ページ共通のループ背景。
 
-Now that you have two routes you can use a `Link` component to navigate between them.
-
-### Adding Links
-
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
-
-```tsx
-import { Link } from "@tanstack/react-router";
-```
-
-Then anywhere in your JSX you can use it like so:
-
-```tsx
-<Link to="/about">About</Link>
-```
-
-This will create a link that will navigate to the `/about` route.
-
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
-
-### Using A Layout
-
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you render `{children}` in the `shellComponent`.
-
-Here is an example layout that includes a header:
-
-```tsx
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-
-export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'My App' },
-    ],
-  }),
-  shellComponent: ({ children }) => (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </header>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  ),
-})
-```
-
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-## Server Functions
-
-TanStack Start provides server functions that allow you to write server-side code that seamlessly integrates with your client components.
-
-```tsx
-import { createServerFn } from '@tanstack/react-start'
-
-const getServerTime = createServerFn({
-  method: 'GET',
-}).handler(async () => {
-  return new Date().toISOString()
-})
-
-// Use in a component
-function MyComponent() {
-  const [time, setTime] = useState('')
-  
-  useEffect(() => {
-    getServerTime().then(setTime)
-  }, [])
-  
-  return <div>Server time: {time}</div>
-}
-```
-
-## API Routes
-
-You can create API routes by using the `server` property in your route definitions:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-import { json } from '@tanstack/react-start'
-
-export const Route = createFileRoute('/api/hello')({
-  server: {
-    handlers: {
-      GET: () => json({ message: 'Hello, World!' }),
-    },
-  },
-})
-```
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-
-export const Route = createFileRoute('/people')({
-  loader: async () => {
-    const response = await fetch('https://swapi.dev/api/people')
-    return response.json()
-  },
-  component: PeopleComponent,
-})
-
-function PeopleComponent() {
-  const data = Route.useLoaderData()
-  return (
-    <ul>
-      {data.results.map((person) => (
-        <li key={person.name}>{person.name}</li>
-      ))}
-    </ul>
-  )
-}
-```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
-
-
-
-# Learn More
-
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
-
-For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
+Three.jsとCOBEは静止中の不要な連続描画を停止し、リサイズ・操作・データ変更時に更新します。ブラウザが非表示の間も描画を停止します。
