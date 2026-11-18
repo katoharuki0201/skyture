@@ -1,12 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { localDateKey } from "../lib/local-date";
-import {
-	loadWorldDay,
-	type WorldCity,
-	type WorldDay,
-	worldCities,
-} from "../lib/world-artworks";
+import { lazy, Suspense, useState } from "react";
+import { useWorldArtworks } from "../hooks/use-world-artworks";
+import { type WorldCity, worldCities } from "../lib/world-artworks";
 
 const WorldGlobe = lazy(() =>
 	import("../components/world-globe").then((module) => ({
@@ -18,58 +13,13 @@ export const Route = createFileRoute("/globe")({ component: GlobePage });
 const ArtworkModal = lazy(() => import("../components/artwork-modal"));
 
 function GlobePage() {
-	const [snapshot, setSnapshot] = useState<WorldDay | null>(null);
-	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState("");
-	const [city, setCity] = useState<WorldCity | null>(null);
-	const refresh = useRef<() => void>(() => {});
-	useEffect(() => {
-		let active = true;
-		let fetching = false;
-		let loadedDate = "";
-		const load = async () => {
-			if (fetching) return;
-			fetching = true;
-			const date = localDateKey(new Date());
-			setLoading(true);
-			setError("");
-			try {
-				const result = await loadWorldDay();
-				if (active) {
-					loadedDate = date;
-					if (date === localDateKey(new Date())) setSnapshot(result);
-				}
-			} catch {
-				if (active) {
-					setError(
-						"都市の作品データを保存・読み込みできません。ブラウザのストレージ設定を確認してください。",
-					);
-					loadedDate = date;
-				}
-			} finally {
-				fetching = false;
-				if (active) setLoading(false);
-			}
-		};
-		refresh.current = () => {
-			void load();
-		};
-		const checkDate = () => {
-			if (loadedDate && loadedDate !== localDateKey(new Date())) {
-				setSnapshot(null);
-				setCity(null);
-				void load();
-			}
-		};
-		void load();
-		const timer = window.setInterval(checkDate, 1000);
-		window.addEventListener("focus", checkDate);
-		return () => {
-			active = false;
-			clearInterval(timer);
-			window.removeEventListener("focus", checkDate);
-		};
-	}, []);
+	const { snapshot, loading, error, retry } = useWorldArtworks();
+	const [opened, setOpened] = useState<{
+		city: WorldCity;
+		date: string;
+	} | null>(null);
+	const city = opened?.date === snapshot?.date ? (opened?.city ?? null) : null;
+
 	return (
 		<main className="world-page" aria-label="世界の空と絵画">
 			<Suspense
@@ -80,7 +30,9 @@ function GlobePage() {
 				<WorldGlobe
 					snapshot={snapshot}
 					loading={loading}
-					onSelect={setCity}
+					onSelect={(city) => {
+						if (snapshot) setOpened({ city, date: snapshot.date });
+					}}
 					paused={city !== null}
 				/>
 			</Suspense>
@@ -92,7 +44,7 @@ function GlobePage() {
 			{error && (
 				<div className="world-page-error">
 					<p role="alert">{error}</p>
-					<button type="button" onClick={() => refresh.current()}>
+					<button type="button" onClick={retry}>
 						もう一度試す
 					</button>
 				</div>
@@ -110,7 +62,7 @@ function GlobePage() {
 							</p>
 						))}
 					</details>
-					<button type="button" onClick={() => refresh.current()}>
+					<button type="button" onClick={retry}>
 						もう一度試す
 					</button>
 				</div>
@@ -120,7 +72,7 @@ function GlobePage() {
 					<ArtworkModal
 						selection={snapshot.records[city.id]}
 						location={city}
-						onClose={() => setCity(null)}
+						onClose={() => setOpened(null)}
 					/>
 				</Suspense>
 			)}

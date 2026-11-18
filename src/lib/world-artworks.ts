@@ -10,6 +10,7 @@ export type WorldDay = {
 	date: string;
 	records: Record<string, Selection>;
 	errors: Record<string, string>;
+	loading: string[];
 };
 const storageKey = "skyture.world-artworks.v1";
 const cacheSchema = z.object({
@@ -24,6 +25,7 @@ export function readWorldDay(date = localDateKey(new Date())): WorldDay {
 		records:
 			parsed.success && parsed.data.date === date ? parsed.data.records : {},
 		errors: {},
+		loading: [],
 	};
 }
 
@@ -31,52 +33,96 @@ function readRecords(date: string) {
 	return readWorldDay(date).records;
 }
 
-// Share pending requests across React remounts; completed cities are cached separately.
-const pending = new Map<string, Promise<WorldDay>>();
-export function loadWorldDay(): Promise<WorldDay> {
+type WorldJob = {
+	snapshot: WorldDay;
+	listeners: Set<(snapshot: WorldDay) => void>;
+	promise: Promise<WorldDay>;
+};
+const pending = new Map<string, WorldJob>();
+
+function subscribe(
+	job: WorldJob,
+	onUpdate?: (snapshot: WorldDay) => void,
+	signal?: AbortSignal,
+) {
+	if (!onUpdate || signal?.aborted) return;
+	job.listeners.add(onUpdate);
+	onUpdate(job.snapshot);
+	signal?.addEventListener("abort", () => job.listeners.delete(onUpdate), {
+		once: true,
+	});
+}
+
+export function loadWorldDay(
+	onUpdate?: (snapshot: WorldDay) => void,
+	signal?: AbortSignal,
+): Promise<WorldDay> {
 	const date = localDateKey(new Date());
 	const existing = pending.get(date);
-	if (existing) return existing;
-	const operation = (async () => {
-		const records = readRecords(date);
-		const errors: Record<string, string> = {};
-		await Promise.all(
-			worldCities.map(async (city) => {
-				if (records[city.id]) return;
-				try {
-					const conditions = await fetchConditions({
-						latitude: city.latitude,
-						longitude: city.longitude,
-					});
-					const selection = {
-						...pickArtwork(conditions),
-						conditions,
-						generatedAt: new Date().toISOString(),
-					};
-					// Another tab may have saved this city while the request was running.
-					const stored = readRecords(date);
-					records[city.id] = stored[city.id] ?? selection;
-					if (localDateKey(new Date()) === date)
-						localStorage.setItem(
-							storageKey,
-							JSON.stringify({ date, records: { ...stored, ...records } }),
-						);
-				} catch (cause) {
-					delete records[city.id];
-					errors[city.id] =
-						cause instanceof Error
-							? cause.message
-							: "この都市の作品を取得できませんでした。";
-				}
-			}),
-		);
-		return { date, records, errors };
-	})();
-	pending.set(date, operation);
-	void operation
+	if (existing) {
+		subscribe(existing, onUpdate, signal);
+		return existing.promise;
+	}
+	const initial = readWorldDay(date);
+	initial.loading = worldCities
+		.filter((city) => !initial.records[city.id])
+		.map((city) => city.id);
+	const job: WorldJob = {
+		snapshot: initial,
+		listeners: new Set(),
+		promise: Promise.resolve(initial),
+	};
+	pending.set(date, job);
+	subscribe(job, onUpdate, signal);
+	const notify = () => {
+		for (const listener of job.listeners) listener(job.snapshot);
+	};
+	job.promise = Promise.all(
+		worldCities.map(async (city) => {
+			if (initial.records[city.id]) return;
+			try {
+				const conditions = await fetchConditions({
+					latitude: city.latitude,
+					longitude: city.longitude,
+				});
+				const selection = {
+					...pickArtwork(conditions),
+					conditions,
+					generatedAt: new Date().toISOString(),
+				};
+				const stored = readRecords(date);
+				const records = {
+					...job.snapshot.records,
+					...stored,
+					[city.id]: stored[city.id] ?? selection,
+				};
+				if (localDateKey(new Date()) === date)
+					localStorage.setItem(storageKey, JSON.stringify({ date, records }));
+				job.snapshot = { ...job.snapshot, records };
+			} catch (cause) {
+				job.snapshot = {
+					...job.snapshot,
+					errors: {
+						...job.snapshot.errors,
+						[city.id]:
+							cause instanceof Error
+								? cause.message
+								: "この都市の作品を取得できませんでした。",
+					},
+				};
+			} finally {
+				job.snapshot = {
+					...job.snapshot,
+					loading: job.snapshot.loading.filter((id) => id !== city.id),
+				};
+				notify();
+			}
+		}),
+	)
+		.then(() => job.snapshot)
 		.finally(() => {
-			if (pending.get(date) === operation) pending.delete(date);
-		})
-		.catch(() => {});
-	return operation;
+			pending.delete(date);
+			job.listeners.clear();
+		});
+	return job.promise;
 }

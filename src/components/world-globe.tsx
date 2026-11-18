@@ -291,7 +291,9 @@ export function WorldGlobe({
 								</button>
 							) : (
 								<span className="world-artwork-placeholder">
-									{loading ? "取得中…" : "取得できません"}
+									{(snapshot ? snapshot.loading.includes(city.id) : loading)
+										? "取得中…"
+										: "取得できません"}
 								</span>
 							)}
 							<figcaption>{city.name}</figcaption>
