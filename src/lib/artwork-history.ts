@@ -1,4 +1,5 @@
 import { type Selection, selectionSchema } from "./artwork";
+import { unlimitedGeneration } from "./development-options";
 import { localDateKey } from "./local-date";
 
 const storageKey = "skyture.artwork-history.v1";
@@ -27,7 +28,7 @@ export function readToday(): Selection | null {
 
 export function saveSelection(selection: Selection): Selection {
 	// A second tab may already have generated today's artwork while location was loading.
-	const existing = readToday();
+	const existing = unlimitedGeneration ? null : readToday();
 	if (existing) return existing;
 	localStorage.setItem(
 		storageKey,
